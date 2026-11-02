@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>O Ídolo de Pedra</title>
+<link rel="stylesheet" href="stage.css">
+<style>
+  html, body { margin: 0; height: 100%; background: #000; overflow: hidden; color: #eee; cursor: default; }
+  #scene { position: fixed; inset: 0; display: grid; place-items: center; }
+  #scene .stage { height: min(100vh, calc(100vw * 3750 / 3537)); transition: opacity .6s; animation: flicker 9s infinite; }
+  #scene .stage.off { opacity: 0; }
+  @keyframes flicker { 0%, 100% { filter: brightness(1); } 47% { filter: brightness(1); } 48% { filter: brightness(.82); } 49% { filter: brightness(1.04); } 50% { filter: brightness(.9); } 51% { filter: brightness(1); } }
+  #blank { position: fixed; inset: 0; display: grid; place-items: center; font: 700 clamp(18px, 3vw, 40px) "Courier New", monospace; letter-spacing: .3em; color: #2a2522; text-transform: uppercase; transition: opacity .6s; }
+  #blank.off { opacity: 0; }
+  #vignette { position: fixed; inset: 0; pointer-events: none; background: radial-gradient(ellipse at center, transparent 55%, rgba(0, 0, 0, .85) 100%); }
+  body.cursed #vignette { animation: cursed 3.2s ease-in-out infinite; }
+  @keyframes cursed { 0%, 100% { box-shadow: inset 0 0 100px 20px rgba(110, 0, 0, .45); } 50% { box-shadow: inset 0 0 180px 50px rgba(160, 10, 0, .6); } }
+  #show { position: fixed; inset: 0; background: #000; display: grid; grid-template-rows: auto 1fr; z-index: 5; }
+  #show[hidden] { display: none; }
+  #show-caption { font: 26px "Courier New", monospace; text-align: center; padding: 14px 120px; height: 64px; box-sizing: border-box; }
+  #show-body { position: relative; min-height: 0; display: grid; place-items: center; }
+  #show-img { max-width: 100vw; max-height: calc(100vh - 64px); object-fit: contain; }
+  #show.no-caption { grid-template-rows: 1fr; }
+  #show.no-caption #show-caption { display: none; }
+  #show.no-caption #show-img { max-height: 100vh; }
+  #show-timer { position: fixed; top: 10px; left: 22px; font: 700 80px/1 "Courier New", monospace; text-shadow: 0 0 20px #000; z-index: 6; }
+  #show-timer.warn { color: #e0483a; animation: blink .5s steps(2) infinite; }
+  @keyframes blink { 50% { opacity: .4; } }
+  #show-done { font: 700 120px "Courier New", monospace; color: #e0483a; letter-spacing: .1em; }
+  #door-count { position: fixed; right: 2.5vw; top: 50%; transform: translateY(-50%); z-index: 4; width: min(20vw, 300px); box-sizing: border-box; text-align: center; font: 700 clamp(14px, 1.6vw, 26px)/1.3 "Courier New", monospace; letter-spacing: .12em; color: #ff5a4a; background: rgba(0, 0, 0, .8); border: 2px solid #8a1a12; padding: 18px 12px; border-radius: 8px; text-shadow: 0 0 12px rgba(255, 40, 20, .8); }
+  #door-count b { display: block; font-size: 4.2em; line-height: 1.1; animation: blink 1.2s steps(2) infinite; }
+  #door-count[hidden] { display: none; }
+  #hint { position: fixed; bottom: 14px; right: 18px; font: 13px -apple-system, sans-serif; color: #777; background: rgba(0, 0, 0, .6); padding: 6px 10px; border-radius: 6px; transition: opacity 1s; z-index: 10; }
+  #hint.off { opacity: 0; }
+</style>
+</head>
+<body>
+  <div id="scene">
+    <div class="stage off" id="stage"><img class="map" id="map" alt=""><div class="tokens" id="tokens"></div></div>
+  </div>
+  <div id="blank">O Ídolo de Pedra</div>
+  <div id="vignette"></div>
+  <div id="door-count" hidden></div>
+  <div id="show" hidden>
+    <div id="show-caption"></div>
+    <div id="show-body">
+      <div id="show-timer" hidden></div>
+      <img id="show-img" alt="">
+      <div id="show-done" hidden>TEMPO!</div>
+    </div>
+  </div>
+  <div id="hint">Clique aqui para tela cheia (ou tecla F). Controle tudo pelo painel do mestre.</div>
+
+  <script src="stage.js"></script>
+  <script>
+  (function () {
+    "use strict";
+    const $ = (id) => document.getElementById(id);
+    const STORAGE_KEY = "op2-tela";
+    let lastTs = 0;
+    let currentMap = null;
+    let currentShowKey = "";
+    let timer = null;
+
+    function apply(state) {
+      if (!state || state.type !== "op2-state" || state.ts < lastTs) return;
+      lastTs = state.ts;
+      document.body.classList.toggle("cursed", !!state.cursed);
+      const map = state.map && Stage.MAPS[state.map];
+      if (state.map !== currentMap) {
+        currentMap = state.map;
+        $("stage").classList.add("off");
+        if (map) {
+          const img = $("map");
+          img.onload = () => $("stage").classList.remove("off");
+          img.src = map.file;
+        }
+      }
+      $("blank").classList.toggle("off", !!map);
+      if (map) Stage.syncTokens($("tokens"), state, false);
+      else $("tokens").innerHTML = "";
+      applyDoorCount(state.doorCountdown, state.doorPowered !== false);
+      applyShow(state.show);
+    }
+
+    function applyDoorCount(left, powered) {
+      const box = $("door-count");
+      if (typeof left !== "number") {
+        box.hidden = true;
+        return;
+      }
+      box.hidden = false;
+      box.innerHTML = powered ? `PORTA<br>DESTRAVANDO<b>${left}</b>${left === 1 ? "RODADA" : "RODADAS"}` : "PORTA<br>SEM ENERGIA<b>!</b>PAROU DE DESTRAVAR";
+    }
+
+    function applyShow(show) {
+      const key = show ? `${show.src}|${show.startedAt}` : "";
+      if (key === currentShowKey) return;
+      currentShowKey = key;
+      clearInterval(timer);
+      if (!show) {
+        $("show").hidden = true;
+        $("show-img").removeAttribute("src");
+        return;
+      }
+      $("show").hidden = false;
+      $("show-caption").textContent = show.caption || "";
+      $("show").classList.toggle("no-caption", !show.caption);
+      $("show-img").src = show.src;
+      $("show-img").hidden = false;
+      $("show-done").hidden = true;
+      $("show-timer").hidden = !show.seconds;
+      if (!show.seconds) return;
+      const endAt = show.startedAt + show.seconds * 1000;
+      const tick = () => {
+        const left = Math.max(0, endAt - Date.now());
+        $("show-timer").textContent = String(Math.ceil(left / 1000));
+        $("show-timer").classList.toggle("warn", left <= 3000);
+        if (left <= 0) {
+          clearInterval(timer);
+          $("show-img").hidden = true;
+          $("show-timer").hidden = true;
+          $("show-done").hidden = false;
+        }
+      };
+      tick();
+      timer = setInterval(tick, 100);
+    }
+
+    window.addEventListener("message", (ev) => apply(ev.data));
+
+    function poll() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) apply(JSON.parse(raw));
+      } catch (err) {
+        console.warn("Não foi possível ler o estado salvo.", err);
+      }
+    }
+
+    function hello() {
+      if (window.opener && !window.opener.closed) window.opener.postMessage({ type: "op2-hello" }, "*");
+    }
+
+    function toggleFullscreen() {
+      if (document.fullscreenElement) document.exitFullscreen();
+      else document.documentElement.requestFullscreen().catch((err) => console.warn("Tela cheia recusada.", err));
+    }
+
+    document.addEventListener("click", toggleFullscreen);
+    document.addEventListener("keydown", (ev) => { if (ev.key === "f" || ev.key === "F") toggleFullscreen(); });
+    document.addEventListener("fullscreenchange", () => $("hint").classList.toggle("off", !!document.fullscreenElement));
+
+    poll();
+    hello();
+    setInterval(poll, 1000);
+    setInterval(hello, 2000);
+  })();
+  </script>
+</body>
+</html>

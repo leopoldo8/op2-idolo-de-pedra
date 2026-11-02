@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>O Ídolo de Pedra: material para imprimir</title>
+<style>
+  @page { size: A4 portrait; margin: 10mm; }
+  @page paisagem { size: A4 landscape; margin: 10mm; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; color: #111; }
+  .page { break-after: page; position: relative; height: 277mm; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8mm; }
+  .page:last-child { break-after: auto; }
+  .landscape { page: paisagem; height: 190mm; }
+  .page img { display: block; object-fit: contain; }
+  .page > img { max-width: 190mm; max-height: 265mm; }
+  .landscape > img { max-width: 277mm; max-height: 182mm; }
+  .rg img { width: 100%; }
+  .tag { position: absolute; bottom: 0; right: 0; font-size: 8pt; color: #999; letter-spacing: .08em; }
+  .index { justify-content: flex-start; align-items: stretch; gap: 0; }
+  .index h1 { font-size: 18pt; margin: 0 0 2mm; }
+  .index .sub { margin: 0 0 6mm; color: #555; font-size: 10pt; }
+  .index h2 { font-size: 11pt; margin: 6mm 0 2mm; text-transform: uppercase; letter-spacing: .06em; }
+  .index table { width: 100%; border-collapse: collapse; font-size: 9.5pt; }
+  .index td, .index th { text-align: left; padding: 1.6mm 2mm; border-bottom: .3mm solid #ddd; vertical-align: top; }
+  .index th { font-size: 8pt; color: #666; text-transform: uppercase; letter-spacing: .05em; }
+  .index td:first-child { width: 18mm; color: #666; white-space: nowrap; }
+  .index ul { margin: 0; padding-left: 5mm; font-size: 9.5pt; line-height: 1.5; }
+  .cut { border: .4mm dashed #888; padding: 3mm; position: relative; }
+  .cut::before { content: "✂"; position: absolute; top: -3.2mm; left: 4mm; background: #fff; padding: 0 1mm; font-size: 9pt; color: #888; line-height: 1; }
+  .rg { width: 186mm; }
+  .rg .fold { position: absolute; top: 3mm; bottom: 3mm; left: 50%; border-left: .3mm dotted #aaa; }
+  .rg-label { font-size: 8pt; color: #888; text-align: center; margin-top: 1.5mm; }
+  .cards { display: flex; flex-direction: column; gap: 14mm; align-items: center; }
+  .card { width: 120mm; height: 70mm; display: flex; flex-direction: column; justify-content: center; align-items: center; background: #f6f1e4; }
+  .card small { font: 9pt -apple-system, sans-serif; color: #7a6f5a; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 6mm; }
+  .card .hand { font-family: "Bradley Hand", "Noteworthy", "Marker Felt", cursive; font-size: 30pt; color: #1d2a55; transform: rotate(-3deg); }
+  .card .laser { font-family: "Avenir Next", "Helvetica Neue", sans-serif; font-size: 22pt; letter-spacing: .14em; color: #555; text-transform: none; }
+  .phones { flex-direction: row; gap: 6mm; }
+  .phones img { height: 175mm; max-height: 175mm; }
+</style>
+</head>
+<body>
+
+<section class="page landscape"><img src="../painel-do-mestre/assets/fichas/alan.jpg" alt=""><span class="tag">FICHA · ALAN</span></section>
+<section class="page landscape"><img src="../painel-do-mestre/assets/fichas/victor.jpg" alt=""><span class="tag">FICHA · VICTOR</span></section>
+<section class="page landscape"><img src="../painel-do-mestre/assets/fichas/eloisa.jpg" alt=""><span class="tag">FICHA · ELOÍSA</span></section>
+
+
+<section class="page">
+  <div>
+    <div class="cut rg"><img src="../painel-do-mestre/assets/handouts/h03.jpg" alt=""><span class="fold"></span></div>
+    <div class="rg-label">HANDOUT 03 · recorte no tracejado e dobre no pontilhado</div>
+  </div>
+  <div>
+    <div class="cut rg"><img src="../painel-do-mestre/assets/handouts/h11.jpg" alt=""><span class="fold"></span></div>
+    <div class="rg-label">HANDOUT 11 · recorte no tracejado e dobre no pontilhado</div>
+  </div>
+</section>
+
+<section class="page"><img src="../painel-do-mestre/assets/handouts/h04.jpg" alt=""><span class="tag">HANDOUT 04</span></section>
+<section class="page landscape"><img src="../painel-do-mestre/assets/handouts/h14.jpg" alt=""><span class="tag">HANDOUT 14</span></section>
+
+<section class="page">
+  <div class="cards">
+    <div class="cut card"><small>Atrás da foto dobrada</small><span class="hand">02/09/2022</span></div>
+    <div class="cut card"><small>Gravado por dentro da pulseira de prata</small><span class="laser">Olívia - 10/08</span></div>
+  </div>
+  <span class="tag">CARTÕES · PESQUISAR DT 6</span>
+</section>
+
+
+
+</body>
+</html>

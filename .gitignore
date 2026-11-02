@@ -1,0 +1,6 @@
+.DS_Store
+__pycache__/
+servidor.log
+estado-celular.json
+Sessão OP2.app/
+fonte/*.zip

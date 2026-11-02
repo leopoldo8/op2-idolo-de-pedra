@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="data:,">
+<title>Celular</title>
+<style>
+  :root { --wa-bg: #0b141a; --wa-bar: #202c33; --wa-them: #202c33; --wa-me: #005c4b; --wa-green: #00a884; --muted: #8696a0; --text: #e9edef; }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { margin: 0; height: 100%; background: #000; color: var(--text); font: 16px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; overscroll-behavior: none; }
+  #app { position: fixed; inset: 0; display: flex; flex-direction: column; overflow: hidden; }
+  button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+  input { font: inherit; }
+  .status { display: flex; justify-content: space-between; align-items: center; padding: max(6px, env(safe-area-inset-top)) 16px 6px; font-size: 13px; font-weight: 600; color: #fff; }
+  .status .icons { display: flex; gap: 6px; align-items: center; }
+  .battery { width: 22px; height: 11px; border: 1.5px solid #fff; border-radius: 3px; position: relative; padding: 1px; }
+  .battery::after { content: ""; position: absolute; right: -4px; top: 3px; width: 2px; height: 4px; background: #fff; border-radius: 0 1px 1px 0; }
+  .battery i { display: block; height: 100%; width: 23%; background: #ffcc00; border-radius: 1px; }
+
+  .off { flex: 1; display: grid; place-items: center; background: #000; color: #222; font-size: 13px; letter-spacing: .2em; }
+  .off-msg { display: flex; flex-direction: column; align-items: center; gap: 14px; color: #555; font-size: 15px; letter-spacing: .04em; text-align: center; padding: 0 32px; }
+  .off-msg .bat { width: 46px; height: 22px; border: 2px solid #555; border-radius: 4px; position: relative; }
+  .off-msg .bat::after { content: ""; position: absolute; right: -6px; top: 6px; width: 4px; height: 8px; background: #555; border-radius: 0 2px 2px 0; }
+  .off-msg small { color: #3a3a3a; font-size: 13px; }
+
+  .lock { flex: 1; display: flex; flex-direction: column; align-items: center; padding: 24px 28px 28px; background: radial-gradient(ellipse at 30% 10%, #2d3b4f 0%, #121a26 45%, #05070b 100%); }
+  .lock .clock { font-size: 76px; font-weight: 200; letter-spacing: -2px; margin-top: 4vh; line-height: 1; }
+  .lock .date { font-size: 17px; opacity: .85; margin-top: 6px; }
+  .lock .hello { margin-top: auto; font-size: 20px; font-weight: 500; }
+  .lock form { width: 100%; max-width: 340px; margin-top: 16px; display: flex; flex-direction: column; gap: 10px; }
+  .field { display: flex; align-items: center; background: rgba(255, 255, 255, .12); border: 1px solid rgba(255, 255, 255, .2); border-radius: 14px; padding: 0 6px 0 14px; }
+  .field input { flex: 1; background: none; border: 0; color: #fff; padding: 13px 0; outline: none; font-size: 17px; }
+  .field button { padding: 8px; opacity: .8; font-size: 13px; }
+  .primary { background: #fff; color: #111; border-radius: 14px; padding: 13px; font-weight: 600; }
+  .primary:disabled { opacity: .4; }
+  .link { color: #9fc4ff; font-size: 15px; padding: 8px; }
+  .msg { min-height: 22px; font-size: 14px; text-align: center; color: #ffb4a8; }
+  .msg.ok { color: #8fe3b0; }
+  .hint { font-size: 14px; background: rgba(255, 214, 102, .14); border: 1px solid rgba(255, 214, 102, .35); color: #ffe08a; border-radius: 10px; padding: 8px 12px; text-align: center; }
+  .shake { animation: shake .35s; }
+  @keyframes shake { 20%, 60% { transform: translateX(-8px); } 40%, 80% { transform: translateX(8px); } }
+
+  .sheet { flex: 1; display: flex; flex-direction: column; background: #101418; padding: 18px 22px 28px; overflow: auto; }
+  .sheet h1 { font-size: 22px; font-weight: 600; margin: 8px 0 4px; }
+  .sheet p { color: #b9c2cb; margin: 6px 0; }
+  .sheet .small { font-size: 13px; color: var(--muted); }
+  .sheet .prompt { font-size: 19px; color: #fff; margin: 22px 0 12px; }
+  .sheet .field { background: #1c232b; border-color: #2c3640; }
+  .back { align-self: flex-start; color: #9fc4ff; padding: 6px 0; font-size: 15px; }
+  .spinner { width: 34px; height: 34px; border: 3px solid #2c3640; border-top-color: #9fc4ff; border-radius: 50%; animation: spin 1s linear infinite; margin: 30px auto 14px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .progress { display: flex; gap: 6px; margin: 14px 0 0; }
+  .progress i { flex: 1; height: 4px; border-radius: 2px; background: #2c3640; }
+  .progress i.done { background: #8fe3b0; }
+
+  .pattern-wrap { position: relative; width: min(78vw, 320px); aspect-ratio: 1; margin: 24px auto 8px; touch-action: none; }
+  .pattern-wrap svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+  .home { flex: 1; display: flex; flex-direction: column; background: radial-gradient(ellipse at 70% 0%, #3b2a1f 0%, #15110e 50%, #050404 100%); padding: 0 16px 24px; }
+  .notif { background: rgba(32, 44, 51, .92); border-radius: 18px; padding: 12px 14px; margin-top: 10px; box-shadow: 0 6px 18px rgba(0, 0, 0, .4); }
+  .notif small { color: var(--muted); font-size: 12px; display: block; }
+  .notif b { display: block; margin: 2px 0; }
+  .notif .code { font: 700 26px/1.2 ui-monospace, Menlo, monospace; letter-spacing: .12em; color: #fff; }
+  .apps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px 8px; margin-top: auto; padding: 0 4px 10px; }
+  .app { display: flex; flex-direction: column; align-items: center; gap: 6px; font-size: 12px; position: relative; }
+  .app .ic { width: 58px; height: 58px; border-radius: 16px; display: grid; place-items: center; font-size: 28px; box-shadow: 0 3px 8px rgba(0, 0, 0, .4); }
+  .app .badge { position: absolute; top: -4px; right: 10px; background: #25d366; color: #000; border-radius: 99px; font-size: 11px; font-weight: 700; min-width: 18px; height: 18px; display: grid; place-items: center; padding: 0 5px; }
+  .app.flash-on .ic { box-shadow: 0 0 22px 6px rgba(255, 248, 200, .75); }
+  .toast { position: fixed; left: 50%; bottom: 40px; transform: translateX(-50%); background: rgba(40, 40, 40, .95); padding: 10px 16px; border-radius: 20px; font-size: 14px; z-index: 9; }
+
+  .wa { flex: 1; display: flex; flex-direction: column; background: var(--wa-bg); min-height: 0; }
+  .wa-bar { display: flex; align-items: center; gap: 10px; background: var(--wa-bar); padding: 10px 12px; }
+  .wa-bar .t { flex: 1; min-width: 0; }
+  .wa-bar .t b { display: block; font-weight: 500; font-size: 17px; }
+  .wa-bar .t small { display: block; color: var(--muted); font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .wa-bar .bk { font-size: 22px; padding: 2px 6px; }
+  .avatar { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; font-weight: 600; flex: none; color: #fff; }
+  .wa-list { flex: 1; overflow: auto; }
+  .wa-item { display: flex; gap: 12px; padding: 12px 16px; align-items: center; width: 100%; text-align: left; }
+  .wa-item .t { flex: 1; min-width: 0; border-bottom: 1px solid #1f2c33; padding-bottom: 12px; }
+  .wa-item .row { display: flex; justify-content: space-between; gap: 8px; }
+  .wa-item small { color: var(--muted); font-size: 13px; }
+  .wa-item .last { color: var(--muted); font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .wa-item .unread { background: #00a884; color: #111; border-radius: 99px; font-size: 12px; font-weight: 700; min-width: 20px; height: 20px; display: grid; place-items: center; }
+  .wa-item .time.new { color: #00a884; }
+  .chat { flex: 1; overflow: auto; padding: 10px 10px 20px; background-color: #0b141a; background-image: radial-gradient(rgba(255, 255, 255, .025) 1px, transparent 1px); background-size: 18px 18px; }
+  .day { text-align: center; margin: 8px 0 12px; }
+  .day span { background: #182229; color: var(--muted); font-size: 12.5px; padding: 5px 12px; border-radius: 8px; }
+  .bubble { max-width: 82%; padding: 6px 9px 6px; border-radius: 9px; margin: 3px 0; font-size: 15.5px; position: relative; width: fit-content; word-wrap: break-word; }
+  .bubble.them { background: var(--wa-them); }
+  .bubble.me { background: var(--wa-me); margin-left: auto; }
+  .bubble .who { color: #e4a33b; font-size: 13.5px; font-weight: 600; display: block; }
+  .bubble::after { content: ""; display: block; clear: both; }
+  .bubble .tm { float: right; font-size: 11px; color: rgba(233, 237, 239, .6); margin: 8px 0 -4px 10px; }
+  .bubble.me .tm::after { content: " ✓✓"; color: #53bdeb; letter-spacing: -3px; }
+  .wa-input { display: flex; gap: 8px; padding: 8px; background: var(--wa-bg); }
+  .wa-input div { flex: 1; background: var(--wa-bar); border-radius: 22px; padding: 11px 16px; color: var(--muted); }
+  .wa-input span { width: 44px; height: 44px; border-radius: 50%; background: var(--wa-green); display: grid; place-items: center; }
+
+  .tranca { flex: 1; display: flex; flex-direction: column; background: linear-gradient(180deg, #121417, #08090a); padding: 8px 22px 24px; }
+  .tranca header { display: flex; align-items: center; gap: 10px; }
+  .tranca h1 { font: 800 20px/1 ui-monospace, Menlo, monospace; letter-spacing: .14em; margin: 0; }
+  .tranca .sub { color: #8a9099; font-size: 13px; }
+  .pill { display: inline-block; margin: 18px auto 6px; padding: 6px 14px; border-radius: 99px; font-size: 13px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
+  .pill.fechada { background: #3a1512; color: #ff8b80; }
+  .pill.aberta { background: #15331f; color: #8fe3b0; }
+  .pill.bloq { background: #3a2d10; color: #ffcf6a; }
+  .slots { display: flex; justify-content: center; gap: 6px; margin: 18px 0 6px; font: 700 34px ui-monospace, Menlo, monospace; }
+  .slots span { width: 34px; border-bottom: 2px solid #3a4048; text-align: center; }
+  .slots em { font-style: normal; color: #3a4048; width: 12px; text-align: center; }
+  .keypad { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: auto; max-width: 320px; width: 100%; align-self: center; }
+  .keypad button { height: 64px; border-radius: 50%; background: #1b1f24; font-size: 26px; font-weight: 500; aspect-ratio: 1; justify-self: center; }
+  .keypad button.ok { background: #1f4d33; font-size: 15px; font-weight: 700; }
+  .keypad button:disabled { opacity: .35; }
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+(function () {
+  "use strict";
+
+  const API = "/api/phone";
+  const FAKE_TIME = "03:12";
+  const AVATAR_COLORS = { victor: "#6a5acd", alan: "#b5651d", reuniao: "#5f6b73" };
+  const app = document.getElementById("app");
+  const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+  let st = null;
+  let lastJson = "";
+  let nav = "lock";
+  let chatId = null;
+  let msg = { text: "", ok: false };
+  let showPassword = false;
+  let busy = false;
+  let doorCode = "";
+  let doorWaiting = null;
+  let patternMsg = "";
+  const readChats = new Set();
+  const inputs = {};
+
+  async function api(body) {
+    try {
+      const res = await fetch(API, { method: body ? "POST" : "GET", headers: { "Content-Type": "application/json" }, body: body ? JSON.stringify(body) : undefined, cache: "no-store" });
+      return await res.json();
+    } catch (err) {
+      console.warn("Sem conexão com o servidor.", err);
+      return null;
+    }
+  }
+
+  async function poll() {
+    const next = await api();
+    if (!next) return;
+    const json = JSON.stringify(next);
+    if (json === lastJson) return;
+    lastJson = json;
+    st = next;
+    if (doorWaiting && !st.doorPending.includes(doorWaiting)) {
+      doorWaiting = null;
+      doorCode = st.door.open ? doorCode : "";
+    }
+    render();
+  }
+
+  function statusBar(dark) {
+    return `<div class="status" style="${dark ? "background:#000" : ""}"><span>${FAKE_TIME}</span><span class="icons"><span>▂▄▆</span><span>4G</span><span class="battery"><i></i></span></span></div>`;
+  }
+
+  function toast(text) {
+    const el = document.createElement("div");
+    el.className = "toast";
+    el.textContent = text;
+    document.body.appendChild(el);
+    setTimeout(() => el.remove(), 1800);
+  }
+
+  function shake() {
+    const f = app.querySelector("form");
+    if (!f) return;
+    f.classList.remove("shake");
+    void f.offsetWidth;
+    f.classList.add("shake");
+  }
+
+  function screenOff() {
+    return `<div class="off"><div class="off-msg"><span class="bat"></span>Celular desligado<small>Esta tela liga sozinha quando o mestre mandar.</small></div></div>`;
+  }
+
+  function screenLock() {
+    const locked = st.passwordLockLeft > 0;
+    return `${statusBar()}<div class="lock">
+      <div class="clock">${FAKE_TIME}</div>
+      <div class="date">quinta-feira, 13 de outubro</div>
+      <div class="hello">Olá, Gustavo</div>
+      <form data-form="password">
+        ${st.hint ? `<div class="hint">Lembrete de senha: <b>Prata = 25</b></div>` : ""}
+        <div class="field"><input id="pw" type="${showPassword ? "text" : "password"}" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Senha" value="${esc(inputs.pw || "")}" ${locked ? "disabled" : ""}>
+          <button type="button" data-act="toggle-pw">${showPassword ? "ocultar" : "mostrar"}</button></div>
+        <button class="primary" ${locked || busy ? "disabled" : ""}>Desbloquear</button>
+        <div class="msg ${msg.ok ? "ok" : ""}">${locked ? `Muitas tentativas. Tente de novo em ${st.passwordLockLeft} s.` : esc(msg.text)}</div>
+      </form>
+      <button class="link" data-act="go" data-to="recovery">Esqueceu a senha?</button>
+      ${st.fallback ? `<button class="link" data-act="go" data-to="pattern">Usar padrão de desbloqueio</button>` : ""}
+    </div>`;
+  }
+
+  function screenRecovery() {
+    const r = st.recovery;
+    let body;
+    if (st.lockout || r.failedTest) {
+      body = `<p style="margin-top:30px">Não foi possível verificar sua identidade.</p><p>Tente novamente mais tarde.</p><p class="small">(Uma nova tentativa depende do mestre.)</p>`;
+    } else if (r.waiting) {
+      body = `<div class="spinner"></div><p style="text-align:center">Verificando sua identidade…</p><p class="small" style="text-align:center">(O mestre vai pedir um teste de Intuição.)</p>`;
+    } else if (!r.current) {
+      body = `<p style="margin-top:30px">Verificação concluída.</p>`;
+    } else {
+      body = `
+        <div class="progress">${Array.from({ length: r.total }, (_, i) => `<i class="${i < r.done ? "done" : ""}"></i>`).join("")}</div>
+        <p class="small" style="margin-top:8px">Pergunta ${r.done + 1} de ${r.total}</p>
+        <div class="prompt">${esc(r.current.prompt)}</div>
+        <form data-form="answer" data-id="${r.current.id}">
+          <div class="field"><input id="ans" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Sua resposta" value="${esc(inputs.ans || "")}"></div>
+          <button class="primary" style="width:100%;margin-top:12px" ${busy ? "disabled" : ""}>Confirmar</button>
+          <div class="msg ${msg.ok ? "ok" : ""}" style="margin-top:10px">${esc(msg.text)}</div>
+        </form>
+        <p class="small">Respostas erradas que ainda pode dar: <b>${r.errorsLeft}</b></p>`;
+    }
+    return `${statusBar(true)}<div class="sheet">
+      <button class="back" data-act="go" data-to="lock">‹ Voltar</button>
+      <h1>Recuperar acesso</h1>
+      <p>Responda às perguntas de segurança da conta de Gustavo.</p>
+      ${body}
+    </div>`;
+  }
+
+  const DOT = (i) => ({ x: 50 + (i % 3) * 100, y: 50 + Math.floor(i / 3) * 100 });
+
+  function screenPattern() {
+    const sm = st.smudge || { path: [], clarity: 1 };
+    const locked = st.patternLockLeft > 0;
+    const pts = sm.path.map(DOT);
+    const smudgeLines = pts.slice(1).map((p, i) => `<line x1="${pts[i].x}" y1="${pts[i].y}" x2="${p.x}" y2="${p.y}" />`).join("");
+    const decoys = [[80, 230, 40, 18, 30], [210, 90, 30, 12, -20], [250, 260, 26, 14, 60]];
+    const start = sm.clarity === 2 && pts[0] ? `<circle cx="${pts[0].x}" cy="${pts[0].y}" r="30" fill="rgba(255,255,255,.22)" filter="url(#blur)"/>` : "";
+    return `${statusBar(true)}<div class="sheet">
+      <button class="back" data-act="go" data-to="lock">‹ Voltar</button>
+      <h1>Padrão de desbloqueio</h1>
+      <p class="small">Com a lanterna inclinada, dá pra ver marcas de dedo na tela.</p>
+      <div class="pattern-wrap" id="pattern">
+        <svg viewBox="0 0 300 300">
+          <defs><filter id="blur"><feGaussianBlur stdDeviation="${sm.clarity === 2 ? 4 : 6}"/></filter></defs>
+          <g stroke="rgba(255,255,255,${sm.clarity === 2 ? 0.2 : 0.13})" stroke-width="26" stroke-linecap="round" fill="none" filter="url(#blur)">${smudgeLines}</g>
+          ${start}
+          ${decoys.map(([x, y, rx, ry, a]) => `<ellipse cx="${x}" cy="${y}" rx="${rx}" ry="${ry}" transform="rotate(${a} ${x} ${y})" fill="rgba(255,255,255,.07)" filter="url(#blur)"/>`).join("")}
+          <polyline id="drawn" fill="none" stroke="#9fc4ff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" points=""/>
+          ${Array.from({ length: 9 }, (_, i) => { const p = DOT(i); return `<circle class="dot" data-i="${i}" cx="${p.x}" cy="${p.y}" r="9" fill="#cfd8e3"/>`; }).join("")}
+        </svg>
+      </div>
+      <div class="msg">${locked ? `Bloqueado. Tente de novo em ${st.patternLockLeft} s.` : esc(patternMsg)}</div>
+    </div>`;
+  }
+
+  function screenHome() {
+    const flash = st.flashlight;
+    return `${statusBar()}<div class="home">
+      <div class="notif"><small>Gmail · agora</small><b>Código de verificação</b><div class="code">${esc(st.content.twoFactor)}</div><small>Use este código para entrar no seu e-mail no computador.</small></div>
+      <div class="apps">
+        <button class="app" data-act="decor"><span class="ic" style="background:#3b82f6">☎</span>Telefone</button>
+        <button class="app" data-act="decor"><span class="ic" style="background:#334155">◉</span>Câmera</button>
+        <button class="app" data-act="decor"><span class="ic" style="background:#be185d">❀</span>Galeria</button>
+        <button class="app ${flash ? "flash-on" : ""}" data-act="flash"><span class="ic" style="background:${flash ? "#fef3c7" : "#475569"};color:${flash ? "#111" : "#fff"}">✦</span>Lanterna</button>
+        <button class="app" data-act="go" data-to="chats"><span class="ic" style="background:#25d366;color:#fff">✉</span>Mensagens${readChats.has("victor") ? "" : `<span class="badge">1</span>`}</button>
+        <button class="app" data-act="go" data-to="trancatron"><span class="ic" style="background:#111;border:2px solid #e0483a;color:#e0483a">⌂</span>TRANCATRON</button>
+      </div>
+    </div>`;
+  }
+
+  function avatar(chat) {
+    return `<span class="avatar" style="background:${AVATAR_COLORS[chat.id] || "#555"}">${chat.group ? "⚇" : esc(chat.title[0])}</span>`;
+  }
+
+  function screenChats() {
+    const chats = st.content.chats;
+    return `${statusBar(true)}<div class="wa">
+      <div class="wa-bar"><button class="bk" data-act="go" data-to="home">‹</button><div class="t"><b>Mensagens</b></div></div>
+      <div class="wa-list">${chats.map((c) => {
+        const last = c.messages[c.messages.length - 1];
+        const lastText = last[0] === "me" ? `✓✓ ${last[1]}` : (c.group ? `${last[0]}: ${last[1]}` : last[1]);
+        const unread = readChats.has(c.id) ? 0 : c.unread;
+        return `<button class="wa-item" data-act="chat" data-id="${c.id}">${avatar(c)}<div class="t">
+          <div class="row"><b>${esc(c.title)}</b><small class="time ${unread ? "new" : ""}">${c.day === "Hoje" ? last[2] : "11/10/2022"}</small></div>
+          <div class="row"><span class="last">${esc(lastText)}</span>${unread ? `<span class="unread">${unread}</span>` : ""}</div></div></button>`;
+      }).join("")}</div>
+    </div>`;
+  }
+
+  function screenChat() {
+    const c = st.content.chats.find((x) => x.id === chatId);
+    if (!c) return screenChats();
+    return `${statusBar(true)}<div class="wa">
+      <div class="wa-bar"><button class="bk" data-act="go" data-to="chats">‹</button>${avatar(c)}<div class="t"><b>${esc(c.title)}</b><small>${esc(c.subtitle)}</small></div></div>
+      <div class="chat" id="chat"><div class="day"><span>${esc(c.day)}</span></div>
+        ${c.messages.map(([from, text, time], i) => {
+          const me = from === "me";
+          const showWho = c.group && !me && (i === 0 || c.messages[i - 1][0] !== from);
+          return `<div class="bubble ${me ? "me" : "them"}">${showWho ? `<span class="who">${esc(from)}</span>` : ""}${esc(text)}<span class="tm">${time}</span></div>`;
+        }).join("")}
+      </div>
+      <div class="wa-input"><div>Mensagem</div><span>🎤</span></div>
+    </div>`;
+  }
+
+  function screenTrancatron() {
+    const d = st.door;
+    const waiting = !!doorWaiting;
+    let pill = `<span class="pill fechada">Porta trancada</span>`;
+    const opening = typeof d.opensIn === "number";
+    if (d.open) pill = `<span class="pill aberta">Porta aberta</span>`;
+    else if (!d.powered) pill = `<span class="pill bloq">Sem conexão com a tranca</span>`;
+    else if (opening) pill = `<span class="pill bloq">Destravando…</span>`;
+    else if (d.lockedUntil !== null && d.lockedUntil !== undefined) pill = `<span class="pill bloq">Teclado bloqueado</span>`;
+    const digits = doorCode.padEnd(6, " ").split("");
+    const disabled = d.open || waiting || opening;
+    return `${statusBar(true)}<div class="tranca">
+      <header><button class="back" data-act="go" data-to="home">‹</button><div><h1>TRANCATRON</h1><div class="sub">Porta do porão</div></div></header>
+      <div style="text-align:center">${pill}</div>
+      <div class="slots"><span>${digits[0]}</span><span>${digits[1]}</span><em>/</em><span>${digits[2]}</span><span>${digits[3]}</span><em>/</em><span>${digits[4]}</span><span>${digits[5]}</span></div>
+      <div class="msg ${d.open ? "ok" : ""}">${waiting ? "Conectando à tranca…" : esc(d.message || "")}</div>
+      <div class="sub" style="text-align:center">Tentativas erradas: ${d.errors || 0} de 3</div>
+      <div class="keypad">
+        ${[1, 2, 3, 4, 5, 6, 7, 8, 9].map((n) => `<button data-act="key" data-k="${n}" ${disabled ? "disabled" : ""}>${n}</button>`).join("")}
+        <button data-act="key" data-k="del" ${disabled ? "disabled" : ""}>⌫</button>
+        <button data-act="key" data-k="0" ${disabled ? "disabled" : ""}>0</button>
+        <button class="ok" data-act="door" ${disabled || doorCode.length !== 6 ? "disabled" : ""}>ABRIR</button>
+      </div>
+    </div>`;
+  }
+
+  function render() {
+    if (!st) return;
+    const focused = document.activeElement && document.activeElement.id;
+    let html;
+    if (!st.enabled) html = screenOff();
+    else if (!st.unlocked) {
+      if (!["lock", "recovery", "pattern"].includes(nav) || (nav === "pattern" && !st.fallback)) nav = "lock";
+      html = nav === "recovery" ? screenRecovery() : nav === "pattern" ? screenPattern() : screenLock();
+    } else {
+      if (!["home", "chats", "chat", "trancatron"].includes(nav)) nav = "home";
+      html = nav === "chats" ? screenChats() : nav === "chat" ? screenChat() : nav === "trancatron" ? screenTrancatron() : screenHome();
+    }
+    app.innerHTML = html;
+    if (focused) {
+      const el = document.getElementById(focused);
+      if (el) {
+        el.focus();
+        if (el.setSelectionRange && el.type !== "password") el.setSelectionRange(el.value.length, el.value.length);
+      }
+    }
+    if (nav === "pattern") bindPattern();
+  }
+
+  function go(to) {
+    nav = to;
+    msg = { text: "", ok: false };
+    patternMsg = "";
+    render();
+    const chat = document.getElementById("chat");
+    if (chat) chat.scrollTop = chat.scrollHeight;
+  }
+
+  app.addEventListener("input", (ev) => {
+    if (ev.target.id) inputs[ev.target.id] = ev.target.value;
+  });
+
+  app.addEventListener("click", async (ev) => {
+    const el = ev.target.closest("[data-act]");
+    if (!el || el.disabled) return;
+    const act = el.dataset.act;
+    if (act === "go") {
+      go(el.dataset.to);
+      if (el.dataset.to === "chats") api({ action: "open", what: "Mensagens" });
+      if (el.dataset.to === "trancatron") api({ action: "open", what: "TRANCATRON" });
+    } else if (act === "toggle-pw") {
+      showPassword = !showPassword;
+      render();
+    } else if (act === "chat") {
+      chatId = el.dataset.id;
+      const c = st.content.chats.find((x) => x.id === chatId);
+      readChats.add(chatId);
+      api({ action: "open", what: `conversa ${c ? c.title : chatId}` });
+      go("chat");
+    } else if (act === "decor") {
+      toast("Nada de útil aqui.");
+    } else if (act === "flash") {
+      await api({ action: "flashlight", on: !st.flashlight });
+      await poll();
+    } else if (act === "key") {
+      doorCode = el.dataset.k === "del" ? doorCode.slice(0, -1) : (doorCode + el.dataset.k).slice(0, 6);
+      render();
+    } else if (act === "door") {
+      const res = await api({ action: "door", code: doorCode });
+      if (res && res.ok) doorWaiting = res.id;
+      render();
+      setTimeout(poll, 400);
+    }
+  });
+
+  app.addEventListener("submit", async (ev) => {
+    ev.preventDefault();
+    const form = ev.target;
+    if (busy) return;
+    busy = true;
+    if (form.dataset.form === "password") {
+      const res = await api({ action: "password", text: inputs.pw || "" });
+      busy = false;
+      if (res && res.ok) {
+        msg = { text: "", ok: true };
+        nav = "home";
+      } else {
+        msg = { text: (res && res.message) || "Senha incorreta.", ok: false };
+        inputs.pw = "";
+      }
+      lastJson = "";
+      await poll();
+      render();
+      if (!(res && res.ok)) shake();
+    } else if (form.dataset.form === "answer") {
+      const res = await api({ action: "answer", id: Number(form.dataset.id), text: inputs.ans || "" });
+      busy = false;
+      if (res && res.correct) {
+        msg = { text: "Correto.", ok: true };
+        inputs.ans = "";
+      } else {
+        msg = { text: (res && res.message) || "Resposta incorreta.", ok: false };
+      }
+      lastJson = "";
+      await poll();
+      render();
+      if (!(res && res.correct)) shake();
+    }
+  });
+
+  function bindPattern() {
+    const wrap = document.getElementById("pattern");
+    if (!wrap || st.patternLockLeft > 0) return;
+    const svg = wrap.querySelector("svg");
+    const line = svg.querySelector("#drawn");
+    let seq = [];
+    let drawing = false;
+
+    const point = (ev) => {
+      const r = svg.getBoundingClientRect();
+      return { x: ((ev.clientX - r.left) / r.width) * 300, y: ((ev.clientY - r.top) / r.height) * 300 };
+    };
+    const hit = (p) => {
+      for (let i = 0; i < 9; i++) {
+        const d = DOT(i);
+        if (Math.hypot(d.x - p.x, d.y - p.y) < 34) return i;
+      }
+      return -1;
+    };
+    const draw = (extra) => {
+      const pts = seq.map(DOT).map((d) => `${d.x},${d.y}`);
+      if (extra) pts.push(`${extra.x},${extra.y}`);
+      line.setAttribute("points", pts.join(" "));
+      svg.querySelectorAll(".dot").forEach((c) => c.setAttribute("fill", seq.includes(Number(c.dataset.i)) ? "#9fc4ff" : "#cfd8e3"));
+    };
+
+    wrap.addEventListener("pointerdown", (ev) => {
+      ev.preventDefault();
+      wrap.setPointerCapture(ev.pointerId);
+      drawing = true;
+      seq = [];
+      const i = hit(point(ev));
+      if (i >= 0) seq.push(i);
+      draw();
+    });
+    wrap.addEventListener("pointermove", (ev) => {
+      if (!drawing) return;
+      const p = point(ev);
+      const i = hit(p);
+      if (i >= 0 && !seq.includes(i)) seq.push(i);
+      draw(p);
+    });
+    wrap.addEventListener("pointerup", async () => {
+      if (!drawing) return;
+      drawing = false;
+      draw();
+      if (seq.length < 4) {
+        patternMsg = "Conecte pelo menos 4 pontos.";
+        render();
+        return;
+      }
+      const res = await api({ action: "pattern", seq });
+      if (res && res.correct) {
+        nav = "home";
+      } else {
+        patternMsg = (res && res.message) || "Padrão incorreto.";
+        if (navigator.vibrate) navigator.vibrate(200);
+      }
+      lastJson = "";
+      await poll();
+      render();
+    });
+  }
+
+  poll();
+  setInterval(poll, 1500);
+})();
+</script>
+</body>
+</html>

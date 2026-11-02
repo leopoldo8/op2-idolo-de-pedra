@@ -1,0 +1,28 @@
+.stage { position: relative; aspect-ratio: 3537 / 3750; }
+.stage > img.map { position: absolute; inset: 0; width: 100%; height: 100%; display: block; user-select: none; -webkit-user-drag: none; }
+.stage .tokens { position: absolute; inset: 0; }
+
+.tk { position: absolute; display: flex; flex-direction: column; align-items: center; pointer-events: none; transition: left .35s ease, top .35s ease, opacity .4s, filter .4s; }
+.tk img { display: block; pointer-events: none; }
+.tk span { font: 700 clamp(9px, 1.1vmin, 15px) "Courier New", monospace; color: #f2ead8; background: rgba(0, 0, 0, .72); padding: 1px 6px; border-radius: 3px; white-space: nowrap; letter-spacing: .04em; }
+
+.tk-corpo { height: calc(13% * var(--s)); transform: translate(-50%, -100%); transform-origin: 50% 100%; }
+.tk-corpo img { height: 100%; width: auto; filter: drop-shadow(0 6px 6px rgba(0, 0, 0, .85)); }
+.tk-corpo span { position: absolute; top: 100%; margin-top: 2px; }
+
+.tk-ficha { width: calc(6.5% * var(--s)); transform: translate(-50%, -50%); }
+.tk-ficha img { width: 100%; height: auto; filter: drop-shadow(0 3px 5px rgba(0, 0, 0, .9)); }
+.tk-ficha span { margin-top: 2px; }
+
+.tk.st-morto img { filter: grayscale(1) brightness(.85) sepia(.7) hue-rotate(-35deg) saturate(2.4) drop-shadow(0 0 6px rgba(150, 0, 0, .9)); }
+.tk.st-morto span { color: #ff8b80; text-decoration: line-through; }
+.tk-corpo.st-inconsciente { transform: translate(-50%, -100%) rotate(-82deg); }
+.tk-corpo.st-inconsciente span { transform: rotate(82deg); }
+.tk-corpo.st-morto { transform: translate(-50%, -100%) rotate(84deg); }
+.tk-corpo.st-morto span { transform: rotate(-84deg); }
+.tk-ficha.st-inconsciente img { opacity: .55; }
+.tk.st-escapou { opacity: .35; }
+.tk-monstro img { filter: drop-shadow(0 0 10px rgba(210, 0, 0, .95)); animation: monstro 1.6s ease-in-out infinite; }
+.tk-monstro span { color: #ff8b80; }
+.tk-monstro.st-inconsciente img { animation: none; opacity: .5; transform: rotate(80deg); }
+@keyframes monstro { 50% { filter: drop-shadow(0 0 18px rgba(255, 20, 0, 1)); } }

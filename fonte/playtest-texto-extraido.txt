@@ -1,0 +1,3286 @@
+É com enorme orgulho que apresentamos o primeiro playtest de
+ORDEM PARANORMAL RPG II. Este é um jogo completamente novo, reconstruído
+desde suas fundações, e inaugura uma nova era de Ordem Paranormal.
+
+Já se passaram 5 anos desde a criação do primeiro sistema e, com todos os aprendizados
+que tivemos nesse caminho, senti que era a hora perfeita de darmos um passo ousado
+em direção a um novo começo.
+
+Este playtest, como o nome indica, é um teste de jogo. Ou seja, uma demonstração de
+uma pequena fatia do sistema que estamos desenvolvendo. Ele inclui um novo sistema
+de rolagem, mais direto e com valores mais contidos; a assimetria dos perfis, com a
+qual cada personagem tem um feeling diferente ao jogar, e, o principal deste teste, além
+de um dos elementos que mais quero compartilhar, a investigação.
+
+Por isso, nesse teste outras regras foram removidas ou estão presentes em versões
+simplificadas, para que o foco esteja nas mecânicas de investigação.
+
+Escrevi essa história como uma espécie de “vitrine”. O mistério a ser desvendado
+é simples, mas o processo de descoberta é divertido e abrange muitas das novas
+mecânicas que deixam cenas de investigação mais profundas.
+
+A Maldição do Ídolo de Pedra é uma história em dois atos. No Ato I, os personagens são
+pessoas comuns que, de alguma forma, se encontraram em uma situação paranormal.
+Ele abrange as mecânicas básicas de investigação e é completamente gratuito.
+
+Já o Ato II traz personagens mais avançados: agentes da Ordem com acesso a
+ferramentas de investigação, que trazem mecânicas próprias e permitem se aprofundar
+no mistério. Este segundo ato é exclusivo para os assinantes dos Arquivos Secretos
+dos níveis Recruta e Agente de Elite. Além disso, como muitos assinantes são
+jogadores experientes e interessados em game design, eles também têm acesso às
+cartas dos autores, onde trazemos um pouco dos bastidores da criação do novo sistema.
+
+Espero que você aproveite ao máximo o que preparamos, e ao mesmo tempo, lembre-
+se de que isto é um playtest! O jogo ainda está sendo desenvolvido e muitas mecânicas
+ainda serão otimizadas e balanceadas. Este playtest inclui um formulário para você dar
+seu feedback. Afinal, o principal motivo deste lançamento é escutar a sua opinião —
+para que, juntos, possamos criar o melhor jogo possível!
+
+Muito obrigado, e boa investigação.
+
+
+
+
+                                           2
+SUMÁRIO                                  14      Ficha de personagem.
+                                                 Uma explicação das
+                                                 fichas prontas.
+                                                                                          65      Ferramentas da
+                                                                                                  Ordo Realitas.
+                                                                                                  Explica a mecânica
+                                                                                                  de uso de ferramentas
+  4         Introdução.
+            Informações básicas          18      Regras.                                          disponíveis apenas
+                                                 O funcionamento das                              para membros da
+            para quem nunca
+                                                 mecânicas básicas do                             Ordo Realitas.
+            jogou RPG. Se você
+            já jogou antes, pode                 jogo, com tudo que você
+            pular esta seção.                    precisa para começar.
+                                                                                           72      A Maldição dO Ídolo
+                                                                                                   de Pedra, Ato II.
+  6         Cartas dos Autores.          28      A Maldição dO Ídolo                               Segunda missão
+            Informações pessoais e
+            de bastidores escritas
+                                                 de Pedra, Ato I.                                  pronta, também
+                                                 Primeira missão pronta,                           completa com mapa,
+            por Cellbit e pelos                                                                    tokens e handouts,
+                                                 completa com mapa,
+            demais autores do                                                                      para você expandir
+                                                 tokens e handouts, para
+            primeiro playtest.
+                                                 você ter seu primeiro                             sua experiência
+                                                 contato com o jogo.                               com o novo Ordem
+                                                                                                   Paranormal RPG 2.
+
+          Conteúdo para                             Conteúdo exclusivo para
+          todos os apoiadores                       Recrutas e Agentes de Elite
+
+
+
+
+CRÉDITOS
+CRIAÇÃO                              EQUIPE ORDEM PARANORMAL
+Cellbit
+                                     Ajottinha, Akila, Alice Schiavoto, Alison "tan" Marcico, Camilo “ArtCorvus Junior, Camz
+LÍDER DE                             Paiva, Cleqt, Cleysoncafe, Danilo "Orenjiro" Murakami, Eloá Picon, FariaLuth, Gui Motta,
+DESENVOLVIMENTO                      Ivo "Eddu" Zanin, João Dutra, João G. "Bonees" Santos, Jonatas "Jottah", Kael Silva,
+Guilherme Dei Svaldi                 Lara “Rarinha”, LazukiArt, Leonardo Wyrnist, Luna Gallo, Luziano, Marcos "Gnomarc"
+DESENVOLVIMENTO                      Vasconcelos, Matthew “Cinemagrath” Magrath, Mel Martins, Mila Garcia, Noblezito,
+Cellbit, Guilherme Dei Svaldi,       peshie.r, Pitepx, Rodrigo Lopes, Stefano P., Thales "Bif" Cunha, Victor "AST" Trindade e
+Karen Soarele                        Vinicius "Oceanin" Rafael.
+
+PRODUÇÃO EDITORIAL
+Miguel Souza                         EQUIPE JAMBÔ EDITORA
+                                     Guilherme Dei Svaldi, Rafael Dei Svaldi, Leonel Caldela, Akila Gabriel, Ana Júlia Gamla,
+DIREÇÃO DE ARTE E
+PROJETO GRÁFICO                      André Schwertz, Bruno Piñeiro, Dan Ramos, Dani Marques, Davide Di Benedetto, Elisa
+Dan Ramos                            Guimarães, Eric Machado, Gabi Rocha, Gabriel Adam, Gabriel Menezes, Isabelle Gomes,
+                                     Jaime de Andruart, José Cerqueira, J. M. Trevisan, Karen Soarele, Laura Reginin, Laura
+DIAGRAMAÇÃO                          Souza, Leticia Mendes, Lu Brenner, Marcelo Cassaro, Marcus Vinícius, Marina Alvarez,
+Dan Ramos, Gabi Rocha, José
+                                     Marina Theisen, Marlon Vernes, Matheus Guerra, Matheus Rocha, Miguel Souza, Priscilla
+Cerqueira, Pedro Luiz Santos,
+Tiago Orib, Vic Terra                Souza, Richelly Kotik, Samuel Anklam, Simone Rocha, Tatiana Gomes, Thiago Rosa,
+                                     Tiago Guimarães, Tiago Orib, Vic Terra, Víctor Vernet e Victória Cernicchiaro.
+ARTE
+João G. “Bonees” Santos (capa),      Arquivos Secretos é Copyright © 2022-
+Cleysoncafe, Danilo “Orenjiro”       2026 Jambô Editora Ltda. Todos os direitos
+Murakami, Gabriel Feitosa, Ivo
+                                     reservados. É proibida a reprodução total ou
+Eduardo "Eddu" Zanin, Kael Silva,
+Rodrigo Lopes, Vic Terra, Victor     parcial, por quaisquer meios existentes ou que
+Moda, Vinicius “Oceanin” Rafael      venham a ser criados, sem autorização prévia,
+                                                                                             www.jamboeditora.com.br
+                                     por escrito.
+TRILHA SONORA
+                                                                                                                       @jamboeditora
+Alice Schiavoto                      Pacote #8 | Agosto/2026 | v1.1
+
+
+
+                                                            3
+INTRODUÇÃO
+ORDEM PARANORMAL RPG é um jogo de investigação e ação no qual você precisa sobreviver
+aos horrores do Outro Lado. Se conseguir, poderá ser recrutado pela Ordo Realitas, onde
+receberá treinamento, armas e até mesmo poderes paranormais, que o aproximarão do
+Outro Lado. Assim, sacrificará um pouco de sua própria humanidade para deixar de ser
+a caça e se tornar o caçador.
+
+
+
+          As páginas a seguir
+      trazem um resumo das
+                                 O QUE É ORDEM PARANORMAL?
+          regras do jogo. Elas   Ordem Paranormal é um universo de terror criado por Rafael
+        são feitas para serem
+                                 “Cellbit” Lange, no qual agentes de uma organização secreta, a
+          usadas em conjunto
+                                 Ordo Realitas, protegem a humanidade das ameaças do Outro
+         com os personagens
+      prontos deste pacote e     Lado. Ele surgiu em 2020, em uma stream de RPG de mesa,
+        a missão A Maldição      e desde então se expandiu. Hoje conta com diversas tempo-
+            do Ídolo de Pedra.   radas disponíveis no Youtube, além de quadrinhos, livros, um
+                                 videogame e, claro, seu próprio RPG oficial.
+
+
+
+
+                                 O QUE É RPG?
+                                 RPG (sigla em inglês para “jogo de interpretação”) é um jogo no
+                                 qual um grupo de amigos cria uma história em conjunto. Um
+                                 dos participantes é o mestre, que controla os antagonistas,
+                                 os coadjuvantes e o próprio cenário onde a história se passa.
+                                 Os outros são os jogadores, que controlam os protagonistas.
+
+                                 O jogo começa com o mestre introduzindo a história e dizendo
+                                 como os protagonistas estão inseridos nela. Em algum mo-
+                                 mento, ele pergunta aos jogadores o que os personagens deles
+                                 fazem. A história segue a partir das ações dos protagonistas,
+                                 com suas consequências e desdobramentos.
+
+
+
+
+                                              4
+   Por exemplo, o mestre descreve que os personagens estão em                 Para mais
+   um bar quando um zumbi de Sangue surge e ataca as pessoas.
+                                                                            conteúdo de
+   Nesse momento, ele pergunta aos jogadores o que eles fazem.
+                                                                         Ordem Paranormal,
+   Um deles pode dizer “eu corro pra porta dos fundos”, enquanto
+   outro pode dizer “eu pego um taco de sinuca e ataco o zumbi”. O          incluindo os
+   mestre julga o resultado das ações e a história segue a partir daí.   próximos playtests,
+                                                                               apoie os
+ORDEM PARANORMAL RPG é um RPG de mesa, ou seja, não
+precisa de um computador ou videogame. Tudo que você
+precisa é deste playtest, de um conjunto de dados e de um
+grupo de amigos. Você pode jogar presencialmente, ao redor
+de uma mesa (daí o nome “RPG de mesa”), ou on-line, através
+de plataformas como Discord.
+
+DADOS. Além dos materiais do Playtest, você precisará
+de um ou mais conjuntos de dados de RPG, com dados de
+d4 d6 d8 d10 d12 d20
+    , ,    ,    ,   e   faces (idealmente, um conjunto
+por pessoa). Caso não possua, há diversos aplicativos e
+sites gratuitos que simulam rolagens de dados.
+
+
+
+
+COMEÇANDO
+Para jogar o playtest, reúna um grupo de 4 a 6 pessoas. Uma
+delas será o mestre, e deverá ler o resumo das regras e a mis-
+são a ser jogada na íntegra, para entender todos os mistérios
+antes do jogo começar. Os outros 3 a 5 serão jogadores, e
+devem escolher, cada um, um dos personagens prontos.
+
+Depois disso, é hora de começar. O mestre inicia lendo a nar-
+ração introdutória. A partir daí, siga o fluxo da missão.
+
+Se você nunca jogou RPG antes, considere acessar o canal de
+Ordem Paranormal e assistir a alguns episódios. Isso dará a
+você uma ideia geral de como funciona uma sessão. Também
+pode entrar no Discord da Jambô, onde poderá conhecer os
+desenvolvedores deste material, interagir com a comunidade
+e tirar dúvidas.
+
+Claro, o melhor jeito de aprender a jogar RPG é jogando, então
+chame seus amigos e prepare-se para encarar o Outro Lado!
+
+
+                                                     5
+IMERSÃO E
+ASSIMETRIA
+              Após tantos anos, posso dizer com confiança que o ponto
+              principal que torna RPG uma experiência tão especial, é, acima
+  O CORAÇÃO   de tudo, a imersão. Não existe nada igual ao sentimento de
+    DO NOVO   estar cercado de amigos, todos envolvidos completamente
+      ORDEM   na história que vocês mesmos estão criando juntos e com-
+PARANORMAL    partilhando as emoções desses momentos.
+
+        RPG   Porém, analisando o jogo de um ponto de vista mais técnico,
+              um personagem dando um tiro em um inimigo e um perso-
+              nagem abrindo uma fechadura, dentro da narrativa, são com-
+              pletamente diferentes, mas em termos de jogo os jogadores
+              estão tendo experiências praticamente idênticas ao rolar o
+              dado e torcerem pelo resultado.
+
+              Isso não necessariamente é ruim, mas há algum tempo venho
+              considerando mecânicas que aproximem ainda mais o senti-
+              mento do jogador ao sentimento do personagem dentro do
+              universo, e, com isso, intensifique ainda mais o sentimento de
+              imersão dentro daquela narrativa. E a maneira mais eficiente
+              para isso foi abraçar amplamente a assimetria dentro das
+              mecânicas do jogo. Ou seja, personagens diferentes jogam
+              de maneiras diferentes.
+
+              O objetivo do novo ORDEM PARANORMAL RPG é que cada
+              jogador sinta como se estivesse praticamente jogando um jogo
+              diferente dependendo de como construiu seu personagem.
+              Seu perfil, equipamentos e habilidades realmente vão distin-
+              guir completamente o estilo de jogo e a experiência como um
+              todo, com mecânicas especiais que simulam para o jogador o
+              verdadeiro sentimento do desafio que seu personagem está
+              tendo dentro do universo.
+
+              Por exemplo, um jogador que está quebrando a cabeça girando
+              seus dados para encontrar a sequência correta de um cadeado
+              está passando pela mesma experiência de um agente tentando
+              encontrar o ângulo correto para arrombar uma fechadura, e
+              com as mecânicas conversando diretamente com a experiência
+              narrativa, se sentir imerso na história é algo que acontece de
+              maneira ainda mais natural.
+
+
+                           6
+                                                      sonagem a agir conforme seu perfil, garantindo
+                                                      experiências de jogo diferentes. Ao mesmo
+                                                      tempo, o perfil não define seu campo de atu-
+
+
+FILOSOFIA DOS PERFIS
+                                                      ação, permitindo personagens mais variados
+                                                      do que o antigo sistema de classes.
+
+                                                      Por fim, é importante dizer que, embora seu
+Uma das maiores diferenças desta nova edição          perfil represente a sua forma mais natural de
+é que não temos mais classes de personagem.           agir, ele não limita o que você pode fazer. Por
+Em seu lugar, entram os perfis psicológicos,          exemplo, um executor não precisa sempre
+ou simplesmente perfis. Enquanto as classes
+                                                      “agir antes de pensar” — ainda que no geral
+determinavam o que você fazia — se batia,
+                                                      seja beneficiado por atitudes proativas. Cada
+investigava ou conjurava rituais — os perfis
+                                                      perfil tem suas forças e fraquezas, mas todos
+determinam como você faz.
+                                                      podem fazer tudo.
+Quando cria seu personagem, você pode es-
+colher entre três perfis: o executor, o ana-
+lista e o vigilante.
+                                                      A VERDADEIRA
+                                                      INVESTIGAÇÃO
+Executores são aquelas pessoas que agem
+primeiro e pensam depois. São impulsivas,
+mas também perseverantes, tirando força
+de seus fracassos. Já os analistas são mais
+                                                      Histórias de investigação e mistério são mi-
+calmos e ponderados. Às vezes podem de-
+                                                      nhas maiores paixões. Por isso, a base de OR-
+morar para agir, mas quando o fazem é com
+uma precisão incrível. Por fim, os vigilantes         DEM PARANORMAL sempre foi a dualidade
+são os mais atentos e espertos. Dificilmente          de personagens que investigam e também
+são pegos desprevenidos e, nas raras vezes            combatem o paranormal. Mas um desses
+em que isso acontece, conseguem reagir                pontos nunca havia sido devidamente explo-
+rapidamente por instinto.                             rado pelo design como eu sinto que poderia.
+
+Mas sua escolha de perfil não limita seu per-         Ao mesmo tempo, como alguém apaixonado
+sonagem! Seu executor pode ser desde um               por jogos de investigação, e depois de jogar
+porradeiro ousado até um cientista obcecado           centenas de jogos com essa temática (sejam
+com o paranormal. Seu analista pode ser um            videogames, jogos de tabuleiro, RPGs etc.) e,
+professor pacato ou um sobrevivencialista             principalmente, passar tantos anos desen-
+paranoico que avalia cada situação na qual se         volvendo jogos de investigação (incluindo
+envolve para descobrir como sair vivo dela. Seu       O Enigma do Medo), a experiência destacou
+vigilante pode ser um policial protetor ou um         pra mim um enorme contraste entre um jogo
+trambiqueiro oportunista. E assim por diante          com uma temática de detetive, em que
+— as possibilidades são infinitas.                    o jogador apenas controla um personagem
+O que você faz vai depender de outras esco-           que está resolvendo os mistérios, e jogos
+lhas, especialmente seus atributos e perícias.        verdadeiramente investigativos, em que
+O que seu perfil define é seu estilo de jogo.         o próprio jogador está de fato investigando
+                                                      e experienciando a satisfação de conectar
+Cada um desses três diferentes estilos de per-        pistas e descobrir respostas (como Case of
+sonalidade possui suas próprias mecânicas.            the Golden Idol, que eu decidi homenagear
+Assim, as regras do jogo incentivarão seu per-        através dessa história).
+
+
+                                                  7
+Por causa disso, o objetivo do novo ORDEM               Tenha em mente, claro, que assim como nem
+PARANORMAL RPG é fornecer a profundida-                 todo combate em uma missão precisa ser uma
+de de design e as ferramentas que permitam              boss fight difícil, nem toda cena de investigação
+uma cena de investigação ser tão satisfatória,          precisa conter diversos desafios diferentes e
+recompensadora e interessante quanto o con-             complexos. Tudo é determinado pelo estilo
+flito mortal de um combate. Para isso, o jogo           e ritmo da história que você pretende contar.
+precisa permitir que os jogadores sintam que            Mas, no novo ORDEM PARANORMAL RPG, um
+estão verdadeiramente investigando e desco-             personagem pode ser inteiramente focado —
+brindo um mistério, e que possam comemorar              e até mesmo combado — em investigação
+ao chegarem à conclusão de sua investigação,            e ainda vai se sentir tão importante quanto
+assim como comemoram ao derrotar uma                    um personagem que se destaca em combate.
+criatura perigosa.
+                                                        E exatamente por isso, eu tomei a decisão de
+Com esse desenho em mente, uma cena de                  que a primeira experiência pública desse sis-
+investigação não se trata mais de apenas uma            tema deveria ser uma missão inteira focada
+etapa do jogo, e pode ser um jogo completo.             apenas em investigação. Afinal, Ordem Para-
+Cada ponto de interesse é como um inimigo —             normal só existe por causa disso.
+um desafio diferente a ser superado —, e uma
+sala recheada de mistérios (como a escape                                      — Rafael Lange “Cellbit”
+room deste primeiro playtest) é o equivalente                                              @cellbitos
+a um grande combate. Ou, melhor dizendo,
+uma boss fight de investigação.
+
+
+
+
+    UM NOVO TIME
+    A nova edição de ORDEM PARANORMAL RPG está sendo desenvolvida por um time menor, for-
+    mado apenas por Cellbit e pela equipe interna da Jambô. Com menos pessoas, conseguimos man-
+    ter uma visão artística mais concisa e coerente, além de ter um maior controle sobre o cronograma
+    de entregas dos próximos playtests e do próprio jogo em sua versão final.
+    A seguir, estão as pessoas-chaves do projeto.
+    Criador: Cellbit. O próprio criador do universo Ordem Paranormal está muito mais envolvido
+    nesta edição do que já esteve em qualquer outro livro, tendo guiado a visão geral do projeto e
+    desenvolvido pessoalmente muitas das mecânicas.
+    Líder de Desenvolvimento: Guilherme Dei Svaldi. Autor premiado de livros e jogos, veterano com
+    mais de 20 anos na indústria criativa e especialista em regras e mecânica, tendo sido jogador pro-
+    fissional e campeão internacional de Magic.
+    Líder de Redação: Karen Soarele. Autora best-seller de fantasia, terror e investigação sobrena-
+    tural, possui Mestrado em Escrita Criativa, foi editora-chefe da Jambô e é referência nacional em
+    narrativa imersiva.
+    Produtor Editorial: Miguel Souza. Autor e editor de RPGs premiados, iniciou sua trajetória em
+    Ordem Paranormal escrevendo para Sobrevivendo ao Horror — ainda como membro da comuni-
+    dade — e hoje atua como editor de Arquivos Secretos.
+    Diretor de Arte: Dan Ramos. Ilustrador, autor e designer gráfico premiado, com mais de 15 anos
+    na indústria. Assinou a identidade visual de jogos publicados em dezenas de países. Head de
+    design na Jambô Editora.
+    Além desses, contamos com uma seleção de ilustradores e designers de nível internacional.
+
+
+
+
+                                                    8
+O CAMINHO
+NATURAL
+ORDEM PARANORMAL é um universo repleto de mistérios.
+E, quando um deles é revelado, é sempre surpreendente.
+                                                                  GAME
+Ou quase sempre.                                                  DESIGN EM
+O anúncio de ORDEM 2, embora extremamente importante,
+                                                                  EVOLUÇÃO E
+não é exatamente inesperado. Muitas pessoas da comuni-            REVOLUÇÃO
+dade já aguardavam por ele. E, de fato, esse era o caminho
+natural do projeto. À medida que o tempo passa, os criado-
+res e desenvolvedores têm novas ideias, recebem feedback
+do público e, com isso, conseguem pensar em maneiras de
+deixar o jogo melhor.
+
+Isso acontece com qualquer ciência — pode parecer estranho,
+mas game design é um tipo de ciência — e é como a humani-
+dade evolui ao longo do tempo.
+
+
+
+
+UM NOVO COMEÇO
+Considerando que a primeira edição do RPG foi desenvolvi-
+da em 2021 — cinco anos atrás —, já estava na hora de uma
+versão atualizada. Mas, se uma nova versão do jogo não é
+exatamente uma surpresa, o escopo do projeto talvez seja:
+
+ORDEM 2 não é um conjunto de melhorias em cima de
+ORDEM 1. É um jogo completamente novo, reconstruído
+desde suas fundações.
+
+A decisão de fazer o jogo “do zero” não foi fácil, e foi tomada
+após muita ponderação. No fim, decidimos ir por esse caminho
+porque o universo de ORDEM PARANORMAL evoluiu muito,
+e queríamos que essa nova versão do jogo refletisse tudo que
+ele é agora — e tudo que será — com mecânicas próprias e
+feitas sob medida.
+
+
+
+
+                                                9
+A primeira versão de ORDEM usava a engi-               NOVA PREMISSA. Em ORDEM 1, todos os
+ne de Tormenta20 que, embora seja muito                personagens eram membros da Ordo Realitas.
+bem-sucedida, foi feita para outro gênero, a           Já em ORDEM 2, você começa como um sim-
+fantasia épica. Ainda que ORDEM tenha ação             ples “sobrevivente” — uma pessoa comum,
+cinematográfica (que continuará fazendo par-           prestes a ter seu primeiro contato com o pa-
+te do jogo!), é principalmente sobre investigar        ranormal. Se sobreviver, pode ser recrutado
+casos, desvendar enigmas, encarar o medo e             pela organização, onde receberá treinamento
+forjar os elos de amizade que dão aos agentes          e equipamento e poderá lutar contra os inimi-
+uma chance na luta contra o Outro Lado.                gos que ameaçam a Realidade. Se você e seu
+                                                       grupo já quiserem começar como membros
+Essa nova versão de ORDEM leva tudo isso               da Ordem, não há problema — o jogo abre
+em conta — e mais.                                     essa opção. Porém, trazer regras para pessoas
+                                                       comuns expande em muito as possibilidades
+                                                       de história, além de permitir duas experiências
+
+
+NOVOS PILARES
+                                                       distintas dentro de uma mesma série. No início,
+                                                       como civis, os personagens precisam tentar
+                                                       fugir, se esconder e sobreviver (basicamente,
+                                                       como os protagonistas de um filme de terror).
+A seguir, alguns dos principais pontos do jogo.
+                                                       Mais tarde, como agentes, podem investigar
+                                                       e enfrentar as criaturas.
+REGRAS MAIS SIMPLES, RÁPIDAS E EMO-
+CIONANTES. A mecânica básica do jogo —                 JOGABILIDADE ASSIMÉTRICA. Habilidades
+o teste — ficou mais ágil e descomplicada.             e equipamentos diferentes usarão mecânicas
+Além disso, usa uma lógica de “What You See            diferentes. Como o Cellbit já falou sobre isso
+Is What You Get” (“o que você vê é o que vale”,        na carta dele, não vou me estender, mas vale
+numa tradução livre), ou seja, seu resultado é         repetir que cada tipo de agente terá seu pró-
+basicamente pela rolagem dos dados, pratica-           prio feeling, deixando o jogo mais rico. Jogar
+mente sem o uso de modificadores. Isso torna           com um combatente brutamontes será uma
+a rolagem mais emocionante, pois o resultado           experiência muito diferente de jogar com um
+dos dados já determina se o teste foi um su-           malandro manipulador, por exemplo, mas am-
+cesso ou um fracasso, sem a necessidade de             bos serão igualmente viáveis.
+um cálculo adicional. Outras mecânicas tam-
+bém foram criadas ou modificadas para tornar           NOVOS SISTEMAS. O sistema de investi-
+o jogo mais simples, rápido e emocionante,             gação de ORDEM 2 foi refeito para ser mais
+especialmente nas cenas de combate, mas                envolvente e divertido. Será possível cons-
+falaremos delas apenas no próximo playtest.            truir personagens completamente voltados
+                                                       para investigação, e será tão divertido jogar
+                                                       com eles quanto com aqueles voltados para
+                                                       combate. Falando em combate, esse sistema
+                                                       também foi refeito, assim como o de rituais
+                                                       — teremos muitas novidades em termos de
+                                                       jogo. Também haverá sistemas para outros
+                                                       tipos de cena, tanto alguns já conhecidos do
+                                                       público, como o de perseguição (apresentado
+                                                       em Sobrevivendo ao Horror, mas refeito para
+                                                       esta edição) quanto outros inéditos.
+
+
+
+
+                                                  10
+MATEMÁTICA MAIS AMIGÁVEL. A escala do
+jogo foi completamente refeita. Os números
+das fichas são menores e não aumentam tanto
+quando os personagens sobem de nível. Isso
+é importante em termos narrativos: ORDEM
+PARANORMAL não é sobre personagens su-
+perpoderosos, e mesmo agentes veteranos
+ainda são seres humanos “normais”, com li-
+mitações realistas (a menos, claro, que te-
+nham poderes paranormais, mas isso é outra
+história…). Também é importante em termos
+mecânicos, pois uma escala mais contida ga-              SOBRE OS
+                                                         OMBROS DE GIGANTES
+rante um equilíbrio mais preciso — além de
+simplificar os cálculos! A matemática por trás
+de ORDEM PARANORMAL 2 foi feita com
+muito rigor estatístico e garante que o jogo
+                                                         Embora os pontos acima digam respeito à me-
+funcione bem independentemente do poder
+                                                         cânicas inéditas, é claro que ORDEM 2 também
+dos personagens.
+                                                         se aproveita de conceitos já existentes. Como
+EVOLUÇÃO PARALELA. Falando em poder                      dito acima, o game design é uma ciência, e toda
+dos personagens, eles evoluirão em dois eixos:           ciência cresce a partir de trabalhos anteriores.
+seu nível medirá sua experiência e compe-                Se cada pessoa tivesse que reinventar a roda,
+tência mundanas, enquanto seu NEX medirá                 nunca chegaríamos no carro!
+seu contato com o paranormal. Uma caracte-
+rística não estará diretamente relacionada a             Assim, embora ORDEM 2 seja primariamente
+outra. Por exemplo, um soldado de elite que já           um jogo novo, algumas mecânicas estarão de
+participou de operações militares, mas nunca             volta. Por exemplo, embora a lista de perícias
+enfrentou o Outro Lado (e talvez sequer esteja           tenha mudado (e diminuído bastante), algu-
+ciente da existência dele), pode ter nível alto e        mas perícias são as mesmas. Além de resgatar
+NEX baixo. Será muito poderoso em técnicas               elementos que funcionaram do ORDEM 1,
+mundanas, mas não terá poderes paranor-                  também tiramos referências de outros jogos
+mais. Já uma jovem que encontrou, estudou                consagrados, como Fabula Ultima, Delta Green,
+e decifrou um antigo grimório ocultista pode
+                                                         Cortex Prime e outros.
+ter nível baixo e NEX alto — pouco capaz em
+termos mundanos, mas dominando poderes                   No fim, temos um jogo que constrói em cima
+terríveis.
+                                                         de grandes obras, ao mesmo tempo que nun-
+DRAMA E PERSONALIZAÇÃO. Por fim, o dra-                  ca deixa de olhar para frente. Um jogo criado
+ma dos personagens (relações interpessoais,              a partir de muito pensamento e reflexão, com
+traumas passados, luto etc.) e a personalização          uma filosofia e um objetivo claros — ser a obra
+deles (visuais marcantes, estilos únicos etc.)           que o universo de Ordem Paranormal merece.
+estarão presentes no jogo, em termos tanto
+narrativos quanto mecânicos. Esses dois ele-             Nesta fórmula, só falta um ingrediente: você.
+mentos sempre foram muito importantes nas                Jogue o playtest. Dê o seu feedback. E cons-
+histórias canônicas de ORDEM, e agora terão              trua conosco a versão definitiva de ORDEM
+o destaque que merecem.                                  PARANORMAL RPG.
+
+                                                                               — Guilherme Dei Svaldi
+                                                                                   @guilhermesvaldi
+
+
+                                                    11
+EXPERIÊNCIAS
+DE JOGO E DE VIDA
+               Até o momento, existem apenas dois mestres de ORDEM
+               PARANORMAL RPG 2: o Cellbit e o Guilherme Dei Svaldi. E
+     QUANDO    existe apenas uma pessoa que jogou na mesa dos dois: eu. E
+  SENSAÇÕES    vou compartilhar com vocês como está sendo a experiência
+   HUMANAS     de jogar — e de ajudar a construir — a nova versão do RPG.
+SE TRADUZEM
+  EM REGRAS
+      DE RPG
+               O MEDO DE MORRER DE MEDO
+               Direto ao ponto: ORDEM 2 é mais mortal do que ORDEM 1…
+               mas isso é o de menos. O simples fato de um jogo ser mais
+               mortal do que outro não o torna melhor. O que realmente
+               importa é a sensação que ele desperta nos jogadores. E as
+               regras de ORDEM 2 fazem um trabalho fenomenal ao transmitir
+               ao jogador a sensação de perigo — não apenas físico, mas
+               emocional.
+
+               Pandemia, burnout, vício em redes sociais: nos últimos anos,
+               vários eventos globais nos mostraram a importância da saúde
+               psicológica e os danos que podem acontecer quando ela falta.
+               Não é frescura. Não é preguiça. Não é um ferimento visível,
+               mas mesmo assim ele dói e pode matar. E tudo o que vemos,
+               vivemos e fazemos nos afeta nesse sentido. Você já sentiu sua
+               firmeza de espírito esvair por diversos motivos. Sabe do que
+               estou falando.
+
+               ORDEM 2 representa essa energia emocional através dos
+               Pontos de Determinação (PD). Esse recurso é gasto quando
+               o personagem precisa reunir forças para tomar uma atitude
+               (ou seja, usar um poder) ou quando é abalado por algo (como
+               encontrar um ser paranormal). Até aí, nada de novo. Porém,
+               em ORDEM 2, um personagem que chegue a zero PD pode
+               sofrer um trauma irreversível ou até morrer.
+
+               O conceito de morrer por PD já havia aparecido em Sobrevi-
+               vendo ao Horror, mas agora foi aprofundado de forma sublime.
+               Ao sentar para jogar, a mecânica nova impacta a mesa inteira.
+
+
+                           12
+Os jogadores abrem as portas com cuidado.               O que todas as mesas tiveram em comum foi
+Pensam duas vezes antes de usar um poder.               o desejo de criar teorias, conectar informa-
+Ficam aflitos quando recebem dano emocio-               ções, preencher as lacunas e desvendar por
+nal. É o medo de ter medo. De alguma forma,             si mesmos os mistérios envolvendo o Para-
+perder o controle sobre si mesmo se tornou              normal. E, nisso, tiveram papel vital as novas
+mais assustador do que levar um tiro. E o RPG,          mecânicas de investigação que agora vocês
+que é uma obra cultural, agora irá refletir esse        também poderão experimentar.
+anseio que apenas seres humanos são capa-
+zes de sentir.
+
+Para tornar tudo ainda mais interessante, toda
+                                                        NASCIMENTO
+                                                        E RENASCIMENTO
+vez que um agente usar um poder, estará se
+aproximando da morte — o que representa
+muito bem os sacrifícios que se propõe a fazer
+para proteger a Realidade.
+                                                        Não pude participar do desenvolvimento do
+                                                        primeiro ORDEM PARANORMAL RPG , pois
+
+
+ESTILOS DE
+                                                        aconteceu bem quando eu estava dando à luz a
+                                                        minha filha, Gaia. Envolta nos cuidados da bebê,
+                                                        tive que assistir de longe enquanto o jogo
+
+
+INVESTIGAÇÃO
+                                                        passava por seu próprio nascimento, então
+                                                        não pude ajudar a equipe diante dos percalços
+                                                        típicos de um projeto dessas proporções. Para
+Até agora, joguei em duas mesas de Ordem 2.             mim, que gosto de emoção e desafio, foi como
+Cellbit mestrou os dois atos de A Maldição do           ficar de fora de uma montanha-russa da qual
+Ídolo de Pedra e Gui mestrou várias missões             todos estão falando.
+de uma série que irá virar livro no futuro. Além
+                                                        Mas agora é diferente. Agora, ORDEM
+disso, assisti ao Gui mestrar A Maldição do
+                                                        PARANORMAL está renascendo, e dessa vez
+Ídolo de Pedra enquanto eu analisava e fazia
+                                                        estou aqui. Não sou a principal game designer
+anotações para implementar no playtest. Em
+                                                        — essa função é compartilhada pelo Cellbit e o
+cada uma dessas mesas, o espírito do grupo
+                                                        Gui — mas sou a pessoa que converte filosofia
+foi diferente, demonstrando a versatilidade
+                                                        em narrativa, identifica pontos de atenção,
+do sistema.
+                                                        testa regras, sugere melhorias e, o principal,
+Em uma delas, os jogadores estavam mais                 transforma as ideias da equipe em um texto
+                                                        fluido, bem construído e de fácil leitura. Sou a
+interessados em solucionar puzzles e revirar
+                                                        pessoa que dá liga ao projeto, sempre tendo
+cada centímetro da cena de investigação, o que
+                                                        visão do todo. Estou aqui para planejar e para
+resultou em vibrarem de empolgação quando
+                                                        escrever. E, no que depender de mim, esse
+certo segredo da história veio à tona. Em outra,
+                                                        novo RPG será um marco na vida dos fãs de
+os jogadores queriam mais interpretar a psi-
+                                                        ORDEM PARANORMAL.
+quê de seus personagens, e fizeram juízos de
+valor mesmo correndo o risco de errar. Já na            Com esse primeiro playtest, agora você
+série, o sentimento que predomina é o medo              também faz parte de ORDEM 2. Fico feliz que
+de morrer. Assistir a um dos sobreviventes              esteja aqui com a gente.
+ser estraçalhado por um zumbi de Sangue en-
+quanto os outros eram incapazes de intervir                                          — Karen Soarele
+certamente deixou uma marca.                                                          @karensoarele
+
+
+                                                   13
+FICHA DE PERSONAGEM
+A ficha serve para descrever o personagem, com todas as suas forças e fraquezas. Abaixo, está
+a ficha de um dos personagens prontos deste playtest, junto de uma explicação sobre cada
+característica e como utilizá-la.
+
+
+                                1. NOME
+   Esta ficha ainda não é       O nome do personagem.
+    a definitiva! Ela traz
+  apenas os campos que
+      serão usados neste
+       primeiro playtest,
+focado em investigação.         2. PERFIL
+   A ficha completa será
+     apresentada em um          Característica psicológica essencial do personagem, descreve
+          playtest futuro,      sua maneira de resolver problemas — agindo, pensando ou se
+         aqui mesmo nos
+      Arquivos Secretos.
+                                adaptando. Cada perfil fornece uma habilidade (já anotadas
+                                nas fichas dos personagens prontos).
+
+                                EXECUTOR. Você age primeiro e pensa depois. E, se não der
+                                certo da primeira vez, tenta de novo até conseguir, vencendo
+                                pela força de sua perseverança.
+
+                                ANALISTA. Você observa, entende e se prepara, para só en-
+                                tão agir. Pode demorar para tomar uma atitude, mas quando
+                                o faz, é com a maior precisão possível.
+
+                                 VIGILANTE. Você está sempre atento aos arredores, apro-
+                                veitando as brechas para agir primeiro. Se adapta a imprevis-
+                                tos e não tem problemas em tomar decisões sob pressão.
+
+
+
+
+                                             IMPORTANTE! Embora seu perfil represente a sua forma
+                                             mais natural de agir, ele não limita o que você pode
+                                             fazer. Por exemplo, um executor não precisa sempre
+                                             “agir antes de pensar” — mas, no geral, é beneficiado
+                                             por atitudes proativas. Cada perfil tem suas forças e
+                                             fraquezas, mas todos podem fazer tudo. Também vale
+                                             dizer que nenhum perfil é melhor do que o outro. Eles
+                                             foram feitos para fornecer experiências de jogo distintas
+                                             e facilitar a interpretação, então simplesmente escolha
+                                             o que achar mais divertido!
+
+
+
+
+                                             14
+                                                                                          
+
+
+
+
+                                                                                          
+3. OCUPAÇÃO                                           4. NÍVEL
+O que o personagem faz da vida. Assim como            O nível de um personagem mede sua experi-
+o perfil, cada ocupação fornece uma habilidade        ência e competência geral, em uma escala de
+(também já anotadas nas fichas dos persona-           1 a 10 — quanto mais alto, mais capaz ele é.
+gens prontos).
+
+
+
+
+                                                 15
+5. ATRIBUTOS                                          6. PERÍCIAS
+As características inatas do personagem. Exis-        Os conhecimentos e técnicas específicas do
+tem três atributos, descritos a seguir.               personagem. Existem 20 perícias, descri-
+                                                      tas na página ao lado. Juntas, elas abrangem
+FÍSICO. Força muscular, coordenação motora,           todas as ações que você pode realizar.
+velocidade e fôlego. Em suma, sua capacidade
+corporal.                                             ESCALA DAS PERÍCIAS
+                                                      Assim como atributos, perícias operam em
+MENTE. Velocidade de raciocínio, educação             uma escala que vai de  d4 d12
+                                                                              a    .
+e percepção. Em suma, sua capacidade inte-
+lectual e sensorial.                                         DESTREINADO. Leigo, inapto
+                                                       d4 ou ignorante.
+EMOÇÃO. Força de vontade, magnetismo
+social e instintos. Em suma, sua capacidade                  TREINADO. Profissional iniciante.
+                                                       d6
+psicossocial.
+                                                       d8 ESPECIALISTA. Profissional veterano.
+ESCALA DOS ATRIBUTOS
+                                                             MESTRE. Pode dar palestras e ganhar
+Atributos operam em uma escala que vai de              d10 prêmios em seu campo de atuação.
+d4 d12
+    a   .
+                                                             GRÃO MESTRE. Renomado
+                                                             internacionalmente por seu
+        ABAIXO DA MÉDIA. Uma criança,
+                                                       d12   conhecimento.
+ d4     idoso ou enfermo.
+
+
+ d6     MÉDIA HUMANA. Um adulto típico.               7. PONTOS DE VIDA
+        ACIMA DA MÉDIA. Uma pessoa
+                                                      (PV) E PONTOS DE
+ d8     talentosa ou treinada.                        DETERMINAÇÃO (PD)
+                                                      Pontos de vida e pontos de determinação me-
+        MUITO ACIMA DA MÉDIA. Um dos
+ d10    melhores de sua região.                       dem a resistência física e mental do perso-
+                                                      nagem, respectivamente. Sempre que você
+        ÁPICE HUMANO. Um dos melhores do              sofrer um ferimento ou trauma, perde PV ou
+        mundo, como um atleta olímpico                PD. O uso de habilidades também pode con-
+ d12    ou ganhador do Nobel.                         sumir um destes recursos, ou ambos. Se qual-
+                                                      quer um deles chegar a 0, você estará com
+                            d20
+É possível atingir um valor de  em um atribu-         problemas!
+to, o que representa capacidade sobre-huma-
+na. Porém, isso só é possível com a influência
+do paranormal e foge do escopo deste playtest.
+                                                      8. HABILIDADES
+                                                      Capacidades especiais do personagem. Você
+                                                      começa com duas habilidades, uma fornecida
+                                                      pelo seu perfil, a outra fornecida pela sua ocu-
+                                                      pação, e recebe novas habilidades à medida
+                                                      que subir de nível ou treinar. Nas fichas deste
+                                                      playtest, cada habilidade traz a explicação de
+                                                      como pode ser usada.
+
+
+
+                                                 16
+  — LISTA DE PERÍCIAS —
+                                                       ATRIBUTO-BASE. Cada perícia possui um
+ACROBACIA. Movimentos de ginástica e                   atributo listado em itálico após sua descrição.
+parkour, andar de skate ou patins. Físico              Este é o atributo-base da perícia, usado em
+                                                       testes dela. O mestre pode julgar que
+APTIDÃO. Conhecimento em um campo                      determinadas ações usam outro atributo.
+específico (veja a seguir). Mente
+                                                      INTIMIDAÇÃO. Assustar pessoas, coagi-las a
+ • ARTES. Formas de arte, como música,
+   dança, escrita, pintura, atuação e outras.         fazerem o que você quer. Emoção
+
+ • ATUALIDADES. Assuntos gerais, como                 INTUIÇÃO. “Sexto sentido” para analisar
+   esporte, entretenimento e cultura popular.         pessoas e ambientes. Emoção
+ • BUROCRACIA. Direito, política, economia,
+   contabilidade e estruturas governamentais          LUTA. Atacar desarmado ou com armas corpo
+   e corporativas.                                    a corpo. Físico
+
+ • EXATAS. Ciências exatas, como matemá-              MÁQUINAS. Operar e consertar máquinas,
+   tica, física, química, biologia, astronomia        dirigir veículos motorizados. Mente
+   e geologia.
+ • HUMANAS. Ciências humanas, como                    MEDICINA. Primeiros socorros, tratamentos,
+   história, geografia, filosofia, sociologia,        necropsias. Mente
+   teologia e linguística.
+                                                      OCULTISMO. Conhecimento sobre o para-
+ • TÁTICA. Educação militar e estratégica.
+                                                      normal. Mente
+ATLETISMO. Correr, saltar, escalar, nadar,
+                                                      PERCEPÇÃO. Notar coisas através de visão,
+remar. Físico
+                                                      audição e olfato, revistar lugares. Mente
+CRIME. Furtar objetos, abrir fechaduras,
+                                                      PERSUASÃO. Convencer pessoas com
+falsificar documentos. Físico
+                                                      argumentos e lábia. Emoção
+DISCIPLINA. Estudar, meditar, resistir a
+                                                      PESQUISA. Pesquisar documentos e bancos
+traumas e sustos. Emoção
+                                                      de dados, analisar evidências. Mente
+ENGANAÇÃO. Mentir, disfarçar-se, seduzir.
+                                                      PONTARIA. Atacar com armas de arremesso
+Emoção
+                                                      ou de disparo. Físico
+FURTIVIDADE. Esconder-se, andar sem ser
+                                                      SOBREVIVÊNCIA. Montar acampamento,
+visto ou ouvido. Físico
+                                                      rastrear, acalmar animais ferozes. Mente
+
+                                                      TECNOLOGIA. Operar dispositivos tecno-
+                                                      lógicos, hackear redes. Mente
+
+                                                      VIGOR. Manter o fôlego, resistir a venenos,
+                                                      suportar ferimentos. Físico
+
+
+                                                 17
+REGRAS
+ORDEM PARANORMAL RPG funciona principalmente através das descrições do mestre e dos
+jogadores, como uma conversa. O mestre apresenta a cena, os jogadores descrevem suas ações
+e a história segue a partir daí.
+
+Contudo, quando um personagem tenta realizar uma ação em que há chance de falha, as me-
+cânicas do jogo surgem para equilibrar riscos e consequências. A principal delas são os testes.
+
+
+
+
+                                 TESTES
+                                 Testes são a mecânica básica do jogo. Eles funcionam através
+                                 de rolagens de dados que vão de     a d4 d20
+                                                                          , conforme sua ficha
+                                 e elementos situacionais.
+
+                                    Para fazer um teste, você rola dois dados (um para
+                                    o atributo e outro para a perícia) e soma os dois para
+                                    determinar o resultado.
+
+                                 Essa soma deve ser comparada com a dificuldade do teste, ou
+                                 DT. Se for igual ou maior, você consegue fazer o que queria.
+                                 Neste playtest, a DT dos testes é 7, a menos que o texto
+                                 especifique outro número.
+
+                                    PASSO A PASSO DE UM TESTE
+                                   1.   O mestre anuncia qual atributo e qual perícia você deve usar, de
+                                        acordo com a tarefa que está tentando realizar e a forma como
+                                        descreveu sua tentativa. Em seguida, determina a dificuldade
+                                        do teste.
+
+                                   2.   Você rola o dado do atributo e o dado da perícia ao mesmo
+                                        tempo, soma o resultado dos dois e declara esse valor ao mestre.
+
+                                   3.   O mestre compara o valor declarado por você com a DT. Se for
+                                        igual ou maior que a DT, você passa no teste e consegue fazer
+                                        o que queria. Se for menor, você falha no teste e não consegue.
+
+
+
+
+                                               18
+REGRAS ADICIONAIS                                         CRÍTICOS
+DE TESTES                                                 Ao fazer um teste, se dois ou mais dados tive-
+                                                          rem o mesmo valor e esse valor for maior
+TESTES OPOSTOS                                            ou igual a 6, o teste é um sucesso crítico.
+Em algumas circunstâncias, um personagem                  Você passa automaticamente no teste, inde-
+tentará realizar algo contra outro. Nesse caso,           pendentemente da DT. Além disso, em cenas
+em vez de determinar uma DT, o mestre pode                de investigação você recebe alguma informa-
+pedir um teste oposto: cada um dos persona-               ção adicional.
+gens realiza seu próprio teste e comparam os
+                                                          Ao fazer um teste, se todos os dados forem
+resultados para saber quem venceu.
+                                                          1, o teste é uma falha crítica. Você falha au-
+   Por exemplo, se dois personagens se atiram             tomaticamente no teste, independentemente
+   no chão para tentar pegar uma arma caída, o            da DT, e sofre uma penalidade adicional, que
+   mestre pode pedir um teste de Acrobacia pa-            pode ser determinada pelo mestre ou por uma
+   ra os dois. Aquele que tirar o maior valor terá        rolagem na tabela abaixo.
+   conseguido alcançá-la primeiro.
+
+ROLAGEM ALTA                                              EFEITOS DE FALHAS CRÍTICAS
+E ROLAGEM BAIXA                                                       Efeito*
+A soma dos dados dá o resultado do teste,
+                                                            d8
+mas também é importante se atentar a quais                             VEXAME. O jogador precisa descrever
+valores os dados rolaram individualmente.                              a ação de seu personagem de forma
+Algumas mecânicas utilizam a rolagem alta                              vergonhosa. Por exemplo, ao fazer
+                                                                       uma falha crítica ao escalar, talvez
+(RA) ou rolagem baixa (RB) para determi-                    1_on_d8    caia de bunda para cima. Isso não
+nar os efeitos de um teste. Rolagem alta e                             tem efeito em regras (além da falha
+baixa não se referem ao dado usado, mas sim                            normal), mas pode assombrar o
+ao resultado que ele entregou. Ou seja, se em                          personagem pelo resto de sua carreira.
+um teste o d6             d8
+                rolar 6 e o   rolar 3, a rolagem                       MACHUCADO. Seu Físico diminui em
+alta é 6 e a rolagem baixa é 3 — mesmo o      d8            2_on_d8    um passo até o fim da cena.
+sendo maior do que o .  d6                                             DESATENÇÃO. Sua Mente diminui em
+                                                            3_on_d8    um passo até o fim da cena.
+AJUDA                                                                  IRRITAÇÃO. Sua Emoção diminui em
+Você pode ajudar outro personagem em uma                    4_on_d8    um passo até o fim da cena.
+tarefa. Para isso, deve gastar uma ação e es-
+colher uma perícia coerente com a ajuda e no                5_on_d8    ACIDENTE. Você perde d4 PV.
+
+                          d6
+qual possua pelo menos (não é possível aju-
+                                                            6_on_d8    FRUSTRAÇÃO. Você perde d4 PD.
+dar com uma perícia na qual você tenha      d4).
+Você então fornece um aumento de passo ao                              PERDA. Um item que você está
+teste do personagem que está ajudando, se                              carregando ou um espaço de compra
+                                                            7_on_d8    disponível se perde — estragou ou foi
+sua perícia ford6 d8
+                   ou    , ou dois aumentos de
+                                                                       esquecido ou roubado.
+passo, se for d10 d12
+                  ou    . Veja a página 20 para
+as regras de aumento de passo.                              8_on_d8    Nenhum efeito adicional.
+
+                                                          *Se o efeito não fizer sentido na situação, o
+                                                          mestre deve escolher outro.
+
+
+                                                     19
+MODIFICANDO TESTES                                    RODADAS
+Certas habilidades e itens permitem que você
+                                                      Por padrão, as cenas seguem um fluxo livre,
+role mais dados em um teste. Nesse caso,
+                                                      no qual os jogadores agem quando querem.
+você soma os valores de todos os dados rola-
+                                                      Porém, às vezes é melhor usar uma estrutura
+dos. Porém, você pode rolar no máximo quatro
+                                                      organizada, na qual cada jogador tem sua vez
+dados por teste — e pode somar no máximo
+                                                      de agir. Nessa estrutura, o jogo muda do fluxo
+três deles para o resultado.
+                                                      livre para um fluxo baseado em rodadas.
+Também existem efeitos que aumentam
+                                                      Quando o jogo é dividido em rodadas, o mestre
+ou diminuem o “passo” do dado. Isso signi-
+                                                      pede para cada jogador declarar e resolver sua
+fica aumentar ou diminuir o dado em um tipo,
+                                                      ação. Os próprios jogadores decidem em que
+seguindo essa lógica:
+                                                      ordem querem agir — se um jogador souber o
+                                                      que quer fazer e outro ainda estiver pensando,
+         d4 < d6 < d8 < d10 < d12                     o primeiro já pode agir. Em caso de dúvida, o
+Assim, um d6 que diminua um passo vira um             mestre pode começar pelo jogador à esquerda
+d4, enquanto que um d10 que aumente um                dele e avançar em sentido horário, até o joga-
+passo vira um d12. Um dado não pode ser re-           dor à direita dele (se o grupo estiver jogando
+duzido para menos do que d4 e, normalmente,           online, pode usar a ordem das câmeras no
+não pode ser aumentado para mais do que d12.          lugar da posição da mesa). Caso haja NPCs na
+Contudo, alguns efeitos raros e poderosos,            cena, as ações deles acontecem por último.
+normalmente ligados ao paranormal, podem              Ao fim da última ação, se a cena não tiver sido
+aumentar um   d12  parad20
+                         . Isso estará dito no        concluída, outra rodada se inicia.
+efeito, e permite façanhas sobre-humanas!
+                                                      Cabe ao mestre decidir quando usar rodadas.
+                                                      Mesmo nesse modo, a lógica básica do jogo
+
+ESTRUTURA DO JOGO                                     se mantém, com o mestre descrevendo a si-
+                                                      tuação e os jogadores descrevendo as ações
+                                                      de seus personagens. A única diferença é que,
+                                                      em vez de uma conversa solta, cada jogador
+CENAS                                                 tem um momento específico para agir.
+Cenas são a estrutura básica do jogo. De for-
+ma direta, uma cena é um pedaço distinto da              Exceção! Combates possuem uma regra própria
+                                                         para definir a ordem de ações, que será explica-
+história, no qual os personagens interagem
+                                                         da em um playtest futuro.
+entre si, com NPCs ou com o ambiente. Uma
+conversa com NPCs é uma cena. A investi-
+gação de um lugar é uma cena. Um combate              AÇÕES
+contra cultistas é uma cena. Cada sessão de
+jogo é dividida em várias cenas.                      A medida mais elementar do jogo, é cada uma
+                                                      das pequenas atitudes tomadas pelo perso-
+Cenas não são unidades de tempo fixas, me-            nagem. Em cada rodada, você pode realizar
+didas em minutos, horas ou dias. Em vez dis-          apenas uma ação importante — como inves-
+so, cenas começam quando os personagens               tigar uma estante, atacar uma criatura ou fugir
+chegam em um novo lugar ou quando uma                 o mais rápido que pode. Além de uma ação
+nova situação surge e terminam quando os              importante, você também pode realizar ações
+personagens saem desse lugar ou resolvem              menores, que exijam pouquíssimo tempo e
+esta situação. O início e o fim de uma cena           esforço, como dizer palavras simples ou soltar
+sempre são determinados pelo mestre.                  algo que está segurando.
+
+
+                                                 20
+CENAS DE
+                                                                 PONTOS DE INTERESSE
+                                                                 Os elementos da cena, como lugares, objetos
+
+
+INVESTIGAÇÃO
+                                                                 ou pessoas, com os quais os personagens
+                                                                 podem interagir em busca de pistas. No início
+                                                                 da investigação, o mestre cita seus pontos
+ORDEM 2 possui tipos de cenas, que serão
+                                                                 de interesse, para que os jogadores decidam
+                                                                 onde querem investigar.
+melhor explicadas nos próximos playtests.
+Para este primeiro playtest, nosso foco será                     Por exemplo, na cena de um assassinato, os
+em cenas de investigação.                                        pontos de interesse podem ser o corpo da
+                                                                 vítima, um celular caído ao lado dele, o piso
+Cenas de investigação têm por objetivo des-                      manchado de sangue e uma testemunha que
+vendar um mistério. Elas envolvem vasculhar                      escutou os gritos.
+um ambiente, analisar documentos, interrogar
+                                                                 Cada ponto de interesse é apresentado em
+pessoas e tomar quaisquer outras atitudes em                     um quadro com as seguintes informações.
+busca de pistas. Contudo, não espere resolver
+todos os problemas apenas com rolagens de                        CABEÇALHO. Contém o nome e a descrição
+dados. Em ORDEM PARANORMAL RPG , não                             básica do ponto de interesse. A descrição bá-
+apenas seu personagem irá investigar, mas                        sica é narrada quando um personagem usa a
+                                                                 ação “investigar” no ponto de interesse (depois
+você também! Você precisará analisar as evi-
+                                                                 da primeira vez, o mestre não precisa repetir
+dências, criar hipóteses e desvendar enigmas
+                                                                 a descrição básica, embora possa fazer isso
+para ter sucesso na investigação.
+                                                                 se o jogador pedir).
+Seu objetivo será encontrar a maior quantida-                    QUADRO DE INFORMAÇÕES. Traz informa-
+de possível de pistas. E as pistas serão encon-                  ções que o personagem pode encontrar no
+tradas nos pontos de interesse.                                  ponto de interesse ao usar a ação investigar
+                                                                 nele, de acordo com a perícia que escolher
+   COMO FUNCIONA UMA                                             e seu valor nela (ou seu resultado no teste).
+   CENA DE INVESTIGAÇÃO?                                         DESCRIÇÃO CONTEXTUAL. Uma explicação
+  1.   No início da cena, o mestre descreve o am-                completa do ponto de interesse. Deve ser lida
+       biente, deixando claro quais são seus pontos              apenas pelo mestre, para ajudá-lo a guiar qual-
+       de interesse.                                             quer interação dos personagens com o ponto
+                                                                 de interesse.
+  2.   Na rodada de cada personagem, ele usa uma
+       das ações de investigação da lista a seguir. De           Pontos de interesse podem trazer outros ele-
+       acordo com a ação do personagem, ele pode                 mentos além de pistas, tanto benéficos quanto
+       receber uma ou mais informações, retiradas                prejudiciais. Um personagem investigando um
+       dos pontos de interesse.                                  armário de medicamentos pode encontrar um
+                                                                 cicatrizante — ou pode se cortar nos cacos de
+  3.   Esse ciclo se repete, até os personagens
+       decidirem parar de investigar — seja por
+                                                                 um frasco quebrado, sofrendo   d4  pontos de
+                                                                 dano. Se houver, isso estará na descrição con-
+       estarem satisfeitos com as pistas adquiridas, seja        textual. Também é possível que um ponto de
+       por não quererem sofrer dano pela sobrecarga              interesse não tenha pistas, servindo apenas
+       mental. Também é possível que fatores externos            para atrapalhar os personagens. Os jogadores
+       interrompam a investigação, como a chegada                devem ficar atentos às descrições do mestre
+       de uma criatura…                                          para reduzirem a chance de perderem tempo
+                                                                 com pontos inúteis.
+
+
+
+
+                                                            21
+              EXEMPLO DE PONTO DE INTERESSE
+
+               QUADRO NA PAREDE
+               Um quadro está pendurado na parede.
+Cabeçalho      A pintura mostra uma menina num balanço.
+
+              Perícia          DT   Informação
+
+                                    A menina não tem boca e seus olhos estão arregalados de pavor. Isso não combina
+              Aptidão (arte)   6
+ Quadro                             com o estilo da arte, como se a pintura tivesse sido corrompida de alguma forma.
+de Perícias
+                                    Há marcas de mão na parede perto do quadro. Alguém devia mexer nele com
+                               6
+              Percepção             frequência.
+
+                               8    Há uma gota de sangue seco no quadro.
+
+                          O quadro está aqui para esconder um cofre, que será descoberto por qualquer personagem
+                          que retirá-lo da parde.
+
+                          A pintura da menina não era originalmente assim, mas foi distorcida pelo contato
+                          prolongado com o paranormal.
+ Descrição
+Contextual
+
+              AÇÕES DE                                                 uma informação nova (seja porque não
+                                                                       atingiu o valor necessário, seja porque não
+              INVESTIGAÇÃO                                             há nenhuma informação nova para ser des-
+              INVESTIGAR. A ação básica de uma investi-                coberta), você perde 1 PD pelo esforço e
+              gação. Quando usa esta ação, você escolhe                frustração da busca infrutífera.
+              um ponto de interesse. O mestre narra a des-
+                                                                       • Interagir. Você descreve uma ação sim-
+              crição básica do ponto de interesse e lista as
+                                                                       ples que faz com o ponto de interesse. Por
+              perícias do quadro de informações. Então,
+                                                                       exemplo, se o ponto de interesse for um
+              você escolha uma das perícias e diz seu valor
+                                                                       quadro na parede, você pode tirar o quadro
+              nela para o mestre. O mestre responde com
+                                                                       da parede para ver se há algo atrás dele. O
+              as informações da perícia que você escolheu
+                                                                       mestre usa as informações da descrição
+              cuja DT seja igual ou menor que seu valor
+                                                                       contextual do ponto de interesse para re-
+              naquela perícia.
+                                                                       solver sua ação.
+              Por fim, você pode examinar ou interagir
+              (veja a seguir as regras das duas opções).             RECAPITULAR. Você reflete sobre o que já
+              Após examinar ou interagir, sua ação termi-            sabe da investigação em questão, em busca
+              na. Na próxima rodada, se investigar o mes-            de uma ideia ou palpite. Para usar esta ação,
+              mo ponto de interesse, você pode escolher              você deve interpretar seu personagem reca-
+              outra perícia, ou a mesma, se quiser tentar            pitulando todas as informações que o grupo
+              examinar novamente.                                    já recebeu ou encontrou. Se o mestre julgar a
+                                                                     recapitulação coerente, você pode fazer um
+                • Examinar. Você faz um teste da perícia
+                                                                     teste de Intuição (DT 10). Se você passar,
+                que escolheu. Se o resultado for igual ou a
+                                                                     descobre uma nova pista a critério do mestre.
+                maior à DT de uma informação que você
+                                                                     Uma vez que um personagem seja bem-sucedido
+                ainda não tinha recebido, você recebe essa
+                informação. Porém, se você não receber
+
+
+
+
+                                                                22
+nesta ação, ela não poderá ser usada novamente         SOBRE A AÇÃO INVESTIGAR
+na mesma cena.                                         As regras de investigação foram feitas para per-
+                                                       mitir que tanto os jogadores quanto os perso-
+COMPARTILHAR. Você compartilha uma                     nagens interajam com a cena, envolvendo tanto
+informação com outro personagem, na es-                ideias e descrições quanto regras e mecânicas.
+perança de que ele perceba algo que você               Afinal, desvendar um mistério por algo que você
+deixou escapar. Para usar esta ação, você              pensou pode ser mais divertido do que por um
+deve interpretar seu personagem explicando             teste que você fez!
+uma pista que descobriu nesta cena para um
+                                                       Como isso funciona? Simples: ao usar a ação in-
+aliado. Então, esse aliado deve fazer um teste         vestigar, você tem a opção de interagir com o
+de Pesquisar (DT 10) como uma ação livre.              ponto de interesse, descrevendo uma ação à sua
+Se ele passar, deduz uma nova pista a critério         escolha, ou de examinar o ponto de interesse, fa-
+do mestre. Uma vez que um personagem seja              zendo um teste de uma perícia.
+bem-sucedido nesta ação, ela não poderá ser
+                                                       Na primeira opção, você pode descobrir uma in-
+usada novamente na mesma cena.
+                                                       formação de acordo com suas próprias ideias e
+                                                       observação do ponto de interesse. Na segunda,
+USAR HABILIDADES E ITENS. Certas habi-
+                                                       faz um teste para que as habilidades de seu per-
+lidades e itens possuem efeitos em cenas de            sonagem possam ajudá-lo. Vale dizer que a opção
+investigação, explicados em suas descrições.           de examinar funciona como um tipo de aposta,
+Além disso, os jogadores podem encontrar               pois, se você não receber uma informação nova,
+usos criativos para efeitos que normalmente            perde 1 PD, garantindo que o jogador pense duas
+não afetam investigações. O mestre decide              vezes antes de usá-la.
+se uma habilidade ou item pode ser usado em
+                                                       Assim, temos um sistema de investigação que en-
+uma ação de investigação e, se puder, qual seu         volve descrição e imersão narrativa, mas que, ao
+efeito (normalmente um aumento de passo                mesmo tempo, beneficia personagens focados
+no teste em questão).                                  em perícias de investigação.
+
+
+
+
+AÇÕES DE INVESTIGAÇÃO
+Ação                         Resumo
+
+                              Interage com um ponto de interesse em busca de pistas. Pode examinar
+Investigar
+                              ou interagir.
+
+                              Faz um teste de uma perícia para receber mais informações.
+    Examinar                 Se não conseguir uma informação nova, perde 1 PD.
+
+
+    Interagir                Faz uma ação relacionada ao ponto de interesse.
+
+
+                              Recapitula o que já sabe para fazer um teste de Intuição e
+Recapitular
+                              descobrir uma pista.
+
+                              Compartilha o que já sabe com outro personagem, para que
+Compartilhar
+                              ele faça um teste de Intuição e descubra uma pista.
+
+Usar habilidades e itens      Usa uma habilidade ou item.
+
+
+
+
+                                                 23
+DESAFIOS DE ACESSO                                         Se não acertar de primeira, você pode continu-
+                                                           ar tentando — a cada rodada, pode fazer um
+Em uma investigação, muitas vezes haverá                   número de tentativas determinado por seu
+pistas bloqueadas por algum tipo de obstácu-               valor de Crime (Crime d4 = 1 tentativa por
+lo. Para isso, os personagens deverão vencer               rodada; d6 = 2 tentativas, d8 = 3 tentativas,
+desafios de acesso. Existem vários tipos de                d10 = 4 tentativas, Crime d12 = 5 tentativas
+desafios. A seguir, explicamos os que serão                por rodada). Porém, a fechadura possui um
+usados neste playtest.                                     número máximo de tentativas, de acordo com
+                                                           sua resistência (determinado pelo texto da
+ABRIR FECHADURAS                                           missão). Se o número máximo de tentativas
+                                                           for excedido, a fechadura é danificada e não
+Para abrir uma fechadura trancada, seja em
+                                                           poderá mais ser aberta na técnica, restando
+uma porta, cofre ou outro objeto, você pode
+                                                           apenas arrombá-la na força bruta ou encontrar
+DESTRANCÁ-LA (usando técnica) ou ARROM-                    a chave correta.
+BÁ-LA (usando força bruta).
+                                                              Para maior imersão, o mestre pode substituir as
+                                                              palavras “baixo, alto e exato” por uma simulação
+DESTRANCAR
+                                                              de sons, como “tic, toc e click”, e o jogador pre-
+Você tenta abrir uma fechadura com técnica.
+                                                              cisará interpretar qual som significa baixo e qual
+Para isso, deverá vencer o desafio a seguir.                  som significa alto, adicionando uma camada ex-
+                                                              tra de dificuldade.
+  1.   O mestre rola uma quantidade de dados que
+       varia conforme a complexidade da tranca.
+                                                           ARROMBAR
+       O resultado dos dados, na ordem em que
+                                                           Você tenta abrir uma fechadura com força
+       foram rolados, é a senha a ser descoberta. O
+                                                           bruta. Para isso, gaste 1 PV (pelo esforço) e
+       mestre deverá manter os dados escondidos,
+       como uma “senha”.                                   faça um teste de Atletismo contra uma DT
+                                                           definida pelo objeto. Se passar, anote uma
+  2. Você pega a mesma quantidade de dados                 pontuação igual ao valor da RA. Você precisa
+     e, ao invés de rolar, os posiciona com os nú-         acumular uma pontuação alvo (PA) definida
+     meros que quiser virados para cima. Esta é
+                                                           pelo objeto — quanto mais resistente, maior
+     sua tentativa de descobrir a senha.
+                                                           a pontuação alvo necessária.
+  3. O mestre então indica, na sequência, se cada
+     um dos números está alto, baixo ou exato.             Além disso, arrombar uma fechadura pode
+                                                           trazer consequências inesperadas, como fa-
+                                       d6
+   Por exemplo: em uma fechadura de 3 , o mes-
+                                                           zer barulho e atrair atenção de guardas (ou
+   tre rola os números 3-5-2. O jogador coloca os
+                                                           criaturas) ou danificar seu conteúdo.
+   dados 4-5-1. O mestre então responde “baixo,
+   exato, alto”.
+
+
+
+
+                                                      24
+HACKEAR DISPOSITIVOS                                      ALCANÇAR
+Para invadir um dispositivo tecnológico, como             Às vezes, você precisará alcançar algo em um
+um celular ou computador, você pode fazer                 lugar de difícil acesso, seja por estar muito
+um hack técnico ou um hack social.                        alto, do outro lado de um buraco, atrás de um
+                                                          espaço apertado, etc. Você pode tentar isso
+Se falhar em uma tentativa de hack, você pode             de forma segura ou arriscada.
+tentar novamente na próxima rodada. Contu-
+do, dependendo do dispositivo, falhar pode
+                                                          ALCANÇAR DO JEITO SEGURO
+bloqueá-lo ou até mesmo ativar um alarme
+                                                          Você tenta alcançar algo de forma lenta e cui-
+ou armadilha.
+                                                          dadosa. Você precisa gastar duas ações em se-
+                                                          quência (isso significa que está se preparando
+HACK TÉCNICO                                              para um salto, escalando de forma devagar,
+Você tenta invadir um dispositivo tecnológico             etc.). Para cada ação, precisa fazer um teste
+com base em seus conhecimentos técnicos.                  de Acrobacia (DT definida pelo ambiente). Se
+Para isso, você deve fazer um teste de Tec-               passar nos dois, alcança o que queria ao final
+nologia e, então, responder a um problema                 da segunda ação. Se falhar em qualquer um
+matemático em 10 segundos. A dificuldade                  deles, recebe dano igual a RB e precisa co-
+do problema varia de acordo com o teste de                meçar de novo.
+Tecnologia: quanto maior o resultado, mais
+fácil o problema.
+                                                          ALCANÇAR DO JEITO ARRISCADO
+                                                          Você tenta alcançar algo de forma rápida e
+HACK SOCIAL                                               ousada. Gaste uma ação e faça um teste de
+Outra opção para invadir um dispositivo tec-              Acrobacia (DT definida pelo ambiente +3). Se
+nológico é fazer um hack social, ou seja, utilizar        passar, alcança o que queria. Se falhar, recebe
+conhecimentos sobre o dono do celular ou do               dano igual a RA.
+computador para adivinhar sua senha. Para
+isso, você deve fazer um teste de Intuição.
+Se passar, deverá responder a algumas per-
+                                                          SUSTENTAR
+guntas a respeito da pessoa que criou a senha.            Em alguns cenários, você precisará erguer ou
+O número de respostas corretas necessárias                empurrar algo pesado, enquanto outro perso-
+para adivinhar a senha varia de acordo com                nagem analisa uma pista que está embaixo ou
+a história. Para cada 3 pontos pelos quais o              atravessa uma passagem que foi aberta dessa
+resultado do teste exceder a DT, você recebe              maneira. Para mover o objeto, gaste 1 PV e
+uma chance adicional de responder (ou seja,               faça um teste de Atletismo. No final de cada
+pode errar uma vez sem falhar).                           rodada, se quiser continuar sustentando o
+                                                          objeto, você precisará fazer um novo teste de
+Exemplos de perguntas:                                    Atletismo. Esse teste sofre uma redução de
+                                                          passo por rodada, representando que você
+  Qual o nome completo de quem criou
+   essa senha?
+                                                          está ficando cada vez mais cansado.
+  O que essa pessoa mais preza?
+  Em que ano ela nasceu?
+  Qual o nome da mãe, filho, cachorro,
+   pessoa querida?
+
+Ou qualquer outra pergunta relevante à his-
+tória da missão.
+
+
+                                                     25
+OUTRAS CENAS
+                                                      FERIMENTOS
+                                                      Um personagem reduzido a 0 PV , ou se so-
+
+
+E REGRAS
+                                                      frer dano já estando com 0 PV, deve fazer um
+                                                      teste de Vigor contra DT 7, +3 por teste já
+                                                      realizado. Se passar, pode continuar agindo.
+                                                      Se falhar, morre.
+Neste playtest, nosso objetivo é experimentar
+cenas de investigação — o coração de Ordem               Assim, um personagem que seja reduzido a
+Paranormal. Por isso, neste momento não                  0 PV precisa fazer um teste de Vigor contra
+teremos outros tipos de cena. Playtests fu-              DT 7. Se passar, continua agindo. Porém, a
+turos, porém, trarão situações variadas, com             partir de agora, para cada dano que sofrer,
+suas respectivas regras.                                 deverá fazer outro teste de Vigor, pois já não
+                                                         tem mais PV. A DT desse teste aumenta para
+Contudo, é possível que coisas inesperadas
+                                                         10, 13, 16 e assim por diante, de modo que,
+aconteçam, como os personagens de seu gru-
+                                                         se continuar sendo ferido, mais cedo ou mais
+po se voltarem uns contra os outros. Caso isso
+                                                         tarde irá morrer.
+aconteça, use as mecânicas a seguir.
+                                                      Esta é uma versão simplificada da regra de fe-
+                                                      rimentos, apenas para este playtest! No jogo
+REGRAS SIMPLIFICADAS                                  completo, há mais possibilidades, incluindo
+
+PARA COMBATES                                         ferimentos permanentes.
+
+E FERIMENTOS
+                                                      TRAUMAS
+COMBATE                                               Se um personagem for reduzido a 0 PD, ou se
+Se dois personagens entrarem em luta cor-             sofrer dano emocional já estando com 0 PD,
+poral, ambos devem fazer um teste oposto              deve fazer um teste de Disciplina contra DT
+de Luta. Aquele que vencer causa dano no              7, +3 por teste já realizado. Se passar, pode
+outro em um valor igual à sua RA (se estiver          continuar agindo. Se falhar, tem um colapso
+empunhando algum tipo de arma) ou à sua               mental e morre.
+RB (se estiver atacando desarmado).
+                                                      Novamente, esta é uma versão simplificada
+ESQUIVA. Um personagem atacado pode                   da regra de traumas. No jogo completo, não
+apenas se defender, em vez de contra-atacar.          é tão fácil morrer por perda de PD — mas
+Nesse caso, faz um teste de Acrobacia oposto          existe a possibilidade de sofrer traumas que
+ao teste de Luta do agressor. O personagem            acompanharão seu personagem pelo resto
+                                                      da vida dele.
+que está apenas se defendendo recebe +     d6
+em seu teste e, se vencer, não sofre nem cau-
+sa dano.
+
+MÚLTIPLOS AGRESSORES. Se um mesmo
+personagem for atacado por dois ou mais se-
+res, só poderá lutar (ou se esquivar) de um
+deles. O outro faz um teste teste de Luta (DT
+7). Se passar, acerta o ataque.
+
+
+
+
+                                                 26
+                                     ATO
+
+
+                                        I
+Este playtest é a primeira missão de ORDEM PARANORMAL RPG 2. Para
+jogar, você precisa de um grupo com 3 a 5 jogadores, mais o mestre. Os
+personagens são de 2º nível (relativamente iniciantes) e “sobreviventes”,
+ou seja, não conhecem a Ordo Realitas.
+
+Nesta história, os personagens acordam presos em um porão desconhe-
+cido, sem saber como chegaram ali. A última coisa que lembram é estarem
+comemorando o ano novo de 2021 para 2022. Para escapar, precisarão in-
+vestigar o local, solucionar enigmas, correlacionar evidências e desvendar
+o que realmente aconteceu.
+
+
+
+
+              Se você é jogador, PARE DE LER AGORA. Boa parte da diversão
+              dessa missão é descobrir a história durante o jogo. A partir daqui,
+              todas as informações são spoilers.
+
+              Se você é o mestre, recomendamos que leia a missão inteira antes
+              de começar o jogo.
+
+
+
+
+                                        28
+PREPARAÇÃO
+Antes de começar o jogo, distribua para os jogadores as fichas
+dos personagens prontos (sobreviventes). Diga a eles que de-
+verão escolher seu personagem com base apenas nas esta-
+tísticas de jogo (atributos, perícias e habilidades) e aparência;
+apenas após escolherem receberão seus históricos.
+
+Para a história fazer sentido, é importante apresentar apenas
+os seguintes personagens para serem escolhidos conforme
+a quantidade de jogadores no grupo:
+
+
+
+     3 JOGADORES                                4 JOGADORES            5 JOGADORES
+                                                           Edgar                        Edgar
+
+
+
+               Alan
+
+
+                                              Alan
+                                                                                                  Kênia
+
+
+ Victor
+
+
+                                                                        Alan
+
+                                                        Eloísa
+
+               Eloísa
+                                                                                         Victor
+
+
+
+                                             Victor
+
+
+
+                                                                               Eloísa
+
+
+
+
+    Caso seu grupo tenha 3 ou 4 jogadores, retire Kênia da história.
+
+
+
+
+Após os jogadores escolherem, entregue a cada um o histórico
+de seu personagem. Assim, eles saberão seus próprios histó-
+ricos, mas não os dos demais. Parte da graça é que precisam
+compartilhar informações entre si para desvendar a história,
+fazendo seus personagens conversarem durante a missão.
+
+
+                                                                 29
+VITÓRIA E DERROTA
+Em ORDEM PARANORMAL 2, cenas de investigação não são
+uma parte menor do jogo. Na verdade, às vezes são a peça
+central da história — como neste playtest. Em outras palavras,
+em ORDEM PARANORMAL 2 investigações podem ser tão
+importantes e envolventes quanto combates em outros jogos.
+
+Isso significa que investigações podem ser “vencidas” ao se
+atingir um objetivo. Porém, nem sempre os jogadores sabe-
+rão qual é esse objetivo, e parte da investigação pode ser
+descobri-lo.
+
+O objetivo do Ato I da Maldição do Ídolo de Pedra é simples:
+escapar do porão com vida. Porém, ao longo da investigação,
+os personagens vão descobrir que isso é algo que nem todos
+conseguirão fazer…
+
+Há um objeto amaldiçoado escondido no porão: o Ídolo de
+Pedra. No início, ele está inerte e não representa perigo. Porém,
+após ser descoberto, a maldição do Ídolo começará a afetar
+os personagens. Não é possível destruí-lo ou contê-lo com
+esse grupo, então a única opção é fugir — o que só pode ser
+feito se descobrirem a senha da saída.
+
+O Ídolo de Pedra também poderá ser ativado em outras cir-
+cunstâncias, a critério do mestre. A princípio, é importante dar
+tempo aos jogadores para explorar a sala, revisar as pistas e
+pensar em soluções. Contudo, se o jogo se arrastar demais
+— especialmente se os jogadores começarem a demonstrar
+cansaço ou perda de interesse — você pode anunciar que
+eles sentem uma energia maligna vindo de dentro do armário,
+ou que o corpo no freezer começa a ter espasmos cada vez
+mais violentos, começando a contagem de rodadas da maldi-
+ção (veja a página 53). Se mesmo assim os personagens não
+avançarem na investigação, a morte do grupo inteiro sempre
+é uma possibilidade.
+
+O mais provável é que, após muito esforço, os personagens
+escapem. Pelo menos, alguns deles… Ao descobrir a senha da
+saída, ao menos um deles terá entendido parte do mistério que
+os colocou ali. Isso pode fazer com que se voltem uns contra
+os outros, seja entrando em confronto físico, seja deixando
+alguém para trás para morrer.
+
+
+             30
+INTRODUÇÃO
+Mestre, anuncie aos jogadores que o jogo vai começar e peça
+                                                               Para maior imersão,
+que todos prestem atenção. Então, leia o texto abaixo.           use como trilha de
+                                                                 fundo a música
+                                                                 O Porão, encontrada
+                                                                 nos arquivos
+   O Paranormal não vem para nossa Realidade de                  deste pacote.
+   maneira fácil… mas, quando o faz, pode revelar
+   o verdadeiro custo de uma dádiva.
+
+   Para muitos, o ano novo é considerado uma
+   época de recomeços. Uma nova fase da vida, uma
+   nova chance de fazer as coisas darem certo.
+   Um novo começo. Mas, para alguns de vocês, essa
+   ideia parecia cruel, uma ironia do destino…
+
+   Tudo está escuro. Vocês não sabem onde estão.
+   Vocês tentam se mexer, mas o corpo não responde.
+   Tentam gritar, mas nenhum som sai. De repente,
+   visualizam uma sequência de lugares, pessoas
+   e acontecimentos, mas as imagens e sons estão
+   misturadas e confusas. Quando vocês tentam
+   prestar atenção em uma visão específica, ela
+   desaparece, se tornando apenas o eco de algo
+   que se perdeu.
+
+   Uma a uma, as cenas desvanecem. Sombras se
+   dissipam, vozes param de sussurrar. Vocês veem
+   uns aos outros por um momento. Mas, acima de
+   tudo, sentem uma presença externa… Algo espera
+   por vocês. Algo superior.
+
+   Algo que está cobrando uma dívida.
+
+
+
+Após terminar a narração, avance para
+O Ídolo de Pedra, Ato I.
+
+
+
+
+                                            31
+O ÍDOLO DE PEDRA, ATO I
+Alan, Victor e Eloísa acordam. Vocês               Victor está encolhido como se ti-
+estão caídos em um chão frio de                     vesse dormido de joelhos.
+concreto. Respiram um ar abafado,
+que mistura cheiro de mofo com algo               Olhando ao redor, vocês percebem
+metálico difícil de reconhecer. A                 que o ambiente é úmido e não possui
+luz é fraca e pisca de tempos em                  janelas. Estão em um tipo de porão.
+tempos. Olham em volta e veem uns                 No centro, há um altar de madeira
+aos outros, mas não se conhecem
+                                                  com manchas de sangue e correntes.
+e nem conhecem este lugar. Vocês
+                                                  Acima do altar, um símbolo enorme
+não sabem como chegaram aqui. Sua
+                                                  foi desenhado no teto.
+última memória é a que está escrita
+em seu histórico.
+                                                  De um lado, há um armário de metal,
+ Eloísa, você está caída ao lado de              do tipo onde se guardam ferramentas,
+  um balcão de madeira. Ao levantar,              trancado com um cadeado. Do outro,
+  percebe que há um homem acorrenta-              há uma estante de livros.
+  do sobre o balcão, como se fosse
+  um altar de sacrifício. No teto,                Além disso, um celular está pousado
+  acima desse balcão, há um enorme                sobre uma mesa, acima da qual há um
+  símbolo desenhado com algum tipo                duto de ventilação. Vários pôsteres
+  de substância vermelha-escura.                  estão colados nas paredes, e a
+                                                  única saída é uma porta de metal
+ Alan e Victor, vocês estão den-                 reforçado, ao lado da qual há um
+  tro de um depósito gradeado. As                 painel eletrônico.
+  grades parecem feitas para man-
+  ter crianças e animais longe dos                Por fim, há dois depósitos gradeados,
+  itens guardados aqui dentro. Mas
+                                                  com as portas fechadas.
+  o que poderia manter alguém fora
+  também serve para prender alguém
+  dentro… a grade está trancada e                 3 Por fim, todos vocês olham com
+  vocês estão presos.                             atenção para o homem acorrentado
+                                                  sobre o balcão. A camisa dele está
+ Alan sente muita dor na cabeça. Ao              ensopada de sangue e ele parece não
+  encostar a mão na nuca, percebe                 estar respirando.
+  que está sangrando. Diminua 1 PV
+  da sua ficha de personagem.                     O que vocês fazem?
+
+
+
+
+ NÚMERO DE JOGADORES
+ Ao longo da missão, você encontrará alguns parágrafos que devem ser lidos apenas se o grupo
+ tiver 3, 4 ou 5 jogadores. Eles estão sinalizados pelos ícones:
+
+ 3 4 5
+
+
+
+                                             32
+Entregue o Mapa 01 aos jogadores. Explique            Se até o fim da segunda rodada nenhum perso-
+que Alan e Victor estão dentro do Depósi-             nagem tiver investigado seus próprios corpos,
+to B e que Eloísa está ao lado do “Altar” de          diga que, ao se mexerem, todos eventualmen-
+Madeira e deixe-os livres para explorar por           te acabam percebendo um estranho símbolo
+uma rodada — ou seja, dê a cada um a opor-            “tatuado” em seus corpos (veja “Símbolo Ta-
+tunidade de fazer uma ação, como investigar           tuado nos Corpos”, página 37).
+um ponto de interesse.
+                                                      A partir daqui, deixe os jogadores livres para
+Quando cada um tiver feito uma ação, avance           investigar os elementos da sala na ordem que
+para a segunda rodada. Controlar as rodadas           preferirem. Você possui sua própria versão do
+é importante por dois motivos: primeiro, para         mapa, que inclui números indicando a legen-
+garantir que todos os jogadores estejam fazen-        da de cada ponto de interesse. Use o mapa e
+do a mesma quantidade de ações. Segundo,              a seção a seguir, Pontos de Interesse, para
+porque quando descobrirem o Ídolo de Pedra,           descrever o que os personagens encontram
+a passagem do tempo determinará o efeito              em cada lugar.
+da maldição.
+                                                      Ao final da missão, a seção O que de fato
+4  OU 5 No início da segunda rodada, Edgar            aconteceu revela a história completa e serve
+e Kênia despertam. Descreva para eles:                de guia para mestrar. Mas guarde o segredo!
+                                                      Revele aos jogadores apenas as pistas que eles
+                                                      descobrirem e deixe que criem suas teorias.
+
+    Vocês despertam. Ao tentarem se                   Bom jogo!
+    mover, sentem um formigamento
+    estranho no corpo. Nesta rodada,
+    vocês sofrem uma redução de passo
+    em testes físicos.
+
+     Edgar, você é o homem acorren-
+      tado sobre o altar de sacrifí-
+      cio. Seus braços e pernas estão
+      envoltos por uma corrente presa
+      com um cadeado.
+
+     Kênia, você acorda em um se-
+      gundo depósito gradeado. Está
+      espremida contra o canto mais
+      ao fundo da cela.
+
+
+
+
+                                                 33
+           12
+                                         1                           3
+     8                                                                             22
+                                                                                                                 23
+                                                                 2
+          17                                                                                           24
+13
+                                         4
+
+                                                                                                             20
+          7 (no teto)                                                                         19
+
+                                                             5
+                                                                                        21
+
+                    6
+
+
+
+
+                                                                                        15
+                                                                                                       18
+14
+
+
+
+                                                                                              11
+                9
+     16                  10
+
+
+
+
+                                                                                                   Sala Secreta
+                                                                                                   18. Mesa de poker
+                        Porão                6. Altar                    12. Pôster 1              19. Mesa de sinuca
+                        1. Depósito A        7. Sigilo no teto           13. Pôster 2              20. Churrasqueira
+                        2. Chaves            8. Armário de Ferro         14. Pôster 3              21. Roupas
+                        3. Painel elétrico   9. Celular                  15. Pôster 4              22. Computador
+                        4. Depósito B        10. Duto de ar              16. Porta de ferro        23. Freezer
+                        5. Rabiscos          11. Estante de livros       17. Ídolo de Pedra        24. Corpo no freezer
+
+
+
+                                                    34
+PONTOS DE INTERESSE
+A seguir está a descrição de cada ponto de interesse do porão, seguindo a legenda do mapa.
+
+Se uma descrição ou perícia contém o símbolo , isso significa que ela só pode ser acessada
+após o personagem cumprir uma condição indicada, como vencer um desafio de acesso, en-
+contrar um objeto ou superar a DT de outra perícia. Algumas descrições também podem ser
+exclusivas apenas para personagens indicados.
+
+Ao entregar um handout para um jogador, recomendamos que faça isso de forma que apenas
+esse jogador tenha acesso ao que encontrou. Fica a cargo dele compartilhar a informação com
+os outros ou não. Neste ato, alguns personagens podem preferir manter segredos…
+
+
+
+
+OS PERSONAGENS
+Ninguém lembra como veio parar aqui ou o que está carregando, o que faz seus próprios corpos
+e pertences serem parte da investigação.
+
+
+          ALAN E SEUS PERTENCES
+          Alan tem um ferimento na nuca e um celular com pouca bateria.
+
+Perícia           DT   Informação
+
+                       A camisa e o casaco de Alan estão um pouco frouxos nele, como se
+Intuição           6
+                       fossem de um tamanho maior.
+
+                   6   A nuca de Alan tem um leve sangramento e está latejando.
+Percepção
+                  10   Dentro da gola do casaco há um “G.” bordado à mão.
+
+
+            O ferimento na nuca de Alan é consequência da tigelada que Victor desferiu nele para
+            desacordá-lo. O sangramento não é letal, mas a cabeça ainda dói.
+
+            Alan está usando uma camiseta e uma blusa velhas e maiores do que seu próprio tamanho.
+            São roupas de Gustavo, que Alan encontrou no porão. Alan trocou suas roupas por essas de
+            Gustavo após matá-lo, pois suas roupas ficaram sujas de sangue.
+
+            O celular tem apenas 1% de bateria e mostra o horário de 18h30. A tela está aberta em
+            uma conversa entre Alan e Eloísa. Mostre o handout: HANDOUT 01 - CONVERSA ELOÍSA.
+            Alan enviou esta mensagem após matar Gustavo. Fez para manipular Eloísa, mentindo que
+            Gustavo havia “preparado uma armadilha” e pedindo que ela chegasse mais cedo, para
+            convencê-la antes dos demais. Se Alan ou Eloísa virem a conversa, não se lembrarão dela,
+            mas sentirão que é seu jeito de escrever. Após ver essa mensagem, a bateria acaba.
+
+
+
+
+                                                   35
+                VICTOR E SEUS PERTENCES
+                Victor traz no bolso um giz branco, alguns papéis e um par de brincos de ouro. Os papéis contêm
+                um diagrama estranho e, ao serem manuseados, se desfazem como se fossem papiros milenares.
+
+      Perícia             DT   Informação
+
+                               Você não sabe por que está carregando consigo joias de sua avó.
+                           6
+                               Elas trazem lembranças preciosas.
+      Intuição
+      (apenas Victor)          Você tinha muito zelo por essas joias, e não estaria andando com
+                          10
+                               elas por acaso. Você as trouxe para cá por algum motivo.
+
+                               É difícil reconhecer o que estava escrito nos papéis antes que
+                           6   eles se desfizessem, mas eram símbolos estranhos, como letras de
+      Percepção                um alfabeto desconhecido.
+
+                           8   Os dedos de Victor têm uma poeira branca de giz de quadro.
+
+                               Os dedos de Victor estão sujos de giz, o giz que ele carrega está
+      Pesquisar           10   gasto de um lado e há riscos brancos no chão. Victor desenhou
+                               algo no chão.
+
+
+                  Os itens que Victor está carregando são os componentes ritualísticos que ele usou para
+                  realizar o ritual de Conhecimento que apagou a memória de todos no ambiente.
+
+                  Os componentes são um giz (que ele havia esquecido em seu bolso por ser professor, e usou
+                  para desenhar o símbolo), rascunhos do símbolo do ritual de apagamento de memória e joias
+                  antigas douradas e com memórias importantes para Victor (são da avó dele; o próprio Victor
+                  reconhece isso). Como o ritual já foi realizado, os componentes se desfazem se alguém
+                  interagir com eles.
+
+
+
+
+          ELOÍSA E SEUS PERTENCES
+          Eloísa veste uma roupa de academia, com fones bluetooth no bolso.
+
+Perícia            DT   Informação
+
+                        Você veste uma roupa de academia, o que acha estranho, já que não
+Intuição                costuma fazer exercícios. Especialmente nos últimos meses, estava
+                    6
+(apenas Eloísa)         cada vez mais difícil realizar atividades físicas, pois você se
+                        sentia muito cansada.
+
+                        Ao verificar os fones, você percebe que eles estão conectados,
+Tecnologia          6   o que significa que o celular não deve estar longe. O fone diz
+                        “Você possui uma mensagem”.
+
+
+            Eloísa deixou sua bolsa com a maioria de seus pertences no andar de cima, já que quando os
+            outros finalmente apagaram, ela e Alan começaram a arrastar seus corpos desacordados em
+            direção ao porão.
+
+            Em seus bolsos, ela possui apenas seus fones. Se eles estiverem conectados e o botão de ler
+            mensagens for apertado, o fone diz: “Mensagem de Alan: ‘Venha imediatamente’. Enviada
+            há 4 horas”.
+
+
+
+
+                                                      36
+          EDGAR E KÊNIA
+          Edgar e Kênia não carregam nada consigo. Ambos estão com a boca seca e sentindo sede, além
+          de formigamento no corpo inteiro.
+
+Perícia            DT   Informação
+
+            Alan e Eloísa esvaziaram os bolsos de Edgar e Kênia antes de arrastarem os corpos
+            desacordados deles para o porão.
+
+            Edgar está acorrentado no altar de madeira e não consegue agir até ficar livre. As correntes
+            podem ser abertas com arrombar (DT 10, PA 10), destrancar (senha 4d4 , 2 tentativas)
+            ou com o molho de chaves 1 (encontrado no Depósito A). Se quiser, Edgar pode tentar
+            arrombar as correntes com o próprio corpo.
+
+
+
+
+               SÍMBOLO TATUADO NOS CORPOS
+               Todos têm o mesmo símbolo tatuado em seu pulso, do mesmo tamanho e com a mesma aparência.
+
+     Perícia             DT   Informação
+
+                              Se um personagem toca no símbolo, todos sentem um calafrio ao
+     Intuição             6
+                              mesmo tempo, revelando que estão conectados de alguma forma.
+
+     Medicina ou              Um queloide desse tamanho demora meses para se formar, indicando
+                          6
+     Sobrevivência            que a cicatriz não é recente.
+
+                              A princípio parece uma tatuagem. Porém, analisando com
+                          6   mais cuidado, é mais como se o símbolo tivesse “crescido” e
+                              cicatrizado, formando um queloide.
+     Percepção
+                              Não parece ter sido desenhado. O relevo é côncavo, como se um
+                          8
+                              carimbo tivesse sido pressionado contra a pele.
+
+
+                 O símbolo foi marcado durante o ritual, quando a parte inferior do Ídolo tocou suas peles.
+                 Com o passar do tempo, ele continuou “inchando” levemente, representando a progressão
+                 da maldição. Se tocarem no símbolo, sentem uma sensibilidade estranha, como uma
+                 queimadura recente.
+
+                 O símbolo marcado na pele dos personagens é o mesmo pintado no teto do porão.
+
+
+
+
+                                                      37
+ O PORÃO
+ A área principal, onde todos acordam.
+
+
+
+          DEPÓSITO A
+          Um pequeno depósito com paredes de grade divisória e uma porta trancada. Há algumas          01
+          estantes vazias, um aparelho elíptico quebrado em um canto e um painel elétrico na parede.
+
+   DESAFIO            ARROMBAR (DT 10, PA 10)
+ DE ACESSO
+                      DESTRANCAR (senha: 3d6 , 3 tentativas)
+ PORTA
+ TRANCADA             ITEM (molho de chaves 1 )
+
+Perícia               DT   Informação
+
+                           Há um molho de chaves caído no chão. O molho tem três chaves,
+Percepção             6
+                           duas grandes e uma pequena.
+
+                           As chaves estão jogadas longe das grades, o que indica que foram
+Pesquisar             6
+                           arremessadas lá dentro de propósito.
+
+
+            Eloísa e Alan usaram os depósitos do porão de Gustavo como celas improvisadas.
+
+            3 ou 4 Victor jogou as chaves para a cela vazia para não arriscar que Alan acordasse e
+            conseguisse pegar as chaves dele para escapar.
+
+            5 Após acorrentarem Edgar no altar para sacrificá-lo, Alan e Eloísa levaram Kênia e a
+            trancaram no depósito caso acordasse antes da hora. Victor jogou as chaves para Kênia, que
+            ainda estava desacordada e trancada, enquanto realizava o ritual, na expectativa que ela
+            fosse acordá-los e libertá-los.
+
+
+
+
+                     DEPÓSITO A, MOLHO DE CHAVES
+                     Um molho com três chaves, sendo duas grandes e uma pequena.                            02
+           Perícia            DT   Informação
+
+           Percepção           6   Há um pouco de sangue nas chaves.
+
+                                   Duas chaves são iguais. Provavelmente cada uma abre um
+                               6
+                                   depósito diferente.
+           Pesquisar
+                               8   A terceira chave é menor e, pela forma, abre um cadeado.
+
+
+                       Este é o molho de chaves 1 . As chaves abrem:
+                        Porta do Depósito A
+                        Porta do Depósito B
+                        Cadeado nas correntes de Edgar
+
+
+
+
+                                                          38
+          DEPÓSITO A, PAINEL ELÉTRICO
+          Um painel de luz antigo, confuso e mal instalado.                                        03
+   DESAFIO DE              ROLAGEM EQUAÇÃO
+ ACESSO PAINEL                10+      16 x 5 = 80
+ CONFUSO
+ HACK TÉCNICO                  7-9      192 ÷ 8 = 24
+ Só é possível
+                               5-6      13² = 169
+ investigá-lo se
+ conseguir entendê-lo.         1-4      √2209 = 47
+
+Perícia            DT    Informação
+
+                         Há dois disjuntores etiquetados: “Porão” (ligado) e “Segredo”
+Pesquisar          6
+                         (desligado).
+
+                         Se alguém coloca uma etiqueta escrito “Segredo” num painel de luz,
+Intuição           8
+                         provavelmente não está realmente preocupado em esconder um segredo.
+
+Máquinas           8     O disjuntor “Segredo” não afeta nenhuma das luzes dessa sala.
+
+
+            Os interruptores “Porão” e “Segredo” ligam e desligam todas as luzes e dispositivos das do
+            porão e da sala secreta (veja a página 54).
+
+            Se o disjuntor “Porão” estiver desligado, a estante de livros (página 46) e a porta de saída
+            (p.50) não funcionam. Ao ligar e desligar o disjuntor “Porão” é possível ver o teclado
+            numérico ao lado da porta de saída desligando e ligando. Se alguém estiver perto, percebe
+            que a tela pisca momentâneamente com “DD/MM/AA” ao ligar.
+
+            Se o disjuntor “Segredo” estiver desligado, o computador (p.56) não liga.
+
+            Por fim, se um personagem desligar “Porão” e ligar “Segredo”, todos percebem uma fonte de
+            luz vazando por trás da estante.
+
+
+
+
+                                                       39
+          DEPÓSITO B
+          Um pequeno depósito com paredes de grade divisória e uma porta trancada. Há caixas, um
+          teclado velho e quebrado e um ursinho de pelúcia. Além disso, há fragmentos de algum tipo    04
+          de vaso ou tigela antiga e pesada espalhados por todo lado.
+
+  BLOQUEIO            ARROMBAR (DT 7, PA 10)
+DE ACESSO
+                      DESTRANCAR (senha: 3d6 , 3 tentativas)
+PORTA
+TRANCADA              ITEM (molho de chaves 1 )
+
+Perícia               DT    Informação
+
+Aptidão                     A tigela era antiga. Muito antiga. Pelo material, marcas
+                       6
+(Humanas)                   e condições, ela devia ter séculos… ou mais.
+
+                            As caixas não têm nada de útil, o teclado está quebrado
+                       6
+                            e o ursinho de pelúcia possui um bordado com a letra “L”.
+
+                            Vários fragmentos mostram que a tigela já estava bastante
+Percepção                   manchada antes de quebrar, como se fosse usada para conter
+                       8
+                            um líquido escurecido. Somado a isso, alguns dos fragmentos
+                            estão manchados de sangue fresco.
+
+                      10    Provavelmente, foi a tigela que causou a ferida na cabeça de Alan.
+
+
+            Eloísa e Alan usaram os depósitos como celas improvisadas. Alan havia arrastado Victor até
+            a cela, mas Victor fingiu estar desacordado e o nocauteou usando a tigela ritualística.
+            Depois disso, pegou as chaves e trancou a cela para que Eloísa não entrasse enquanto ele
+            conjurava seu ritual.
+            Os outros pertences são apenas coisas antigas que Gustavo guardou: um ursinho de
+            pelúcia de sua filha Laura, um teclado musical antigo, caixas com tranqueiras inúteis (como
+            decorações natalinas e panos velhos).
+
+
+
+                      DEPÓSITO B, RABISCOS NO CHÃO
+                      Algo foi desenhado ou escrito no chão, mas está completamente borrado e irreconhecível   05
+                      agora, como se algo tivesse sido arrastado por cima.
+
+            Perícia             DT    Informação
+
+                                      O borrão vai em direção ao local onde Victor acordou,
+            Percepção            6    provavelmente foi seu próprio corpo que borrou o desenho
+                                      ao se arrastar para acordar.
+
+                                 6    O que sobrou no desenho parece algum tipo de diagrama ou símbolo.
+            Pesquisar
+                                10    Não é o mesmo símbolo das tatuagens ou do teto.
+
+
+                        O símbolo no chão foi desenhado por Victor, na tentativa de apagar da memória de Alan
+                        tudo o que aprendeu no início do ano sobre o ritual. Porém, quando ambos desmaiaram ao
+                        terem as memórias apagadas, Victor caiu em cima do símbolo, borrando-o por completo.
+                        Victor trouxe os componentes ritualísticos escondidos em seu casaco, bem como o giz
+                        branco que usa para dar aulas e os papéis contendo rascunhos do símbolo — que usou para
+                        copiar. Foi o primeiro ritual que conjurou, e o resultado não saiu como o esperado.
+
+
+
+
+                                                         40
+          “ALTAR” DE MADEIRA
+          Parece um altar de sacrifício, mas na verdade é uma cômoda de madeira com gavetas. Há
+          sangue fresco por todo lado, e as correntes estão enroladas e presas aos pés. Uma trilha de   06
+          sangue se arrasta do altar em direção a um dos cantos da sala.
+
+Perícia             DT    Informação
+
+                          Os símbolos entalhados na madeira lembram o símbolo do teto e
+Intuição             6
+                          da tatuagem.
+
+                          Símbolos estranhos foram entalhados no tampo usando algum tipo
+                     6
+                          de lâmina.
+Percepção
+                          Marcas no chão indicam que essa cômoda foi puxada recentemente
+                     8
+                          para ficar embaixo do símbolo do teto.
+
+                          Nas gavetas, há toalhas manchadas de sangue ressecado, restos de
+                     6
+                          ervas moídas e um antigo moedor feito de pedra.
+
+                          3 O corpo do homem morto está com a garganta cortada, e há uma
+Pesquisar
+                          faca de churrasco caída ao seu ao lado, ensanguentada.
+                     8
+                          4 ou 5 Do jeito que Edgar foi acorrentado, não parecia que ele
+                          ficaria ali por muito tempo
+
+
+            O “altar” é apenas uma cômoda de madeira que Gustavo tinha em seu porão, convertida em
+            um altar para o ritual do Ídolo de Pedra.
+            Os símbolos esculpidos na madeira foram desenhados por Alan usando uma faca de
+            churrasco. Ele não sabe o que significam, estava apenas replicando os seus achados
+            arqueológicos.
+            Quando Gustavo se recusou a participar do plano, Alan o atacou com a mesma faca que
+            meses antes havia usado para esculpir os símbolos na cômoda. Então, realizou os ritos
+            necessários para entregar a vida de Gustavo como sacrifício para o Ídolo.
+            As gavetas têm alguns dos componentes ritualísticos, como ervas moídas, entre roupas e
+            toalhas antigas de Gustavo e sua família. Nenhum desses itens é útil agora.
+            3 Eloísa matou Edgar com a faca de churrasco, antes mesmo de Alan terminar de arrastar
+            Victor, pois ele estava se mexendo e parecia prestes a acordar. Veja a descrição da faca na
+            página 43.
+
+
+
+
+                                                      41
+            SÍMBOLO NO TETO
+            No teto, acima do altar, há um símbolo enorme desenhado com algum líquido ou tinta         07
+            avermelhada. A iluminação baixa do local torna difícil enxergá-lo em detalhes.
+
+     DESAFIO                  Devido à iluminação fraca e teto alto, é necessário subir no altar molhado
+   DE ACESSO
+                              e escorregadio para observar o símbolo de perto:
+   SÍMBOLO ALTO
+                              ALCANÇAR (DT 7)
+   (ALCANÇAR)
+
+  Perícia              DT     Informação
+
+                              O símbolo é idêntico ao que todos têm tatuados em seu pulso.
+                        6
+                              Mostre o handout: HANDOUT 02 - SÍMBOLO NO TETO.
+
+                              Ele parece ter sido desenhado duas vezes. Primeiro, com um
+                              líquido marrom e seco, já apagado e, mais recentemente, com
+  Percepção            8
+                              um líquido vermelho — possivelmente sangue, ainda fresco.
+                              Enquanto você observa, uma gota cai no altar.
+
+                              O desenho fresco parece tremido e mal feito, como se tivesse
+                      10
+                              sido traçado às pressas.
+
+  Aptidão                     O símbolo lembra linguagens mesopotâmicas ancestrais, mas não
+                        6
+  (Humanas)                   parece pertencer a nenhum alfabeto conhecido.
+
+
+              O símbolo da maldição foi desenhado por Alan, seguindo as evidências que encontrou em
+              sua expedição arqueológica ao Iraque.
+
+              Ele foi desenhado duas vezes. A primeira, meses atrás, quando todos realizaram o ritual, e
+              a segunda há poucas horas, quando Alan passou o sangue de Gustavo por cima do símbolo
+              previamente desenhado para realizar o ritual com seu corpo.
+
+
+
+
+     ARMÁRIO DE METAL
+     Um armário de ferramentas no canto do porão, um pouco enferrujado e trancado com um           08
+     cadeado. O cadeado está manchado com sangue.
+
+                 ARROMBAR (DT 7, PA 10)
+                 Se escolherem arrombar, o Ídolo de Pedra dentro dele se quebra.
+   DESAFIO       Os papéis das instruções do ritual de Alan também se bagunçam, dificultando a
+DE ACESSO        informação de Pesquisar de 6 para 10.
+ CADEADO
+                 DESTRANCAR (senha: 5d6 , 3 tentativas)
+
+                 ITEM (molho de chaves 2 )
+
+
+
+
+                                                    42
+ARMÁRIO DE METAL (CONTINUAÇÃO)
+
+                                              CONTEÚDO
+
+Ao abrir o armário, é possível ver chaves de fenda, cabos, parafusos e outras ferramentas diversas.
+Além disso, enrolada em uma jaqueta de couro marrom está uma estatueta de pedra esquisita. Mais
+abaixo, há um amontoado de papéis.
+
+Assim que os personagens abrirem o armário, veja “A Maldição do Ídolo de Pedra”, na página 52. Além
+disso, se um personagem quiser investigar a estatueta, veja o ponto de interesse 17 - O Ídolo de Pedra,
+na página 51.
+
+4 ou 5 Há também uma faca de churrasco suja de sangue ao lado da estatueta.
+
+Perícia            DT     Informação
+
+                          Olhar na direção do armário causa uma sensação horripilante.
+Intuição            6     Seja lá o que estiver trancado ali dentro, você sente
+                          que é perigoso.
+
+                          (apenas se algum personagem for Arrombar o armário)
+Intuição            6
+                          Tem certeza de que quer tentar arrombar esse armário à força?
+
+                          A jaqueta de couro está manchada de sangue.
+                    6     Em um bolso, há uma carteira com um documento de identidade.
+                          Mostre o handout: HANDOUT 03 - RG DE GUSTAVO.
+
+Pesquisar           8     A jaqueta de couro tem três furos na parte das costas.
+
+                          Os papéis parecem ser anotações de uma expedição
+                   6 ou
+                          arqueológica feita no Iraque.
+                    10
+                          Mostre o handout: HANDOUT 04 - ANOTAÇÕES ARQUEOLÓGICAS.
+
+                          Os papéis trazem informações arqueológicas sobre
+                          uma civilização da Antiga Mesopotâmia. Anotações resumidas
+                    6
+                          e rabiscadas parecem traduzir instruções para um ritual
+Aptidão                   envolvendo um grupo de pessoas e uma estatueta de pedra.
+(Humanas)
+                          Analisando as anotações mais a fundo, o ritual parece
+                    8     estar associado à longevidade e renascimento dos líderes
+                          de um povoado.
+
+
+Percepção                 A letra desses documentos é sua. Mas você não se lembra
+                    8
+(apenas Alan)             de ter escrito isso.
+
+
+           Originalmente um armário usado por Gustavo para guardar ferramentas variadas.
+
+           Alan decidiu manter o Ídolo de Pedra trancado ali com um dos cadeados que encontrou
+           no armário, junto de suas anotações arqueológicas e da própria faca que usou para matar
+           Gustavo (a mesma que foi usada para esculpir os sigilos no altar), enquanto aguardava as
+           outras pessoas para prosseguir com o ritual. Para não danificar o Ídolo, Alan o enrolou na
+           jaqueta de couro que Gustavo estava usando quando foi morto.
+
+           FACA DE CHURRASCO: uma faca longa e afiada, manchada com sangue. A faca pode ser
+           usada como arma. Se acertar um ataque com ela, você causa dano igual à sua RA +2 (por
+           exemplo, se sua rolagem de ataque for 4 e 5, você causa 7 pontos de dano).
+
+
+
+                                                    43
+          CELULAR DE GUSTAVO [EVIDÊNCIA-CHAVE]
+          Jogado sobre uma mesa, há um celular bloqueado. A tela principal diz: "Olá, Gustavo."     09
+          A data mostra 13 de outubro de 2022.
+
+                                            Qual o nome completo da pessoa que criou essa senha?
+
+                                                            Gustavo Alves de Campos
+
+                                              Qual o aniversário da pessoa que criou essa senha?
+
+                                                               07 de junho de 1978
+   MECÂNICA DE ACESSO
+ SENHA DO CELULAR                                    Datas importantes para essa pessoa:
+ (HACK SOCIAL)                                      Data de casamento: 10 de agosto de 1997
+ 4 respostas corretas necessárias.
+                                              Data de nascimento da filha: 02 de setembro de 2015
+
+                                                     Nomes importantes para essa pessoa:
+
+                                                                  Olívia (esposa)
+
+                                                                   Laura (filha)
+
+Perícia            DT   Informação
+
+Intuição            6    O sentimento não é que haja um erro na data… mas sim em você.
+
+Pesquisar           6    Todos vocês estão nos contatos de Gustavo.
+
+Tecnologia          4    Há um botão de lembrete de senha. Ele diz “Prata = 25”.
+
+                         O celular parece ter um chat de grupo com várias pessoas, mas
+                         Gustavo saiu dele há alguns meses.
+
+                         No histórico é possível ver que todos vocês participaram desse
+                         grupo em algum momento esse ano, mas todos saíram do grupo
+                         eventualmente.
+                    6
+                         O grupo se chama "Lidando com despedidas". Parece ser um grupo de
+                         apoio para pessoas com doenças terminais.
+Tecnologia
+
+                         E, finalmente, a conversa mais recente é entre Victor e Gustavo.
+                         Mostre os handouts: HANDOUT 05A, HANDOUT 05B e HANDOUT 05C.
+
+                         Ao tentar acessar os e-mails, um bloqueio de segurança exige que
+                    8
+                         uma confirmação seja feita pelo computador de Gustavo.
+
+                         Há um app chamado “TRANCATRON”, que permite abrir uma porta fechada
+                    8
+                         por uma tranca de segurança, mas exige uma senha de 6 dígitos.
+
+
+            É o celular de Gustavo, que o deixou na mesa antes de ser pego desprevenido e morto por
+            Alan. Essa é uma das evidências-chaves para concluir a investigação, pois é através dela
+            que os jogadores podem descobrir que a senha da porta é o dia em que realizaram o ritual.
+            Contudo, o celular não contém a data do ritual — essa informação está no computador.
+
+            Caso tentem usar a lanterna do celular para navegar no escuro, apenas um Ponto de
+            Interesse pode ser iluminado e investigado por vez.
+
+
+
+
+                                                     44
+    DUTO DE VENTILAÇÃO
+    Há um duto de ventilação alto na parede. Ele está fechado por uma grade.                     10
+   BLOQUEIO     Requer realizar as duas ações em sequência:
+DE ACESSO         • ALCANÇAR (DT 7)
+ GRADE ALTA      • ARROMBAR (DT 7, PA 10)
+
+      Um duto de ventilação que conecta o porão à sala secreta. É largo o suficiente para uma pessoa
+      se espremer e se arrastar de uma sala para a outra. O caminho que leva o oxigênio para os
+      andares de cima, porém, tem apenas 10 cm de largura, sendo impossível escalá-lo para fugir.
+
+      Se um personagem superar o bloqueio e acessar a sala secreta através da ventilação,
+      revele o MAPA 03 para ele.
+
+
+
+
+                                               45
+          ESTANTE DE LIVROS
+          Uma estante de livros com cinco prateleiras              11
+          próxima à parede.
+
+                            Requer realizar as duas ações em sequência:
+                               •   RESOLVER O ENIGMA DA ESTANTE
+                                   DE LIVROS
+   MECÂNICA DE                 •   SUSTENTAR (DT 7)
+ ACESSO PORTA              Apenas uma pessoa pode passar por rodada.
+ PESADA                     Uma pessoa pode sustentar a estante e passar
+                            ao mesmo tempo. Se falhar na rodada em
+                            que alguém estiver passando, essa pessoa é
+                            esmagada pela estante e perde d4 PV.
+
+Perícia            DT    Informação
+
+                         Você tem a impressão de que isso não
+Intuição            6    é apenas uma estante. Há algo a mais
+                         escondido aqui.
+
+
+                         Há trilhos na parte traseira da
+                         estante, indicando a existência de um
+                         mecanismo capaz de arrastá-la para
+                    6
+                         o lado. Porém, um pedaço de tecido
+                         está enroscado entre as engrenagens,
+                         danificando o sistema.
+Máquinas
+
+                         Analisando a parte traseira da estante,
+                         é possível enxergar que o motor se
+                    8    conecta em quatro pontos: na segunda,
+                         terceira, quarta e quinta prateleiras.
+                         Não há nada na primeira prateleira.
+
+
+                         Os livros não são reais. Têm uma
+                         aparência muito bem cuidada para
+                    6
+                         um porão tão antigo, como se nunca
+                         tivessem sido lidos.
+
+
+                         Ao lado da estante, há ranhuras no
+                         chão, como se ela fosse constantemente
+                         arrastada. Há também um pequeno
+                    8
+                         adesivo colado em um cantinho da
+Percepção                madeira com uma mensagem rabiscada:
+                         “Lembre de checar os pôsteres.”
+
+
+                         Há trilhos na parte traseira da
+                         estante, indicando a existência de um
+                         mecanismo capaz de arrastá-la para
+                   10
+                         o lado. Porém, um pedaço de tecido
+                         está enroscado entre as engrenagens,
+                         danificando o sistema.
+
+
+
+
+                   46
+ESTANTE DE LIVROS (CONTINUAÇÃO)
+
+        A estante é uma porta de isolamento acústico que Gustavo instalou para poder beber com os
+        amigos sem incomodar sua esposa. Aproveitando que estava fazendo sua “man cave” com
+        isolamento acústico, decidiu instalar a porta no estilo “passagem secreta” apenas por diversão.
+        Mostre o handout: HANDOUT 06 - ESTANTE DE LIVROS.
+
+        Os livros não são de verdade — são apenas caixas imitando livros —, mas podem ser
+        puxados até certo ponto. Os livros que devem ser puxados para abrir a passagem são:
+
+        PRATELEIRA 2 - O Gol Que Ninguém Viu - Edinho Canhoto
+
+        PRATELEIRA 3 - Explosivos Industriais: Teoria e Prática Vol. III - J. Gatilho
+
+        PRATELEIRA 4 - Pixel a Pixel: Como Me Tornei Uma Lenda Dos Games - Paulo “Zika” Ferreira
+
+        PRATELEIRA 5 - Aprenda Guitarra Sem Ter Uma Guitarra - Kurt Hemmis
+
+        As dicas para saber quais livros puxar estão nos pôsteres colados nas paredes (vejas os
+        pontos de interesse 12 a 15). Quando os livros certos forem puxados, a estante se move
+        sozinha pelos trilhos… mas abre apenas uma fresta e então emperra. Ainda não é possível
+        passar, pois o funcionamento do mecanismo está prejudicado por um tecido preso nas
+        engrenagens — um pedaço da roupa de Alan que rasgou quando ele passou por ali. Alguém
+        precisará SUSTENTAR a passagem aberta para permitir o acesso à sala secreta.
+
+
+
+
+ Se preferir, você pode ler a lista de livros em
+ voz alta para os jogadores:
+
+
+ PRATELEIRA 1                                              PRATELEIRA 4
+  Dom Caschute - Machado de Assombro                       Admirável Mundo Velho - Adolo Hurley
+  O Espreitador e Outras histórias -                       Física Experimental: Ondas e Óptica -
+   Daniel Hartmann                                           Dr. Novo Tom
+  Explosivos Industriais: Teoria e Prática                 Pixel a Pixel: Como Me Tornei Uma Lenda Dos
+   Vol. I - J. Gatilho                                       Games - Paulo “Zika” Ferreira
+  Caligrafia e Gramática Descritiva - Franco Pedra         Construa Sua Própria Man Cave -
+                                                             Juca Testosterona
+ PRATELEIRA 2
+  Explosivos Industriais: Teoria e Prática                PRATELEIRA 5
+   Vol. II - J. Gatilho                                     Explosivos Industriais: Teoria e Prática Vol. IV -
+  O Gol Que Ninguém Viu - Edinho Canhoto                    J. Gatilho
+  Memórias Péssimas - Brás Quadras                         Aprenda Guitarra Sem Ter Uma Guitarra -
+  Vampyre - Lord Byron                                      Kurt Hemmis
+                                                            Frankenstein II - Mary Shelfie
+ PRATELEIRA 3                                               Incêndio de Roma: A História Completa -
+  Contabilidade Geral Vol. I - Osvaldo Caixa                Vinicio Ludos
+  Contabilidade Geral Vol. II - Osvaldo Caixa
+  Orgulho e Premonição - Joana Austina
+  Explosivos Industriais: Teoria e Prática
+   Vol. III - J. Gatilho
+
+
+
+
+                                                      47
+                                                   PÔSTER: LUTADORES DE RUA
+                                                   Pôster de “Lutadores de Rua”, um videogame de luta de uma
+                                                   franquia famosa nos anos 1990, com um lutador na frente e um   12
+                                                   homem forte e assustador de olhos dourados no fundo.
+
+                                         Perícia            DT    Informação
+
+                                                                  Ficou especialmente popular no Brasil
+                                                                  graças a um jogador profissional chamado
+                                                                  “Zika”, que sempre usava uma máscara
+                                         Aptidão                  para preservar seu anonimato. Porém, no
+                                                             8
+                                         (Atualidades)            fim de sua carreira, Zika lançou uma
+                                                                  autobiografia que acidentalmente revelou
+                                                                  sua identidade. O livro não foi muito bem
+                                                                  recebido pelo público.
+
+
+                                                     Os pôsteres são da juventude de Gustavo, mas ele aproveitou
+                                                     para colocá-los na parede como um lembrete a seus amigos
+                                                     para a senha da passagem secreta da estante. São quatro
+                                                     pôsteres no total, e cada pôster indica um livro específico.
+
+                                                     “Lutadores de Rua” é um pôster de videogame e indica o livro
+                                                     “Pixel a Pixel: Como Me Tornei Uma Lenda Dos Games”. Mostre
+                                                     o handout: HANDOUT 07 - PÔSTER LUTADORES DE RUA.
+
+
+
+
+          PÔSTER: UNIDOS DO INVISÍVEL FUTEBOL CLUBE
+          Pôster antigo de um time de futebol não muito conhecido, o          13
+          Unidos do Invisível Futebol Clube.
+
+Perícia             DT    Informação
+
+                          Time conhecido principalmente por uma
+                          polêmica de muitas décadas atrás, sobre
+Aptidão                   um gol que supostamente aconteceu durante
+                     8
+(Atualidades)             um jogo noturno. A bola apareceu dentro do
+                          gol, mas a luz havia caído e ninguém sabe o
+                          que realmente aconteceu.
+
+                          É o tipo de coisa que um colecionador
+                          colocaria em um local de destaque. É
+Intuição             6
+                          estranho estar pendurado na parede de um
+                          porão.
+
+
+            “Unidos do Invisível Futebol Clube” é um pôster de time de futebol
+            e indica o livro “O Gol que Ninguém Viu”. Mostre o handout:
+            HANDOUT 08 - PÔSTER UNIDOS DO INVISÍVEL FUTEBOL CLUBE.
+
+
+
+
+                                                             48
+          PÔSTER: ERIC TUFÃO 3 – A EXPLOSÃO EXPLOSIVA
+          Pôster de “Eric Tufão 3: A Explosão Explosiva”, filme de ação de uma    14
+          franquia popular nos anos 90, estrelado pelo ator Arnaldo Fritz.
+
+Perícia             DT    Informação
+
+                          É o terceiro filme de uma franquia de sucesso
+                          explosivo. Após esse filme, a franquia explodiu
+                          ainda mais, expandindo o universo em diversos
+                          spin-offs e até mesmo um reboot com uma
+Aptidão                   recepção explosivamente positiva pela crítica
+                     8
+(Atualidades)             e público. O ator principal, Arnaldo Fritz,
+                          acabou se tornando um dos produtores executivos
+                          da franquia Eric Tufão e continuou estrelando
+                          os filmes até sua explosiva morte trágica em um
+                          explosivo acidente de avião em 2009.
+
+Intuição             6    Atrás do protagonista há três explosões.
+
+
+            “Eric Tufão 3: A Explosão Explosiva” é um pôster de filme e indica o
+            terceiro volume de “Explosivos Industriais”. Existem outros volumes, mas
+            o correto é apenas o terceiro, assim como o filme. Mostre o handout:
+            HANDOUT 09 - PÔSTER ERIC TUFÃO 3 - A EXPLOSÃO EXPLOSIVA.
+
+
+
+
+                                                    PÔSTER: THUNDERLAND 2008
+                                                    Pôster de um festival de música que aconteceu há mais de uma
+                                                    década, o “Thunderland 2008”, incluindo uma programação com    15
+                                                    diversas bandas nacionais e internacionais.
+
+                                          Perícia            DT     Informação
+
+                                                                    O Thunderland 2008 é lembrado até hoje como
+                                                                    uma das edições mais marcantes do festival,
+                                                                    tendo o consagrado como um dos maiores
+                                                              6     festivais de rock do Brasil. A maioria das
+                                                                    bandas nesse pôster tocava rock ou metal,
+                                                                    com guitarristas famosos, e já não estão
+                                                                    mais ativas.
+                                          Aptidão
+                                          (Atualidades)             Dragões Metálicos, a atração principal do
+                                                                    evento, recentemente ocupou as manchetes
+                                                                    dos jornais: durante uma viagem à Itália,
+                                                                    um terrível acidente de monomotor matou
+                                                              8
+                                                                    todos os seus membros. Kurt Hemmis, o
+                                                                    guitarrista, havia lançado alguns livros
+                                                                    sobre música, que voltaram ao topo de vendas
+                                                                    após seu falecimento.
+
+
+                                                      “Thunderland 2008” é um pôster de festival de música e indica o
+                                                      livro “Aprenda Guitarra Sem Ter Uma Guitarra”. Mostre o handout:
+                                                      HANDOUT 10 - PÔSTER THUNDERLAND 2008.
+
+
+
+
+                                                               49
+          PORTA DE SAÍDA
+          Uma porta de metal reforçada, com uma tranca eletrônica e um painel numérico ao lado. O     16
+          painel é da marca TRANCATRON.
+
+   BLOQUEIO
+ DE ACESSO                    Senha 160322 (16 de março de 2022)
+ PAINEL ELÉTRICO
+
+Perícia              DT     Informação
+
+                            A tranca não tem marcas de sujeira. Sua instalação deve ser
+Pesquisar             8
+                            recente.
+
+                            Esse modelo de tranca eletrônica bloqueia temporariamente após
+                      6
+                            três tentativas erradas.
+
+Tecnologia                  Esse tipo de tranca eletrônica pode ser desbloqueada
+                     10     remotamente através de um app de celular, mas o app também
+                            requer a senha.
+
+
+            A única maneira de sair do local. A porta é resistente e só pode ser aberta através da senha
+            no teclado numérico.
+
+            O teclado numérico só aceita 6 dígitos. A senha antiga era o aniversário de Olívia, mas para
+            que sua esposa não descesse lá de surpresa, foi alterada por Gustavo para ser a senha do dia
+            em que suas vidas mudaram (o dia em que realizaram o ritual).
+
+            Após três tentativas erradas, a tranca fica bloqueada por 2 rodadas.
+
+            Se o teclado numérico for destruído, ainda é possível abrir a porta por um app no celular de
+            Gustavo, mas a senha ainda é necessária.
+
+
+
+
+                                                     50
+          O ÍDOLO DE PEDRA
+          Uma estatueta com cerca de 30 centímetros de altura e 5 kg, esculpida na forma de uma
+          pequena criatura com as pernas e os braços amarrados. Ela possui duas faces: de um lado,      17
+          um sorriso largo e de dentes pontudos, com fraturas que se conectam aos olhos; do outro, um
+          olhar penetrante e desconfortável.
+
+Perícia             DT    Informação
+
+                          Pela estrutura e material, essa estatueta parece existir há
+Aptidão                   séculos — ou mais! Porém, está muito bem conservada. Seu estilo
+                     8
+(Humanas)                 não é completamente alheio ao de outras obras encontradas na
+                          Antiga Mesopotâmia.
+
+                          Você se sente conectado ao Ídolo de Pedra. Há uma dívida que
+Intuição             6
+                          precisa ser paga.
+
+                          Em sua base, há um disco com um símbolo esculpido na pedra,
+                          similar a um carimbo. O símbolo está sujo, mas é facilmente
+                     6
+                          reconhecível: é o mesmo símbolo (e com o mesmo tamanho) das suas
+Percepção
+                          tatuagens.
+
+                     8    O símbolo na parte inferior está sujo de sangue seco.
+
+                          O interior é oco parece ter sido preenchido por um material
+Percepção            6    apodrecido, polposo e fedorento, similar a uma fruta nojenta e
+(apenas se                podre. É como se o Ídolo de Pedra tivesse entranhas.
+o ídolo for
+quebrado)                 Nas paredes internas da estatueta é possível perceber pequenas
+                     8
+                          marcações similares a arranhões, como uma contagem.
+
+
+            Sempre que um personagem toca no Ídolo, ele e os outros sentem um calafrio na espinha e
+            um espasmo doloroso na marca em seu pulso.
+
+
+
+
+                                                                                  Para intensificar
+                                                                                     a atmosfera,
+                                                                                     recomendamos
+                                                                                     que, quando os
+                                                                                     personagens
+                                                                                     descobrirem o Ídolo
+                                                                                     de Pedra, você mude
+                                                                                     a trilha de fundo para
+                                                                                     a música O Ídolo,
+                                                                                     também nos arquivos
+                                                                                     deste pacote.
+
+
+                                                      51
+Meses atrás, os personagens realizaram o ritual do Ídolo de Pedra. Eles foram fortalecidos,
+mas adquiriram uma dívida… uma dívida que agora devem pagar.
+A Maldição do Ídolo de Pedra é uma mecânica especial ativada quando os personagens abrem
+o armário e encontram a estatueta. Leia o texto a seguir:
+
+
+
+     Ao observarem o Ídolo de Pedra, ele observa de volta. Vocês sentem um
+     arrepio, sua visão embaça e suas pernas ficam fracas. A pressão cai, o
+     coração erra uma batida e fica difícil respirar. Por fim, a marca nos
+     corpos de vocês começa a pulsar, como se atendendo a um chamado.
+
+     O pavor de presenciar um objeto amaldiçoado é terrível. Mais terrível
+     ainda é saber que o destino de vocês está entrelaçado a ele.
+
+
+
+Ao terminar a narração, peça para todos os personagens fazerem um teste de Disciplina (DT 7).
+Quem passar perde 2 PD. Quem falhar perde 4 PD e fica a próxima rodada sem agir, chorando
+de pavor.
+
+A partir disso, comece uma contagem de rodadas. No início de determinadas rodadas, um efeito
+irá acontecer. Veja a tabela a seguir para saber em quais rodadas haverá um efeito e qual efeito
+será (um traço significa que nada acontece naquela rodada).
+
+
+
+
+A DÍVIDA                                 ÍDOLO QUEBRADO
+FOI PAGA                                 Se um personagem quebrar ou danificar o ídolo
+Assim que restarem apenas                de qualquer maneira, todos sentem o símbolo em
+dois personagens vivos, a                seus corpos pulsar e seus estômagos revirarem,
+                                         e imediatamente sentem que cometeram um
+dívida terá sido paga e os
+                                         erro grave. O personagem que quebrou o ídolo
+efeitos da maldição se en-
+                                         precisa fazer um teste de Vigor (DT 7). Se passar,
+cerram. Se houver cadáve-
+                                         perde 3 PV e 1 PD. Se falhar, perde 4 PV, 2 PD e fica
+res erguidos, eles se arras-
+                                         a próxima rodada sem agir, se retorcendo de dor.
+tam em direção ao Ídolo de
+Pedra e são absorvidos por               Além disso, se o ídolo estiver quebrado, sempre
+ele, desaparecendo no inte-              que os personagens sofrerem um efeito da maldi-
+rior da estatueta.                       ção (nas rodadas 4, 7 e 10), perderão +1 PV e +1 PD.
+
+
+                                              52
+                           A DÍVIDA PRECISA SER PAGA
+Rodada   Efeito
+
+          (Quando a maldição é ativada)
+  0
+          Todos os personagens fazem um teste de Disciplina (efeitos descritos acima).
+
+  1
+
+  2
+
+  3
+
+          “O símbolo pulsa em seus corpos e vocês sentem uma angústia insuportável.
+          Sentem também que essa angústia pode ser aplacada… basta ferir outra pessoa
+  4       marcada. A dívida precisa ser paga.”
+          Explique aos jogadores que, no final desta rodada, cada personagem perderá 1 PD a menos
+          que cause dano em outro personagem vivo.
+
+  5
+
+  6
+
+          “O símbolo pulsa mais uma vez. A angústia cresce.
+          A dívida precisa ser paga.”
+  7
+          Como na rodada 4, mas agora cada personagem perderá 2 PD a menos que cause dano em
+          outro personagem vivo.
+
+  8
+
+  9
+
+          “O símbolo pulsa ainda mais forte, como um coração batendo. Agora, além de
+          angústia, vocês sentem seus órgãos internos se revirando.
+  10      A dívida precisa ser paga.”
+          Como na rodada 4, mas agora cada personagem perderá 2 PV e 3 PD a menos que cause dano
+          em outro personagem vivo.
+
+  11
+
+  12
+
+          “Os cadáveres no porão começam a convulsionar e se desdobrar violentamente
+          para dentro de si, como se movidos por uma energia gravitacional interna.”
+          Adapte essa descrição conforme a situação. Por exemplo, se houver apenas o cadáver de
+  13      Gustavo, ele será o único a convulsionar. Mas se um personagem já tiver morrido, seu corpo
+          também será afetado.
+          Na prática, nada acontece nesta rodada. Porém, ela é um aviso do que virá a seguir — e de
+          que, na prática, esta é a última rodada que os personagens têm para escapar!
+
+          “Os cadáveres se reviram descontroladamente e se erguem. São bonecos de carne pulsante.
+          Então, avançam na direção de vocês.”
+          Nesta rodada, cada cadáver alcança o personagem mais próximo e o absorve, matando-o
+14 em
+          instantaneamente. Os dois se tornam uma massa de corpos conectados que se movem de
+diante
+          maneira ainda mais violenta.
+          Se ainda houver mais de dois personagens vivos, na rodada seguinte cada cadáver matará
+          mais um personagem.
+
+
+                                               53
+A SALA SECRETA
+Quando os jogadores acessarem a sala secre-
+ta de alguma forma (resolvendo o puzzle da              Vocês se deparam com o que, à
+estante ou pela ventilação), siga as seguintes          primeira vista, parece ser uma
+instruções:                                             grande sala de jogos, com as
+                                                        paredes revestidas com espuma
+Se os personagens não tiverem acessado o                acústica. Há uma mesa de poker
+                                                        e outra de sinuca, uma grelha de
+painel elétrico para ligar as luzes, leia:              churrasco com coifa conectada ao
+                                                        teto, um freezer bastante sujo,
+                                                        além de um armário de roupas e
+                                                        um computador desligado sobre uma
+                                                        mesa bagunçada.
+   Há claramente uma sala, mas ela
+   está um breu completo. Sem uma
+   fonte de luz, será impossível
+   explorá-la.
+
+                                                                MESA DE POKER
+                                                                Uma mesa com cartas jogadas e     18
+Se os personagens usarem a lanterna no                          fichas de poker.
+celular de Gustavo para navegar no escuro,
+                                                      Perícia             DT     Informação
+pergunte ao jogador para qual direção o seu
+personagem tenta ir e descreva o próximo                                         Uma cadeira
+ponto de interesse nessa direção, sem atu-                                       parece ter
+                                                      Percepção            6     sido derrubada
+alizar o mapa:
+                                                                                 seguindo a trilha
+                                                                                 de sangue no chão.
+
+
+
+   A lanterna é fraca e simples,                                   A mesa era usada por Gustavo e
+   mas funciona. Com ela, apenas                                   seus amigos para jogar partidas de
+   um ponto de interesse pode ser                                  poker. Até mesmo Alan e Victor
+   iluminado e investigado por vez.                                participaram de algumas jogatinas,
+                                                                   já que se tornaram amigos após
+                                                                   os resultados do ritual. A cadeira
+Se os personagens tiverem ativado a luz no                         caída foi resultado de Alan
+painel elétrico, revele o Mapa 02 (ou o Mapa                       esbarrar enquanto arrastava o
+03, caso já tenham também descoberto o duto                        corpo. Nenhuma outra informação
+de ventilação) e leia o seguinte:                                  relevante pode ser encontrada.
+
+
+
+
+                                                 54
+             MESA DE SINUCA
+             Uma mesa de bilhar simples, com bolas espalhadas e um taco de sinuca jogado por cima.    19
+               Assim como a mesa de poker, a mesa de sinuca era usada por Gustavo e seus amigos. Nada
+               relevante pode ser encontrado aqui.
+
+
+
+
+          GRELHA DE CHURRASCO
+          Uma grelha montada com uma coifa acima.                                                    20
+Perícia            DT    Informação
+
+                         Considerando o ambiente com isolamento acústico, o dono dessa
+                         sala provavelmente preparou um lugar para fazer churrasco e
+Intuição            6
+                         curtir com os amigos até tarde sem se preocupar em acordar o
+                         restante da família.
+
+                         A coifa se conecta ao teto, mas o espaço é pequeno demais para
+Percepção           6    conseguir escapar por ali. Há restos de carvão no fundo da
+                         grelha, mas não parece ter sido usada recentemente.
+
+
+            A grelha era usada por Gustavo para fazer churrasco com seus amigos no porão. Não tem
+            informações relevantes.
+
+
+
+
+             ARMÁRIO DE ROUPAS
+             Um armário de roupas aberto e revirado, com algumas peças espalhadas pelo chão.          21
+   Perícia              DT   Informação
+
+                             Entre as peças espalhadas, destacam-se uma camisa e uma jaqueta
+                             que parecem sujas de sangue. Checando os bolsos, você encontra
+   Percepção            6
+                             um molho de chaves e uma carteira de identidade. Mostre o
+                             handout: HANDOUT 11 - RG DE ALAN.
+
+
+                Ao matar Gustavo e arrastar seu corpo, as roupas de Alan ficaram sujas de sangue. Ele
+                então decidiu se trocar, usando roupas antigas que Gustavo guardava no armário. Para isso,
+                revirou o armário em busca de algo que fosse de seu tamanho, mas não encontrou, então
+                precisou se contentar com roupas grandes demais.
+
+                Alan sabia que o resto do grupo estava quase chegando, por isso fez tudo às pressas. Com
+                isso, jogou suas roupas manchadas de qualquer jeito e acabou esquecendo a identidade e o
+                molho de chaves que usou.
+
+                O molho de chaves 2 possui duas chaves com um pouco de sangue fresco nelas. Pelo
+                formato e tamanho, são chaves de cadeado. As chaves abrem:
+
+                 O cadeado no freezer
+
+                 O cadeado no armário de metal
+
+
+
+
+                                                      55
+          COMPUTADOR [EVIDÊNCIA-CHAVE]
+          Um computador antigo sobre uma mesa de escritório no canto da sala. Ao ser ligado,
+          o computador não aparenta pedir senha. Porém, ele é bastante lento e completamente   22
+          desorganizado. A área de trabalho tem dezenas de ícones e pastas nomeadas
+          “dasadasdads123” e derivados.
+
+                             ROLAGEM EQUAÇÃO 23 x 4 - 25 = 67
+    MECÂNICA
+                               10+       20s
+    DE ACESSO
+  COMPUTADOR                  7-9       15s
+ DESORGANIZADO
+ (HACK TÉCNICO)                6 ou
+                                         10s
+                              menos
+
+Perícia           DT    Informação
+
+                         A maioria dos papéis jogados ao redor do computador, também
+                   6     bagunçados, são documentos de contabilidade de várias empresas
+                         pequenas ou pessoas desconhecidas.
+Pesquisar
+                         Há também alguns laudos médicos e exames. O mais recente é de
+                   8     abril, que retornou com uma frase destacada: “Sem evidência de
+                         doença ou sintomas”.
+
+
+                         O computador era usado por Gustavo tanto para trabalho quanto
+                         para lazer, e ele claramente era uma pessoa desorganizada. Você
+                   6
+                         encontra a caixa de e-mail, mas ela pede uma verificação de dois
+                         fatores usando o celular de Gustavo.
+
+
+                         (Requer ter feito o hack social no celular de Gustavo.)
+
+                   6     Há algumas conversas que chamam a atenção, pois envolvem o
+Pesquisar ou
+                         nome de todos presentes neste porão.
+Tecnologia
+                         Mostre os handouts: HANDOUT 12A, HANDOUT 12B e HANDOUT 12C.
+
+
+
+                         (Requer ter feito o hack social no celular de Gustavo.)
+
+                   10    O e-mail de 12 de março marca um encontro “daqui a 4 dias”, ou
+                         seja, eles se encontraram pela primeira vez na casa de Gustavo no
+                         dia 16 de março.
+
+
+
+                         (Requer ter feito o hack social no celular de Gustavo.)
+
+                         Pela linguagem e comunicação das mensagens, parecia que Victor
+                         havia se tornado a pessoa mais próxima de Gustavo.
+Intuição           6
+                         3 ou 4      Eloísa não parecia manter muito contato.
+
+
+                         5    Kênia e Eloísa não pareciam manter muito contato.
+
+
+
+
+                                                    56
+COMPUTADOR (CONTINUAÇÃO)
+
+
+      O computador é de Gustavo, que o usava primariamente para jogar ou para colocar música
+      na caixa de som enquanto seus amigos estavam ali jogando sinuca e bebendo cerveja.
+      Os papéis ao redor são documentos de contabilidade da empresa de Gustavo e não são
+      relevantes para o caso.
+
+      Por outro lado, no computador é possível encontrar informações sobre o ritual, a doença
+      terminal de Gustavo e os e-mails trocados entre todos, nos quais combinam de se encontrar
+      para realizar o ritual do Ídolo de Pedra.
+
+      O computador não precisa de senha para ser usado, mas navegar pelas pastas bagunçadas
+      requer um hack técnico. A caixa de e-mail também não possui senha, mas para acessá-la é
+      necessário fazer uma verificação usando o celular de Gustavo — e este requer um hack social.
+
+      Essa é uma evidência-chave, pois os e-mails revelam o dia em que o ritual foi feito, que é a
+      senha da porta de saída.
+
+
+
+
+                                               57
+          FREEZER
+          Um freezer trancado com um cadeado. Um claro rastro de sangue se arrasta até ele, vindo do   23
+          altar de madeira na outra sala. Tanto o freezer quanto o cadeado parecem sujos de sangue.
+
+    BLOQUEIO                   DESTRANCAR (senha: 4d6 )
+ DE ACESSO                     ARROMBAR - DT Acumulada 12
+  CADEADO
+ DO FREEZER                    ITEM (molho de chaves 2    )
+
+                                                 CONTEÚDO
+
+Ao desbloquear o cadeado, uma visão de horror: o corpo de um homem completamente ensanguentado
+e com olhos vazios e sem vida. Ele está em uma posição perturbadora, com os membros torcidos para
+trás e o pescoço dobrado, como se tivesse sido descartado ali dentro.
+
+Mostre o handout: HANDOUTS 13 - CADÁVER DE GUSTAVO.
+
+                                        TESTE DE DISCIPLINA (DT 10)
+
+O horror de encontrar um corpo nessas condições abalaria qualquer um. Aqueles que falharem no teste
+perdem 1 PD.
+
+Perícia              DT        Informação
+
+Intuição              6        Por que alguém trancaria um freezer usado para churrasco?
+
+Sobrevivência         6        O sangue ainda é fresco, isso foi trancado há pouco tempo.
+
+
+            Gustavo mantinha um freezer aqui, onde gelava a bebida e guardava a carne que seria
+            preparada ao receber os amigos.
+
+            Após matar Gustavo e realizar o ritual usando seu corpo, Alan escondeu o cadáver no freezer
+            e trancou-o usando um dos cadeados que encontrou no porão. Porém, esqueceu as chaves
+            no bolso da jaqueta quando trocou de roupa.
+
+
+
+
+              FREEZER, O CORPO              (requer ter destrancado o freezer)
+              Há um cadáver ensanguentado dentro do freezer. É um homem adulto, por volta de seus 50
+              anos, coberto de sangue e com olhos vazios em um semblante perturbador. Olhar para ele faz
+                                                                                                           24
+              o estômago de qualquer um revirar.
+
+    Perícia               DT    Informação
+
+                                Em seu bolso há uma foto dobrada (mostre o handout: HANDOUT
+                          6     14 FOTO DE ANIVERSÁRIO) e, em seu pulso, uma pulseira de prata
+                                reluzente. Embora manchada de sangue, a pulseira parece nova.
+    Percepção
+                                O corpo apresenta a mesma marca que a de vocês. Contudo, ela
+                          8     parece estar “absorvida”, como se tivesse sido puxada para dentro
+                                do corpo.
+
+
+
+
+                                                         58
+FREEZER, O CORPO (CONTINUAÇÃO)
+
+Intuição
+(apenas              4    Vocês reconhecem o rosto do homem morto: é Gustavo.
+Victor e Alan)
+
+                          Ao presenciar o corpo, o símbolo em seu corpo reage, como se
+Intuição             6
+                          pulsasse.
+
+Medicina ou               O corpo tem três facadas nas costas, provavelmente a causa
+                     6
+Sobrevivência             da morte.
+
+                          Na parte de trás da foto dobrada, está anotado: “02/09/2022”. E,
+                     6    no interior da pulseira de prata, está gravado a laser o nome
+Pesquisar
+                          “Olívia - 10/08”.
+(requer ter
+encontrado a              A foto mostra uma vela de aniversário com o número “7” e balões
+pulseira e a foto)   10   de festa formando o nome “Laura”. Se ela fez 7 anos em 2022,
+                          então a data de nascimento é 02/09/2015.
+
+                          Presentes de prata são uma tradição para celebrar 25 anos de
+                     6
+                          casamento.
+Aptidão
+(Atualidades)             Se o presente de 25 anos é deste ano, então Gustavo e Olívia se
+                     10
+                          casaram em 10/08/1997.
+
+
+           Este é o corpo de Gustavo, que foi pego desprevenido por Alan e esfaqueado dentro de sua
+           própria casa. Depois de realizar o ritual, que envolvia misturar o sangue de Gustavo com alguns
+           componentes e tocá-lo mais uma vez com o Ídolo, Alan arrastou o cadáver até o freezer e o
+           escondeu ali dentro, trancando com um cadeado.
+           Apenas Alan e Victor reconhecem o rosto, já que o conheceram antes de 2022: é Gustavo.
+           Com os pertences no corpo de Gustavo (mais o RG dele, encontrado no Armário de Metal), é
+           possível encontrar informações suficientes para resolver o hack social de seu celular:
+            A pulseira foi um presente da esposa de Gustavo pelas bodas de prata (25 anos de
+             casamento). Essa pista revela o nome da esposa e a data de seu casamento:
+             Olívia - 10/08/1997.
+            A foto é do aniversário de sua filha. Revela o nome dela e o dia de seu nascimento:
+             Laura - 02/09/2015.
+
+
+
+
+                                                      59
+NARRAÇÃO FINAL
+Quando os personagens escaparem, ou quando todos morrerem, a missão chega ao fim.
+Leia o texto correspondente.
+
+
+
+PERSONAGENS                                             Após algumas horas de relatos e
+                                                        coleta de evidências, eles levam
+
+
+ESCAPAM
+                                                        vocês até um ambiente seguro,
+                                                        onde passam alguns dias isola-
+                                                        dos, em tratamento. Quando vocês
+                                                        perguntam o que acontece a partir
+                                                        de agora, eles respondem:
+
+                                                          Não se preocupem, a Ordem vai
+   As escadas levam a uma sala ilu-                     cuidar disso. Vocês estão em boas
+   minada no andar de cima, que                         mãos agora.
+   traz a sensação de liberdade.
+   Lá fora, as ruas da cidade es-
+   tão tranquilas, completamente
+   alheias a tudo que aconteceu. O
+   porão sombrio e sangrento, com
+   todo o inferno dentro dele, ficou
+   para trás. Vocês sobreviveram à
+   Maldição do Ídolo de Pedra… pelo
+                                                       TODOS MORREM
+   menos, por enquanto.
+
+
+                                                        Vocês estão mortos. Seus cadáve-
+Neste momento, pergunte a cada persona-                 res convulsionam cada vez mais,
+gem sobrevivente o que ele gostaria de fazer            se desdobrando, se mesclando e se
+a partir daqui, de forma ampla. Então, continue         arrastando em direção ao Ídolo de
+a narração.                                             Pedra. Ao tocarem na estatueta,
+                                                        os corpos começam a ser absorvi-
+                                                        dos para seu interior. Todas as
+                                                        memórias, momentos, sentimentos e
+                                                        sonhos são devorados, lentamente.
+   Pouco tempo depois de escaparem,
+   vocês são contatados por uma or-                     E, enquanto os corpos são con-
+   ganização. Eles se apresentam                        sumidos, as rachaduras, danos e
+   como investigadores de crimes…                       marcas do tempo na superfície
+   inabituais. Vocês são levados de                     da estatueta desaparecem e se
+   van até uma localização não iden-                    restauram, com sua aparência se
+   tificável, onde são questionados                     tornando cada vez mais pristina
+   sobre tudo o que aconteceu e o                       e imaculada, assim como no dia
+   que viveram. Ao contrário do que                     em que foi esculpida.
+   vocês esperavam, essas pessoas
+   não tratam os seus relatos como                      A maldição foi concluída, a dí-
+   insanidade. Na verdade, parecem                      vida foi paga e o Ídolo de Pedra
+   saber mais sobre tudo isso do que                    está renovado… afinal, todos me-
+   vocês mesmos.                                        recem um novo começo.
+
+
+
+
+                                                  60
+ O QUE VEM
+DEPOIS DO FIM
+Agora que você terminou de jogar A Maldição do Ídolo de
+Pedra Ato I, acesse o formulário e deixe seu feedback!
+
+
+
+     RESPONDA O FORMULÁRIO
+
+Nas próximas páginas, você descobrirá todo o segredo
+por trás de A Maldição do Ídolo de Pedra. Porém, se você
+não for o mestre, recomendamos que não leia! A histó-
+ria continua — e se conclui — no Ato II, disponível para
+assinantes dos Arquivos Secretos nos níveis Recruta e
+Agente de Elite. Venha jogar para descobrir todos os mis-
+térios enquanto interpreta um agente da Ordo Realitas!
+
+
+
+
+                           61
+O QUE DE FATO
+ACONTECEU
+            ATENÇÃO!
+            A história a seguir revela os acontecimentos completos de TODA a história, incluindo
+            informações que podem ser descobertas pelos agentes no Ato II. Se você planeja
+            jogar o Ato II, não revele o texto para seus jogadores, pois ele está cheio de spoilers!
+
+
+
+
+Entre 2021 e 2022, seis pessoas se encontram           teral amiotrófica bulbar. Mas isso não afetou
+em um grupo de apoio online para doentes               sua rotina, que já não tinha muito encanto.
+terminais. Passaram seus réveillons de 2021
+para 2022 em lugares diferentes e nada espe-           KÊNIA, A ESTUDANTE, tinha um futuro
+cífico aconteceu nessa data. Porém, quando              brilhante pela frente, mas descobriu ter uma
+acordam presos em um porão desconhecido,                forma de lúpus que não responde aos tra-
+os fogos do ano novo de 2022 são sua última             tamentos. Desanimada, abandonou a fa-
+memória.                                                culdade e os treinos de natação, e passou
+                                                        a negligenciar o trabalho.
+ ALAN, O ARQUEÓLOGO, já sabia de seu                  GUSTAVO, O CONTADOR, tem esposa e
+  tumor cerebral há um tempo, e sabia que               filha, e estava deprimido por saber que não
+  em breve embarcaria na sua última chance              veria sua menina crescer. O estado das cé-
+  de deixar um legado — uma expedição para              lulas cancerígenas nos pulmões impossi-
+  um sítio arqueológico recém-descoberto                bilitavam um transplante tradicional para
+  no Iraque.                                            curá-lo. Tudo que podia fazer era aproveitar
+ VICTOR, O PROFESSOR DE LITERATURA,                    seus últimos meses de vida.
+  descobriu um câncer gástrico já em estágio
+  avançado. Continuou dando aulas, pois era           No início de 2022, Alan partiu para o que ima-
+  isso que amava fazer, mas buscava apoio             ginava ser a última expedição internacional
+  emocional na internet.                              de sua vida. Nela, encontrou evidências de um
+                                                      grupo conhecido como o “Conselho”, líderes
+ ELOÍSA, A INFLUENCER, tem uma esposa                de um vilarejo que sobreviveram por três ge-
+  e um filho. Só descobriu sua condição ter-          rações através de um ritual responsável por
+  minal após o réveillon.
+                                                      aumento de longevidade e curas milagrosas.
+ EDGAR, O TRABALHADOR PORTUÁRIO,                     O ritual era realizado com uma estatueta, um
+  teve uma vida mais dura. Após a morte de            Ídolo de Pedra com um símbolo específico em
+  sua mãe, tornou-se um homem solitário.              sua parte inferior. Impressionado e esperan-
+  Descobriu recentemente uma doença de-               çoso, Alan escondeu seus achados e os con-
+  generativa agressiva chamada esclerose la-          trabandeou em seu retorno ao Brasil.
+
+
+                                                 62
+Traduzindo as inscrições, Alan encontrou as             ALAN, O ARQUEÓLOGO, revisitou obses-
+instruções para o ritual. Porém, para com-               sivamente seus achados do Iraque para
+pletá-lo, precisava de outras pessoas — as               encontrar mais contexto sobre o ritual re-
+instruções indicavam um mínimo de cinco                  alizado.
+participantes. Não foi difícil convencer outros         VICTOR, O PROFESSOR, ao descobrir que
+membros do grupo de apoio a participarem. A              rituais paranormais eram reais, tornou-se
+coisa toda parecia charlatanismo, mas, quando            obcecado por eles. Assim, começou a pro-
+a morte está chegando, qualquer esperança                curar outro ritual que pudesse ajudá-lo com
+é melhor do que nenhuma.                                 os tormentos psicológicos.
+
+O ritual não aparentava envolver qualquer sa-           ELOÍSA, A INFLUENCER, investiu em remé-
+crifício terrível. Exigia apenas desenhar sím-           dios pesados para dormir. Como seu corpo
+bolos esquisitos em uma cômoda de madeira                resistia cada vez mais a eles, passou a tomar
+                                                         doses mais altas, que seriam capazes de
+que usaram como altar no porão da casa de
+                                                         matar uma pessoa, apenas para conseguir
+Gustavo, realizar uma sequência de movimen-
+                                                         ter algumas horas de sono.
+tos, misturar alguns líquidos com gotas de
+sangue dos envolvidos e, no fim, usar o resul-          EDGAR, O TRABALHADOR PORTUÁRIO,
+tado nojento dessa mistura para “carimbar”               apenas continuou vivendo sua vida espe-
+seus corpos com o símbolo marcado na parte               rando que em algum momento isso fosse
+inferior do Ídolo de Pedra.                              passar. Pelo menos estava sendo mais pro-
+                                                         dutivo e recebendo mais no trabalho.
+Além de um arrepio na espinha e uma atmos-
+                                                        KÊNIA, A ESTUDANTE, além das aulas de
+fera pesada, nenhum deles sentiu nada dife-              direito, passou a frequentar o laboratório
+rente de imediato. Porém, isso estava prestes            de biomedicina de sua universidade. Ela
+a mudar.                                                 buscou na ciência e na tecnologia uma res-
+                                                         posta racional para a cura milagrosa e os
+                                                         subsequentes pesadelos.
+
+A VIRADA                                                GUSTAVO, O CONTADOR, decidiu apro-
+                                                         veitar a sua vida renovada e passar mais
+                                                         tempo com a família, a quem negligenciava
+Nos meses seguintes, os sintomas de suas do-
+                                                         anteriormente.
+enças desapareceram. Exames médicos con-
+firmaram: todos estavam inexplicavelmente              Com a situação piorando, Alan finalmente en-
+curados. Mais do que isso, todos ficaram ainda         controu a resposta. Infelizmente, ela era pior
+mais saudáveis do que antes das doenças,               do que poderia imaginar. A estatueta não era
+com mais energia no dia a dia e performances           uma entidade, mas sim uma ferramenta. Um
+físicas e mentais superiores.                          objeto amaldiçoado feito para realizar um “con-
+                                                       trato”, um vínculo de sacrifício entre pessoas.
+Até que, alguns meses depois, sintomas ad-             O acordo: duas vidas seriam prolongadas, mas
+versos começaram a aparecer. Tremedeiras               ao custo de todas as demais. Uma transferên-
+inexplicáveis, suor frio, insônia, pesadelos e,        cia vital através da própria carne.
+principalmente, o sentimento constante de
+que algo se aproximava.                                Nos meses iniciais, a maldição age como uma
+                                                       “defesa”, eliminando qualquer ameaça ao corpo
+Inicialmente, cada um tentou lidar à sua ma-           daqueles vinculados em seu acordo. Afinal, é
+neira.                                                 importante que estejam saudáveis e protegi-
+
+
+                                                  63
+dos para que possam ser sacrificados. Por isso,        ofereceram bebida a eles enquanto “espe-
+todos melhoraram: estavam sendo cultivados             ravam Gustavo voltar de um compromisso”.
+para o abate. Agora, chegava o momento de
+realizar os sacrifícios. A dívida precisava ser        Edgar e Kênia caíram no truque, mas Victor
+paga.                                                  havia sido alertado por Gustavo e não bebeu.
+                                                       Ao perceber que os outros caíram inconscien-
+                                                       tes, o professor fingiu desmaiar para pegar
+
+
+A REAÇÃO
+                                                       Alan e Eloísa desprevenidos.
+
+                                                       Alan e Eloísa arrastaram Edgar, Kênia e Victor
+                                                       até o porão. Enquanto faziam isso, conver-
+Alan contatou todos por e-mail, avisando que
+                                                       saram entre si, nervosos com o fato de que
+havia encontrado uma solução para o proble-
+                                                       teriam que matar três pessoas, revelando a
+ma e marcando uma nova reunião no porão de
+                                                       Victor o seu plano. Acorrentaram Edgar para
+Gustavo. Gustavo respondeu dizendo que sua
+                                                       ser sacrificado primeiro, pois o estivador era
+esposa e filha não estariam em casa no final
+                                                       o mais perigoso, e prenderam Kênia em um
+de semana, então o momento era perfeito.
+                                                       dos depósitos. Quando Alan estava prestes a
+Alan foi até a casa de Gustavo horas antes             prender Victor no outro depósito, o professor
+do combinado, pois o considerava seu amigo             o golpeou na cabeça com a tigela ritualística
+e queria que ele vivesse. Explicou o que pre-          que estava ao lado. Victor então pegou o mo-
+cisava ser feito, mas Gustavo não concordou            lho de chaves da mão de Alan, se trancou no
+e pegou seu telefone para alertar os outros,           depósito para impedir Eloísa de entrar e come-
+começando por Victor. Antes que Gustavo                çou a realizar o ritual para apagar a memória
+conseguisse explicar tudo, Alan o esfaqueou            do arqueólogo.
+com a mesma faca que havia usado para en-
+                                                          3 Tentando fazer Victor parar, Eloísa ame-
+talhar os símbolos no altar de madeira.
+                                                          açou matar Edgar. Nervosa, acabou real-
+Desesperado, Alan contatou Eloísa. Imagi-                 mente matando o estivador.
+nou que, como ela era a única com filhos, seria
+a mais fácil de convencer. Ele pediu para ela          Victor queria apagar a existência do ritual da
+chegar antes dos outros, mentiu que Gusta-             cabeça de Alan. Dessa forma, seria o único ca-
+vo o atacara e ele apenas se defendera e a             paz de concluí-lo, e obrigatoriamente seria um
+convenceu a sacrificar os demais. Relutante            dos dois sobreviventes. Victor sabia que Alan
+e assustada, ela aceitou, e eles realizaram o          havia descoberto o ritual no começo desse
+sacrifício com o corpo de Gustavo.                     ano, então decidiu apagar todas as memórias
+                                                       de Alan desde então. Porém, a inexperiência
+Alan então arrastou o corpo de Gustavo até             de Victor, combinada com o nervosismo do
+o freezer, e se sujou de sangue no processo.           momento, fez com que ele definisse o alvo de
+Então, vasculhou um armário de Gustavo e               seu ritual como todos os presentes, em vez
+pegou roupas limpas para vestir. Contudo, ao           de apenas Alan.
+voltar pela passagem secreta, enroscou a rou-
+pa grande demais nas engrenagens e o tecido            Assim, todos dentro daquele porão tiveram
+rasgou e emperrou o mecanismo.                         as memórias de 2022 apagadas. Acordaram
+                                                       em um porão escuro em outubro desse ano,
+Depois disso, os dois envenenaram algumas              como se tivessem acabado de viver a virada
+garrafas com os remédios para dormir de Elo-           de 2021 para 2022, sem saber que já estavam
+ísa. Quando Edgar, Kênia e Victor chegaram,            vivendo o seu novo começo.
+
+
+                                                  64
+103
+Pisamos no acelerador, recolhemos feedbacks e aqui está
+a versão 1.1!
+
+O que alteramos:
+
+ Erros gramaticais;
+ Nomes incorretos dos handouts;
+ Textos repetidos e/ou deslocados;
+ Ajustes de diagramação.
+
+O que NÃO alteramos:
+
+ Regras de jogo;
+ História dos dois atos.
+
+Por que não houve alterações nas regras? Porque
+muita gente ainda não teve a oportunidade de jogar, prin-
+cipalmente o Ato II. Queremos que o máximo possível de
+jogadores tenha a experiência proposta antes de qualquer
+alteração de regras acontecer. Após recebermos uma leva
+maior de feedbacks sobre as mecânicas, alguma mudança
+pode acontecer.
+
+Por que não houve um registro de atualizações como
+os outros Arquivos Secretos? Para quem não sabe ou já
+nos acompanha, vale lembrar que os registros são desti-
+nados a alterações de regras que modificam a experiência
+de jogo. Nesse caso, a versão 1.1 não muda a experiência,
+apenas ajusta o texto.
+
