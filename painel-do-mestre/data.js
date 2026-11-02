@@ -1,13 +1,13 @@
 window.DATA = {
   doorCode: "160322",
   survivorsNeeded: 2,
-  players: 3,
 
   tvStart: {
     alan: { x: 50, y: 27 },
     victor: { x: 56, y: 27 },
     eloisa: { x: 34, y: 44 },
     edgar: { x: 27, y: 36 },
+    kenia: { x: 53, y: 12 },
     gustavo: { x: 81, y: 14 }
   },
 
@@ -30,29 +30,64 @@ window.DATA = {
       id: "eloisa", name: "Eloísa", profile: "Analista, Artista", pvMax: 12, pvStart: 12, pdMax: 14,
       abilities: "Avaliação, Foco Emocional", crime: "d6", crimeTries: 2,
       start: "Livre, ao lado do altar. É a melhor em Tecnologia do grupo (d6).",
-      secret: "Cúmplice do Alan. Drogou as bebidas com o remédio dela. Mesa de 3: foi ela quem matou o Edgar com a faca de churrasco, porque ele parecia prestes a acordar (ela não lembra). Roupa de academia (estranha pra ela). Fone bluetooth: \"Mensagem de Alan: 'Venha imediatamente', enviada há 4 horas\".",
+      secret: {
+        3: "Cúmplice do Alan. Drogou as bebidas com o remédio dela. Mesa de 3: foi ela quem matou o Edgar com a faca de churrasco, porque ele parecia prestes a acordar (ela não lembra). Roupa de academia (estranha pra ela). Fone bluetooth: \"Mensagem de Alan: 'Venha imediatamente', enviada há 4 horas\".",
+        4: "Cúmplice do Alan. Drogou as bebidas com o remédio dela. Roupa de academia (estranha pra ela). Fone bluetooth: \"Mensagem de Alan: 'Venha imediatamente', enviada há 4 horas\"."
+      },
       skills: { Tec: "d6+d8", Int: "d8+d6", Pesq: "d6+d8", Perc: "d6+d8", Atl: "d4+d8", Acro: "d6+d8", Disc: "d6+d6" }
     },
     {
-      id: "edgar", name: "Edgar", tvName: "Homem no altar", startStatus: "morto", profile: "Executor, Operário", pvMax: 18, pvStart: 18, pdMax: 10,
+      id: "edgar", name: "Edgar", playableFrom: 4, startStatus: "inconsciente", profile: "Executor, Operário", pvMax: 18, pvStart: 18, pdMax: 10,
       abilities: "Esforço e Suor, Ímpeto", crime: "d6", crimeTries: 2,
-      start: "Mesa de 3: não é jogável. Já está morto, acorrentado no altar, com a garganta cortada e a faca de churrasco ao lado.",
-      secret: "A Eloísa o matou antes de o Alan terminar de arrastar o Victor, porque ele parecia prestes a acordar. Era o primeiro a ser sacrificado.",
+      start: "Acorrentado no altar, desacordado. Acorda na rodada 2 (um passo a menos em testes físicos nessa rodada).",
+      secret: "Vítima: seria o primeiro sacrificado. Sem pertences, boca seca, formigamento.",
+      corpse: {
+        tvName: "Homem no altar",
+        start: "Mesa de 3: não é jogável. Já está morto, acorrentado no altar, com a garganta cortada e a faca de churrasco ao lado.",
+        secret: "A Eloísa o matou antes de o Alan terminar de arrastar o Victor, porque ele parecia prestes a acordar. Era o primeiro a ser sacrificado."
+      },
       skills: { Tec: "d4+d6", Int: "d4+d6", Pesq: "d4+d6", Perc: "d6+d6", Atl: "d8+d10", Acro: "d4+d10", Disc: "d4+d6" }
+    },
+    {
+      id: "kenia", name: "Kênia", playableFrom: 5, startStatus: "inconsciente", profile: "Analista, Profissional de Escritório", pvMax: 12, pvStart: 12, pdMax: 12,
+      abilities: "Avaliação, Conhecimento Técnico", crime: "d4", crimeTries: 1,
+      start: "Trancada no Depósito A, desacordada, com o molho de chaves 1 caído perto dela. Acorda na rodada 2 (um passo a menos em testes físicos nessa rodada). É a melhor em Tecnologia (d8) e a única com Atualidades (d6).",
+      secret: "Vítima. O Victor jogou as chaves para ela enquanto fazia o ritual, esperando que ela acordasse e soltasse os outros. Sem pertences, boca seca, formigamento.",
+      skills: { Tec: "d8+d10", Int: "d6+d6", Pesq: "d6+d10", Perc: "d6+d10", Atl: "d6+d6", Acro: "d6+d6", Disc: "d6+d6", Atual: "d6+d10" }
     }
   ],
 
-  skillNames: { Tec: "Tecnologia", Int: "Intuição", Pesq: "Pesquisar", Perc: "Percepção", Atl: "Atletismo", Acro: "Acrobacia", Disc: "Disciplina" },
+  skillNames: { Atual: "Aptidão (Atualidades)", Tec: "Tecnologia", Int: "Intuição", Pesq: "Pesquisar", Perc: "Percepção", Atl: "Atletismo", Acro: "Acrobacia", Disc: "Disciplina" },
 
   roundReminders: {
-    1: [
-      "Eloísa livre ao lado do altar. Alan e Victor trancados no Depósito B. No altar, o corpo do Edgar, que ninguém reconhece.",
-      "Mesa de 3, leia ao fim da abertura (p. 33): \"Por fim, todos vocês olham com atenção para o homem acorrentado sobre o balcão. A camisa dele está ensopada de sangue e ele parece não estar respirando.\"",
-      "Música: \"O Porão\". Cada jogador faz uma ação por rodada."
-    ],
-    2: [
-      "No fim desta rodada: se ninguém examinou o próprio corpo, todos notam o símbolo \"tatuado\" no pulso."
-    ]
+    1: {
+      3: [
+        "Eloísa livre ao lado do altar. Alan e Victor trancados no Depósito B. No altar, o corpo do Edgar, que ninguém reconhece.",
+        "Mesa de 3, leia ao fim da abertura (p. 33): \"Por fim, todos vocês olham com atenção para o homem acorrentado sobre o balcão. A camisa dele está ensopada de sangue e ele parece não estar respirando.\"",
+        "Música: \"O Porão\". Cada jogador faz uma ação por rodada."
+      ],
+      4: [
+        "Eloísa livre ao lado do altar. Alan e Victor trancados no Depósito B. Edgar acorrentado e desacordado.",
+        "Música: \"O Porão\". Cada jogador faz uma ação por rodada."
+      ],
+      5: [
+        "Eloísa livre ao lado do altar. Alan e Victor trancados no Depósito B. Edgar acorrentado e desacordado. Kênia trancada e desacordada no Depósito A, com o molho de chaves 1.",
+        "Música: \"O Porão\". Cada jogador faz uma ação por rodada."
+      ]
+    },
+    2: {
+      3: [
+        "No fim desta rodada: se ninguém examinou o próprio corpo, todos notam o símbolo \"tatuado\" no pulso."
+      ],
+      4: [
+        "Edgar acorda nesta rodada, com um passo a menos em testes físicos. Leia a p. 33.",
+        "No fim desta rodada: se ninguém examinou o próprio corpo, todos notam o símbolo \"tatuado\" no pulso."
+      ],
+      5: [
+        "Edgar e Kênia acordam nesta rodada, com um passo a menos em testes físicos. Leia a p. 33.",
+        "No fim desta rodada: se ninguém examinou o próprio corpo, todos notam o símbolo \"tatuado\" no pulso."
+      ]
+    }
   },
 
   curse: [
@@ -65,12 +100,19 @@ window.DATA = {
   ],
 
   steps: [
-    { id: "celas", title: "Sair das celas", text: "Eloísa abre o Depósito B (Alan e Victor) ou o Depósito A (onde estão as chaves 1)." },
+    { id: "celas", title: "Sair das celas", text: {
+      3: "Eloísa abre o Depósito B (Alan e Victor) ou o Depósito A (onde estão as chaves 1).",
+      4: "Eloísa abre o Depósito B (Alan e Victor) ou o Depósito A (onde estão as chaves 1). Soltar o Edgar: chave pequena do molho 1, destrancar (4d4) ou arrombar (DT 10).",
+      5: "A Kênia está no Depósito A com as chaves 1: ela pode abrir a própria porta e as outras por dentro. Ou a Eloísa abre o Depósito B. Soltar o Edgar: chave pequena do molho 1, destrancar (4d4) ou arrombar (DT 10)."
+    } },
     { id: "painel", title: "Painel elétrico (Depósito A)", text: "Hack técnico pra entender. Disjuntor \"Porão\" (ligado) e \"Segredo\" (desligado). O certo é deixar os dois ligados." },
     { id: "sala", title: "Entrar na sala secreta", text: "Estante: os 4 livros certos e depois Sustentar. Ou duto de ventilação: Alcançar e depois Arrombar." },
     { id: "roupas", title: "Armário de roupas (sala secreta)", text: "Roupas ensanguentadas do Alan, RG do Alan (Handout 11) e molho de chaves 2 (abre o freezer e o armário de metal)." },
     { id: "freezer", title: "Freezer", text: "Corpo do Gustavo (Handout 13). Disciplina DT 10, quem falha perde 1 PD. Foto (Handout 14): Laura nasceu em 02/09/2015. Pulseira de prata \"Olívia - 10/08\": casaram em 10/08/1997." },
-    { id: "armario", title: "Armário de metal", text: "Ídolo de Pedra, jaqueta com o RG do Gustavo (Handout 03: Gustavo Alves de Campos, 07/06/1978) e anotações (Handout 04). Mesa de 3: a faca não está aqui, está no altar, ao lado do Edgar. Abrir ativa a maldição." },
+    { id: "armario", title: "Armário de metal", text: {
+      3: "Ídolo de Pedra, jaqueta com o RG do Gustavo (Handout 03: Gustavo Alves de Campos, 07/06/1978) e anotações (Handout 04). Mesa de 3: a faca não está aqui, está no altar, ao lado do Edgar. Abrir ativa a maldição.",
+      4: "Ídolo de Pedra, faca de churrasco, jaqueta com o RG do Gustavo (Handout 03: Gustavo Alves de Campos, 07/06/1978) e anotações (Handout 04). Abrir ativa a maldição."
+    } },
     { id: "celular", title: "Celular do Gustavo", text: "Na mesa embaixo do duto. Hack social, 4 respostas certas. Depois: grupo \"Reunião\" (05A), conversas com Alan (05B) e Victor (05C), app TRANCATRON." },
     { id: "computador", title: "Computador (sala secreta)", text: "Precisa do disjuntor \"Segredo\" e do celular desbloqueado. Hack técnico. E-mails 12A, 12B, 12C: o 12A, de 12/03/2022, marca o encontro \"daqui a 4 dias\" = 16/03/2022." },
     { id: "porta", title: "Porta de saída", text: "Senha 160322. Três erros bloqueiam o teclado por 2 rodadas. Quando o painel religa, a tela pisca \"DD/MM/AA\"." }
@@ -79,7 +121,8 @@ window.DATA = {
   crimeTries: "Tentativas de destrancar por rodada, pela perícia Crime: d4 = 1, d6 = 2, d8 = 3, d10 = 4, d12 = 5.",
 
   locks: [
-    { id: "depA", name: "Porta do Depósito A", dice: 3, sides: 6, maxTries: 3, breakDT: 10, breakPA: 10, key: "Chaves 1" },
+    { id: "depA", name: "Porta do Depósito A", dice: 3, sides: 6, maxTries: 3, breakDT: 10, breakPA: 10, key: "Chaves 1", note: { 5: "A Kênia está presa aqui dentro com as chaves 1: pode abrir por dentro." } },
+    { id: "correntes", name: "Correntes do Edgar", minPlayers: 4, dice: 4, sides: 4, maxTries: 2, breakDT: 10, breakPA: 10, key: "Chaves 1", note: "Edgar pode arrombar com o próprio corpo." },
     { id: "depB", name: "Porta do Depósito B", dice: 3, sides: 6, maxTries: 3, breakDT: 7, breakPA: 10, key: "Chaves 1" },
     { id: "armario", name: "Armário de metal", dice: 5, sides: 6, maxTries: 3, breakDT: 7, breakPA: 10, key: "Chaves 2", warn: "Abrir ativa a maldição. Arrombar quebra o Ídolo e as anotações passam de DT 6 pra DT 10. Intuição DT 6 avisa: \"Tem certeza de que quer arrombar?\"" },
     { id: "freezer", name: "Freezer", dice: 4, sides: 6, maxTries: 3, breakDT: 7, breakPA: 12, key: "Chaves 2", note: "Tentativas e arrombamento são sugestões (o livro é ambíguo)." },
@@ -157,13 +200,15 @@ window.DATA = {
       { id: "f-alan", file: "fichas/alan.jpg", title: "Ficha do Alan" },
       { id: "f-victor", file: "fichas/victor.jpg", title: "Ficha do Victor" },
       { id: "f-eloisa", file: "fichas/eloisa.jpg", title: "Ficha da Eloísa" },
-      { id: "f-edgar", file: "fichas/edgar.jpg", title: "Ficha do Edgar" }
+      { id: "f-edgar", file: "fichas/edgar.jpg", title: "Ficha do Edgar", note: "Só com 4 ou 5 jogadores." },
+      { id: "f-kenia", file: "fichas/kenia.jpg", title: "Ficha da Kênia", note: "Só com 5 jogadores." }
     ]},
     { group: "Históricos (entregue em segredo, um pra cada)", secret: true, items: [
       { id: "s-alan", file: "historicos/alan.jpg", title: "Histórico do Alan" },
       { id: "s-victor", file: "historicos/victor.jpg", title: "Histórico do Victor" },
       { id: "s-eloisa", file: "historicos/eloisa.jpg", title: "Histórico da Eloísa" },
-      { id: "s-edgar", file: "historicos/edgar.jpg", title: "Histórico do Edgar" }
+      { id: "s-edgar", file: "historicos/edgar.jpg", title: "Histórico do Edgar", note: "Só com 4 ou 5 jogadores." },
+      { id: "s-kenia", file: "historicos/kenia.jpg", title: "Histórico da Kênia", note: "Só com 5 jogadores." }
     ]}
   ],
 
@@ -172,7 +217,7 @@ window.DATA = {
     "O Ídolo é um contrato: só dois sobrevivem, os outros são sacrificados.",
     "Hoje (13/10/2022) Alan matou o Gustavo e escondeu o corpo no freezer. Convenceu a Eloísa, e os dois drogaram as bebidas.",
     "Victor, avisado, não bebeu. Acertou o Alan com a tigela ritual, se trancou no Depósito B e fez um ritual pra apagar a memória do Alan. Errou o alvo: apagou a memória de todos desde o réveillon de 2021 para 2022.",
-    "Com 4 jogadores, a Kênia não veio. O nome dela aparece nos handouts; ninguém sabe onde ela está."
+    { 3: "Com 3 ou 4 jogadores, a Kênia não veio. O nome dela aparece nos handouts; ninguém sabe onde ela está.", 5: "Com 5 jogadores, a Kênia estava presa no Depósito A. O Victor jogou as chaves para ela, esperando que acordasse e soltasse os outros." }
   ],
 
   traps: [

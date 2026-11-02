@@ -87,6 +87,27 @@
         "Você fica parado. Não por medo. Por não ver mais motivo para se mexer.",
         "O espumante barato, os fogos pela janela, a casa vazia. Foi assim que o ano começou. Talvez seja assim que ele acabe."
       ]
+    },
+    kenia: {
+      alto: [
+        "Você respira como fazia na piscina: puxa o ar, segura, solta devagar. Funcionava antes de a doença tirar a natação de você.",
+        "Você pensa nos livros de Direito parados na estante de casa. O concurso, a vida diferente. Ainda dá tempo, se você sair daqui.",
+        "Você usa a voz do call center por dentro: calma, educada, resolvendo o problema de outra pessoa. Só que o problema agora é seu."
+      ],
+      baixo: [
+        "Para que se esforçar em nome de um futuro que não vai vir? A pergunta volta, igual à que você se fazia antes do réveillon.",
+        "Suas articulações doem só de lembrar como era a crise. Você espera a dor chegar, e ela não chega. Isso assusta mais.",
+        "Funcionária do mês. Você ri sozinha, sem graça. Ninguém do escritório vai perceber que você não voltou."
+      ],
+      limite: [
+        "A última coisa de que você lembra é a contagem lá fora e os fogos. Você estava sozinha naquela hora também.",
+        "Você tenta organizar os fatos como numa prova de Direito: quem, onde, quando. Nada fecha, e a cabeça gira.",
+        "O corpo que você treinou na piscina por anos parece não ser mais seu. Você não sabe se ainda consegue nadar contra isso."
+      ],
+      zero: [
+        "Você se encolhe num canto, como no escritório vazio. Ninguém liga, ninguém atende. Só o silêncio.",
+        "O futuro que você planejava some de uma vez. Não sobra plano, não sobra prova, só o medo."
+      ]
     }
   };
 

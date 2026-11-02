@@ -1,19 +1,21 @@
 # OP2 playtest: "A Maldição do Ídolo de Pedra", Act I
 
-Game-master kit built to run the Ordem Paranormal RPG II playtest (Alpha v1.1), Act I, at home.
-First session: 2026-11-01, 3 players (Alan, Victor, Eloísa; Edgar dropped out, so the book's 3-player variant is active).
+Game-master kit built to run the Ordem Paranormal RPG II playtest (Alpha v1.1), Act I, at home, for 3, 4 or 5 players.
+First used on 2026-11-01 with 3 players.
 
-The game content (book, character sheets, handouts, maps, music, tokens) belongs to the publisher and is here for private use only.
-Keep this repository private.
+**Portuguese setup guide for game masters: [COMO-USAR.md](COMO-USAR.md).**
+
+The game content (book, character sheets, histories, handouts, maps, music, tokens) belongs to the publisher of Ordem Paranormal RPG II and comes from the public playtest.
+This repository only adds GM tools around it.
 
 ## What is here
 
 | Path | What it is |
 |---|---|
 | `folha-do-mestre-idolo-de-pedra-ato-1.md` | GM sheet in pt-BR: what to explain to players, step-by-step progression, locks, hacks, curse, house rules, PD narration lines. |
-| `painel-do-mestre/` | Browser GM panel (`index.html` + `app.js`), the players' TV screen (`jogadores.html` + `stage.js`) and the players' phone page (`celular.html`). |
+| `painel-do-mestre/` | Browser GM panel (`index.html` + `app.js`), the players' TV screen (`jogadores.html` + `stage.js`) and the players' phone page (`celular.html`). `mesa.js` decides, for the chosen player count, who is playable, who is a corpse, who is absent, and which text variant applies. |
 | `servidor.py` | Local LAN server (port 8765). Serves the panel and the phone page, and holds the phone state in `estado-celular.json`. |
-| `iniciar-sessao.command`, `tools/build-sessao-app.sh` | Two ways to start the server. The script builds `Sessão OP2.app`, which registers the `op2painel://iniciar` URL used by the panel's "start server" button. |
+| `iniciar-sessao.bat` (Windows), `iniciar-sessao.command` (macOS) | Start the server. On macOS, `tools/build-sessao-app.sh` also builds `Sessão OP2.app`, which registers the `op2painel://iniciar` URL used by the panel's "start server" button. |
 | `impressao/` | Printable handouts. Edit `impressao.html`, then regenerate `material-para-imprimir.pdf` (command below). |
 | `handouts-hack-tecnico/`, `tools/make_hack_handouts.py` | Generated images for the technical-hack minigame, plus the answer key. |
 | `tools/teste-*.mjs`, `tools/teste-*.cjs` | Test suites (below). |
@@ -21,16 +23,18 @@ Keep this repository private.
 
 ## Running a session
 
-1. Start the server: double-click `iniciar-sessao.command`, or `open 'op2painel://iniciar'` once the app is built.
+1. Start the server: double-click `iniciar-sessao.bat` (Windows, needs Python 3 on PATH) or `iniciar-sessao.command` (macOS). Without the server, `painel-do-mestre/index.html` still works from disk, minus the players' phone.
 2. The panel opens at `http://localhost:8765/index.html`. Open the TV screen from the "Mapa e TV" tab and drag that window to the TV.
 3. Players open `http://<LAN IP>:8765/celular.html` on their phones. The page stays on "Celular desligado" until the GM turns it on in the "Celular" tab.
-4. Panel state lives in the browser's localStorage. Use "Nova sessão" to reset it.
+4. Pick 3, 4 or 5 players in the "Jogadores" selector at the top of the panel. With 3, Edgar is already dead on the altar; with 5, Kênia joins.
+5. Panel state lives in the browser's localStorage. Use "Nova sessão" to reset it.
 
 ## Tests
 
 Stop the session server first: the browser tests start their own on port 8765 and refuse to run if the port is busy.
 
 ```
+node tools/teste-mesa.cjs
 node tools/teste-falas-pd.cjs
 node tools/teste-ritmo.mjs
 node tools/teste-servidor-painel.mjs
@@ -56,14 +60,14 @@ What carries over with little change:
 - The printable-handout pipeline and the test harness.
 
 What is specific to this adventure and must be rewritten:
-- `painel-do-mestre/data.js`: characters, starting positions, locks, steps, curse table, gallery, rules summary.
+- `painel-do-mestre/data.js`: characters, starting positions, locks, steps, curse table, gallery, rules summary. Any text can be a map keyed by player count (`{ 3: "...", 4: "..." }`); `Mesa.pick` takes the largest key not above the chosen count.
 - `painel-do-mestre/dicas.js`, `falas-pd.js`: content only; the mechanism is generic.
 - `painel-do-mestre/ritmo.js`: house rules for this adventure (Gustavo's body rising, door countdown).
 - `servidor.py` and `celular.html`: the content of Gustavo's phone (chats, security questions, unlock pattern, password).
 - `app.js`: most tabs are generic, but "Caminho e porta", "Travas", "Hacks" and "Maldição" still contain Act I flows and strings.
 - `assets/`, the GM sheet and `impressao/`.
 
-## Known issues
+## Known limitations
 
-- The phone page clock and the computer-hack images show 03:12, but the book puts the scene around 18:30 on 2022-10-13 (Alan's phone, p. 35).
-- 3 vs 4 players is hard-coded. To go back to 4 players, set Edgar's `startStatus` to `"inconsciente"` in `data.js`, remove `tvName`, set `players: 4`, and restore his round-2 reminder, the chains lock and the knife in the metal-cabinet step.
+- The Windows path (`iniciar-sessao.bat`, MIME types, LAN IP detection) was written for Windows but only exercised on macOS with the Windows code path forced.
+- Changing the player count mid-session resets Edgar and Kênia to their starting state.

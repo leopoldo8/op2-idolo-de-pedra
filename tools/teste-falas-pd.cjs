@@ -11,7 +11,11 @@ check("above half is alto", F.tierFor(14, 16) === "alto");
 check("half is baixo", F.tierFor(8, 16) === "baixo");
 check("3 or less is limite", F.tierFor(3, 16) === "limite");
 check("0 is zero", F.tierFor(0, 16) === "zero");
-for (const id of ["alan", "victor", "eloisa", "edgar"]) {
+global.window = {};
+require(path.join(__dirname, "..", "painel-do-mestre", "data.js"));
+const ids = window.DATA.characters.map((c) => c.id);
+check("every character in data.js is covered", ids.length === 5 && ids.every((id) => F.LINES[id]));
+for (const id of ids) {
   for (const tier of ["alto", "baixo", "limite", "zero"]) {
     check(`${id} has ${tier} lines`, Array.isArray(F.LINES[id][tier]) && F.LINES[id][tier].length >= 2);
   }
@@ -19,7 +23,7 @@ for (const id of ["alan", "victor", "eloisa", "edgar"]) {
 const first = F.pickLine("eloisa", 12, 14, 0);
 const second = F.pickLine("eloisa", 12, 14, 1);
 check("lines rotate within a tier", first.tier === "alto" && first.text !== second.text);
-check("unknown character returns null", F.pickLine("kenia", 5, 12, 0) === null);
+check("unknown character returns null", F.pickLine("gustavo", 5, 12, 0) === null);
 const all = Object.values(F.LINES).flatMap((byTier) => Object.values(byTier).flat());
 check("no em dashes in lines", all.every((line) => !/[—–]/.test(line)));
 

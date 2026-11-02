@@ -94,7 +94,7 @@ def build_desktop(rng, readable_slot):
         f'<rect y="{tb}" width="{W}" height="44" fill="#1b1b1b"/>',
         f'<rect x="6" y="{tb + 6}" width="96" height="32" rx="4" fill="#2f6b2f"/>',
         f'<text x="54" y="{tb + 27}" text-anchor="middle" font-family="Tahoma, sans-serif" font-size="15" fill="#fff">Iniciar</text>',
-        f'<text x="{W - 16}" y="{tb + 19}" text-anchor="end" font-family="Tahoma, sans-serif" font-size="13" fill="#ddd">03:12</text>',
+        f'<text x="{W - 16}" y="{tb + 19}" text-anchor="end" font-family="Tahoma, sans-serif" font-size="13" fill="#ddd">18:41</text>',
         f'<text x="{W - 16}" y="{tb + 36}" text-anchor="end" font-family="Tahoma, sans-serif" font-size="13" fill="#ddd">13/10/2022</text>',
         "</svg>",
     ]

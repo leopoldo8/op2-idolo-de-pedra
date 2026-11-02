@@ -6,7 +6,9 @@ Os números de página citados são os impressos no PDF.
 
 **Senha da porta: 160322** (16 de março de 2022, o dia do ritual).
 
-**Esta sessão: 3 jogadores (Alan, Victor e Eloísa), sem o Edgar.** O livro já tem essa versão (p. 32, 33, 41, 43 e 64). O que muda:
+**Quantos jogadores:** a folha foi escrita para 4 (Alan, Victor, Eloísa e Edgar). Escolha 3, 4 ou 5 no seletor "Jogadores", no topo do painel, antes de começar: o painel, a TV e as travas se ajustam sozinhos. Os quadros abaixo dizem o que muda na história.
+
+**Mesa de 3 jogadores (Alan, Victor e Eloísa), sem o Edgar.** O livro já tem essa versão (p. 32, 33, 41, 43 e 64). O que muda:
 - **O Edgar não é jogável.** Ele já está morto, acorrentado no altar, com a garganta cortada. Ninguém o reconhece: para os jogadores, é "o homem no altar".
 - **Na abertura,** depois da descrição do porão, leia o trecho de 3 jogadores da p. 33: "Por fim, todos vocês olham com atenção para o homem acorrentado sobre o balcão. A camisa dele está ensopada de sangue e ele parece não estar respirando."
 - **A faca de churrasco está no altar,** ensanguentada, ao lado do corpo. Não está no armário de metal. Quem pegar já tem uma arma antes da maldição (dano RA + 2).
@@ -16,13 +18,22 @@ Os números de página citados são os impressos no PDF.
 - **Não existem as correntes do Edgar** como desafio, nem o Edgar acordando na rodada 2.
 - **Maldição:** a dívida é paga com **1 morte** (sobram 2 vivos). Nas rodadas 13 e 14, o corpo do Edgar também convulsiona e se ergue, junto com o do Gustavo (p. 53).
 - **Força física:** o Edgar era o melhor em Atletismo (d8) e Acrobacia (d10). Agora só o Victor tem Atletismo d6 para dar "pezinho", e arrombar fica mais difícil. O duto e as portas na força ficam mais lentos; a estante e as chaves ficam mais atraentes.
-- **Painel e PDF já ajustados:** o cartão do Edgar sumiu do painel, a TV mostra o corpo como "Homem no altar", a trava das correntes saiu da aba Travas, e a ficha do Edgar saiu do PDF de impressão.
+- **No painel, com o seletor em 3:** o cartão do Edgar some, a TV mostra o corpo como "Homem no altar" e a trava das correntes sai da aba Travas.
+
+**Mesa de 5 jogadores (com a Kênia).** O que muda (p. 33, 37, 38, 56 e 62):
+- **A Kênia começa trancada no Depósito A,** desacordada, com o molho de chaves 1 caído perto dela. Ela e o Edgar acordam na rodada 2, com um passo a menos nos testes físicos nessa rodada. Leia a p. 33 para os dois.
+- **O Victor jogou as chaves para ela** enquanto fazia o ritual, esperando que ela acordasse e soltasse os outros. Com as chaves, ela abre a própria porta por dentro e depois as outras.
+- **A Kênia é a melhor em Tecnologia (d8)** e a única com Aptidão (Atualidades), d6: ela recebe de graça a informação de DT 6 dos pôsteres e da foto (prata = 25 anos de casamento).
+- **O que ela lembra:** estudante de Direito de dia e atendente de call center à noite, nadava nos fins de semana. Recebeu o diagnóstico de lúpus fulminante, e os tratamentos não funcionaram. Passou o réveillon sozinha, trabalhando num escritório vazio.
+- **Intuição DT 6 nas conversas do celular:** a Kênia e a Eloísa não pareciam manter muito contato com o Gustavo.
+- **Maldição:** a dívida só é paga com **3 mortes** (sobram 2 vivos).
+- **A faca de churrasco** fica no armário de metal, como com 4 jogadores.
 
 ---
 
 ## 1. Antes da sessão
 
-- [x] Saber quantos jogadores vêm: 3, 4 ou 5. Isso muda a história (ver seção 4). **Esta sessão: 3, sem o Edgar** (ver o quadro no topo).
+- [ ] Saber quantos jogadores vêm: 3, 4 ou 5. Isso muda a história (ver os quadros no topo e a seção 4). Escolha o número no seletor "Jogadores" do painel.
 - [ ] **Avisar o grupo antes (pode ler em voz alta):** "A aventura tem doença terminal, assassinato, corpos mutilados e overdose de remédio pra dormir. Pode ter traição entre personagens e morte de personagem."
 - [ ] **Só pra você, não conte:** a maldição premia quem fere outro personagem e, se o grupo não sair a tempo, mata personagens até sobrarem só dois.
 - [ ] Decidir a regra de **Compartilhar**: o texto diz teste de Pesquisar (DT 10), a tabela-resumo diz Intuição. Escolha uma e avise.
@@ -90,7 +101,7 @@ Se travarem, perguntem quais perícias servem ali.
 
 ## 1c. Progressão do jogo, passo a passo
 
-Escrito para 4 jogadores. **Nesta sessão são 3:** onde aparece o Edgar vivo, vale o quadro no topo da folha. As páginas entre parênteses são do livro.
+Escrito para 4 jogadores. Com 3 ou 5, valem os quadros no topo da folha. As páginas entre parênteses são do livro.
 As DTs e as tentativas de cada fechadura estão na tabela da seção 6; as imagens e os tempos dos hacks, na seção 7.
 
 **O que depende do quê, em uma linha:** chaves 1 (Depósito A) → painel elétrico → sala secreta (estante ou duto) → chaves 2 (armário de roupas) → freezer → celular do Gustavo → computador → senha da porta.
@@ -295,10 +306,11 @@ Detalhes do duto:
 - **Alan:** câncer no cérebro, descoberto três meses antes. Os médicos deram menos de um ano.
 - **Victor:** câncer de estômago já em estágio avançado. O histórico só diz "diagnóstico", mas o livro dá a doença; ele sabe que tem poucos meses.
 - **Edgar:** recebeu o diagnóstico perto do Natal. O histórico diz "nome complicado", e o livro diz qual é: esclerose lateral amiotrófica bulbar (ELA). Prazo de no máximo dois anos.
+- **Kênia (só com 5 jogadores):** lúpus fulminante. O histórico diz o nome da doença e que é terminal, então ela já sabe.
 - **Eloísa:** ainda não tem diagnóstico. Só tem os sintomas (dor de cabeça, tontura, tosse com sangue) e esconde de todo mundo. O livro diz que ela só descobre que é terminal depois do réveillon, então ela não sabe o que tem, e o livro não dá o nome da doença.
 - **Hoje, em outubro de 2022, todos estão curados pelo ritual**, mas ninguém lembra disso. Não ofereça essa informação. Se algum jogador perguntar como o personagem se sente fisicamente, "estranhamente bem para alguém na sua situação" é uma resposta honesta que não entrega a cura.
 
-**Regra da casa: a doença volta à memória aos poucos.** O Alan já sabe pelo histórico; para Victor e Edgar (nesta sessão, só o Victor), entregue em três momentos:
+**Regra da casa: a doença volta à memória aos poucos.** O Alan já sabe pelo histórico; para Victor, Edgar e Kênia (os que estiverem na mesa), entregue em três momentos:
 1. **Quando examinarem o próprio corpo:** só a sensação. Victor: "você leva a mão ao estômago por reflexo, esperando uma dor que não vem". Edgar: "você confere as mãos, como se esperasse que tremessem".
 2. **Quando acharem o grupo "Lidando com despedidas"** no celular do Gustavo (Tecnologia DT 6): eles lembram que estavam num grupo de apoio para doentes terminais e que o próprio caso era sem volta.
 3. **Quando lerem os e-mails ou os exames no computador:** o nome da doença volta inteiro (câncer de estômago avançado; esclerose lateral amiotrófica bulbar).
@@ -505,7 +517,7 @@ O texto fica em `/Users/rodrigohaertel/workspace/personal/playtest-op2/painel-do
   - O teatro acaba. Não sobra filtro, não sobra roteiro, só uma mulher com medo no escuro.
   - Você fecha os olhos e tenta lembrar o rosto do seu filho. Por um segundo terrível, ele não vem.
 
-*Edgar* (fora desta sessão, mesa de 3)
+*Edgar* (só com 4 ou 5 jogadores)
 - PD acima da metade:
   - Você fecha os punhos. São mãos de quem carregou navio a vida inteira, e mesmo assim estão tremendo.
   - Você pensa no apartamento em silêncio. Ninguém vai notar que você sumiu, e isso pesa mais do que deveria.
@@ -521,6 +533,23 @@ O texto fica em `/Users/rodrigohaertel/workspace/personal/playtest-op2/painel-do
 - Chegou a 0 (junto do teste de Disciplina):
   - Você fica parado. Não por medo. Por não ver mais motivo para se mexer.
   - O espumante barato, os fogos pela janela, a casa vazia. Foi assim que o ano começou. Talvez seja assim que ele acabe.
+
+*Kênia* (só com 5 jogadores)
+- PD acima da metade:
+  - Você respira como fazia na piscina: puxa o ar, segura, solta devagar. Funcionava antes de a doença tirar a natação de você.
+  - Você pensa nos livros de Direito parados na estante de casa. O concurso, a vida diferente. Ainda dá tempo, se você sair daqui.
+  - Você usa a voz do call center por dentro: calma, educada, resolvendo o problema de outra pessoa. Só que o problema agora é seu.
+- PD na metade ou menos:
+  - Para que se esforçar em nome de um futuro que não vai vir? A pergunta volta, igual à que você se fazia antes do réveillon.
+  - Suas articulações doem só de lembrar como era a crise. Você espera a dor chegar, e ela não chega. Isso assusta mais.
+  - Funcionária do mês. Você ri sozinha, sem graça. Ninguém do escritório vai perceber que você não voltou.
+- 3 PD ou menos:
+  - A última coisa de que você lembra é a contagem lá fora e os fogos. Você estava sozinha naquela hora também.
+  - Você tenta organizar os fatos como numa prova de Direito: quem, onde, quando. Nada fecha, e a cabeça gira.
+  - O corpo que você treinou na piscina por anos parece não ser mais seu. Você não sabe se ainda consegue nadar contra isso.
+- Chegou a 0 (junto do teste de Disciplina):
+  - Você se encolhe num canto, como no escritório vazio. Ninguém liga, ninguém atende. Só o silêncio.
+  - O futuro que você planejava some de uma vez. Não sobra plano, não sobra prova, só o medo.
 
 **Relógio de sessão:** o chip "Sessão" no topo do painel conta o tempo real; clique para iniciar ou pausar.
 

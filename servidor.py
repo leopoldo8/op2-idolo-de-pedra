@@ -386,6 +386,8 @@ def gm_action(body):
 
 
 def wifi_ip():
+    if sys.platform != "darwin":
+        return None
     for interface in ("en0", "en1"):
         try:
             out = subprocess.run(["ipconfig", "getifaddr", interface], capture_output=True, text=True, timeout=3)
@@ -415,6 +417,19 @@ HOST_IP = lan_ip()
 
 
 class Handler(SimpleHTTPRequestHandler):
+    # Windows reads MIME types from the registry, which can map .js to text/plain.
+    extensions_map = {
+        **SimpleHTTPRequestHandler.extensions_map,
+        ".html": "text/html; charset=utf-8",
+        ".js": "text/javascript; charset=utf-8",
+        ".css": "text/css; charset=utf-8",
+        ".json": "application/json",
+        ".png": "image/png",
+        ".jpg": "image/jpeg",
+        ".svg": "image/svg+xml",
+        ".mp3": "audio/mpeg",
+    }
+
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=str(ROOT), **kwargs)
 
@@ -503,6 +518,9 @@ class Handler(SimpleHTTPRequestHandler):
 
 
 def open_panel(url):
+    if sys.platform != "darwin":
+        webbrowser.open(url)
+        return
     try:
         subprocess.run(["open", "-a", "Google Chrome", url], check=True, capture_output=True)
     except (OSError, subprocess.CalledProcessError):
@@ -510,6 +528,9 @@ def open_panel(url):
 
 
 def main():
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8", errors="replace")
     panel_url = f"http://localhost:{PORT}/index.html"
     open_browser = "--no-browser" not in sys.argv
     try:

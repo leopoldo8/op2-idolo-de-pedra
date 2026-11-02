@@ -77,18 +77,38 @@ try {
   const tv = (await json("/json/list")).find((t) => t.url.endsWith("jogadores.html"));
   check("TV window opened", !!tv);
 
-  const startState = await evalIn(panel, state);
-  check("3-player table: Edgar starts dead", startState.chars.edgar.status === "morto", startState.chars.edgar.status);
-  check("3-player table: only playable cards shown", (await evalIn(panel, "document.querySelectorAll('#chars article.char').length")) === 3);
+  const setPlayers = (n) => `(() => { const el = document.querySelector('[data-input=players]'); el.value = '${n}'; el.dispatchEvent(new Event('input', { bubbles: true })); return 'ok'; })()`;
+  const cardCount = "document.querySelectorAll('#chars article.char').length";
+  const tvToken = (id) => `(() => { const t = document.querySelector('#tokens [data-token=${id}]'); return t ? { cls: t.className, name: t.textContent.trim() } : null; })()`;
+
+  check("default table has 4 players", (await evalIn(panel, `${state}.players`)) === 4 && (await evalIn(panel, cardCount)) === 4);
+
+  await evalIn(panel, setPlayers(5));
+  let tableState = await evalIn(panel, state);
+  check("5-player table: Kênia gets a card", (await evalIn(panel, cardCount)) === 5 && (await evalIn(panel, "!!document.querySelector('#chars [data-id=kenia]')")) === true);
+  check("5-player table: Edgar and Kênia start unconscious", tableState.chars.edgar.status === "inconsciente" && tableState.chars.kenia.status === "inconsciente");
+  await evalIn(panel, click("[data-act=tab][data-id=travas]"));
+  check("5-player table: chains lock listed", (await evalIn(panel, "document.body.textContent.includes('Correntes do Edgar')")) === true);
+  await sleep(1200);
+  check("5-player table: TV shows Kênia", (await evalIn(tv, tvToken("kenia"))) !== null);
+
+  await evalIn(panel, setPlayers(3));
+  tableState = await evalIn(panel, state);
+  check("3-player table: Edgar starts dead", tableState.chars.edgar.status === "morto", tableState.chars.edgar.status);
+  check("3-player table: only playable cards shown", (await evalIn(panel, cardCount)) === 3);
   check("3-player table: Edgar has no card", (await evalIn(panel, "!!document.querySelector('#chars [data-id=edgar]')")) === false);
-  await evalIn(panel, `(() => { const s = ${state}; s.chars.edgar.status = 'inconsciente'; localStorage.setItem('op2-ato1-painel-v1', JSON.stringify(s)); setTimeout(() => location.reload(), 50); return 'ok'; })()`);
+  check("3-player table: no chains lock", (await evalIn(panel, "document.body.textContent.includes('Correntes do Edgar')")) === false);
+  await sleep(1200);
+  check("3-player table: TV hides Kênia", (await evalIn(tv, tvToken("kenia"))) === null);
+  const edgarToken = await evalIn(tv, tvToken("edgar"));
+  check("TV shows the altar body as dead without his name", !!edgarToken && edgarToken.cls.includes("st-morto") && edgarToken.name === "Homem no altar", JSON.stringify(edgarToken));
+
+  await evalIn(panel, `(() => { const s = ${state}; delete s.players; localStorage.setItem('op2-ato1-painel-v1', JSON.stringify(s)); setTimeout(() => location.reload(), 50); return 'ok'; })()`);
   await sleep(2000);
   await evalIn(panel, "window.confirm = () => true; 'ok'");
-  await evalIn(panel, click("[data-act=tab][data-id=caminho]"));
-  check("3-player table: a panel saved before the change also shows Edgar dead", (await evalIn(panel, `${state}.chars.edgar.status`)) === "morto");
-  check("3-player table: no chains lock", (await evalIn(panel, "window.DATA.locks.some((l) => l.id === 'correntes')")) === false);
-  await sleep(1200);
-  check("TV shows the altar body as dead without his name", (await evalIn(tv, "(() => { const t = document.querySelector('#tokens [data-token=edgar]'); return !!t && t.classList.contains('st-morto') && t.textContent.trim() === 'Homem no altar'; })()")) === true);
+  check("a panel saved during the 3-player session reopens with 3 players", (await evalIn(panel, cardCount)) === 3 && (await evalIn(panel, "document.querySelector('[data-input=players]').value")) === "3");
+  await evalIn(panel, setPlayers(4));
+  check("back to 4 players: Edgar is playable again", (await evalIn(panel, `${state}.chars.edgar.status`)) === "inconsciente" && (await evalIn(panel, cardCount)) === 4);
 
   await evalIn(panel, click("[data-act=tab][data-id=ritmo]"));
   check("rhythm tab shows hint cards", (await evalIn(panel, "document.querySelectorAll('.hint-card').length")) === 8);

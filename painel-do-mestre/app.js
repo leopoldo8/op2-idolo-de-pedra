@@ -21,14 +21,18 @@
   const esc = (value) => String(value ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const roll = (sides) => 1 + Math.floor(Math.random() * sides);
   const charDef = (id) => D.characters.find((c) => c.id === id);
+  const charView = (def) => Mesa.view(def, S.players);
+  const playableDefs = () => D.characters.filter((def) => Mesa.role(def, S.players) === "playable");
+  const presentDefs = () => D.characters.filter((def) => Mesa.role(def, S.players) !== "absent");
+  const activeLocks = () => D.locks.filter((l) => !l.minPlayers || S.players >= l.minPlayers);
   const lockDef = (id) => D.locks.find((l) => l.id === id);
 
-  function freshState() {
+  function freshState(players = Mesa.DEFAULT_PLAYERS) {
     const chars = {};
     D.characters.forEach((c) => {
       chars[c.id] = {
         pv: c.pvStart, pd: c.pdMax,
-        status: c.startStatus || "ativo",
+        status: Mesa.initialStatus(c, players),
         skipRound: null, damagedOther: false,
         pvTests: 0, pdTests: 0, pvPending: false, pdPending: false
       };
@@ -38,7 +42,7 @@
       locks[l.id] = { code: [], reveal: false, tries: 0, status: "fechada", guess: "", feedback: null, breakAcc: 0, ra: "" };
     });
     return {
-      round: 1, curseStart: null, idolBroken: false, curseApplied: {},
+      players, round: 1, curseStart: null, idolBroken: false, curseApplied: {},
       chars, steps: {}, breakers: { porao: true, segredo: false }, locks,
       door: { input: "", errors: 0, lockedUntil: null, open: false, message: "", opensAt: null },
       gustavo: Ritmo.fresh(), clock: { startedAt: null, elapsed: 0 }, hintsShown: {},
@@ -51,17 +55,28 @@
     };
   }
 
+  function alignChars(chars, players) {
+    const out = { ...chars };
+    D.characters.forEach((def) => {
+      const role = Mesa.role(def, players);
+      const status = out[def.id].status;
+      if (role !== "playable") out[def.id] = { ...out[def.id], status: Mesa.initialStatus(def, players) };
+      else if (status === "ausente") out[def.id] = { ...out[def.id], status: Mesa.initialStatus(def, players) };
+    });
+    return out;
+  }
+
   function load() {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
       if (raw) {
-        const base = freshState();
         const saved = JSON.parse(raw);
+        const players = Mesa.normalizePlayers(saved.players ?? (saved.chars?.edgar?.status === "morto" ? 3 : undefined));
+        const base = freshState(players);
         const tv = { ...base.tv, ...(saved.tv || {}) };
         tv.positions = { ...base.tv.positions, ...((saved.tv && saved.tv.positions) || {}) };
-        const chars = { ...base.chars, ...(saved.chars || {}) };
-        D.characters.filter((c) => c.startStatus === "morto").forEach((c) => { chars[c.id] = { ...chars[c.id], status: "morto" }; });
-        return { ...base, ...saved, chars, tv, dice: { ...base.dice, ...(saved.dice || {}) } };
+        const chars = alignChars({ ...base.chars, ...(saved.chars || {}) }, players);
+        return { ...base, ...saved, players, chars, tv, dice: { ...base.dice, ...(saved.dice || {}) } };
       }
     } catch (err) {
       console.warn("Estado salvo ilegível, começando do zero.", err);
@@ -102,7 +117,7 @@
     esc,
     curseRound: () => curseRound(),
     charName: (id) => charDef(id).name,
-    characters: D.characters,
+    get characters() { return playableDefs(); },
     isOpen: (id) => openDetails.has(id)
   };
   const TV_KEY = "op2-tela";
@@ -120,6 +135,8 @@
   let serverUp = false;
   let serverWaiting = false;
   let serverMsg = "";
+  const IS_MAC = /Mac/i.test(navigator.platform || navigator.userAgent);
+  const START_BAT_HINT = "Dê dois cliques no arquivo iniciar-sessao.bat, na pasta do projeto. O servidor abre o painel numa aba nova: use aquela e feche esta.";
   let serverStopped = false;
   let syncTimer = null;
   let srvChipLast = "";
@@ -221,7 +238,7 @@
     serverWaiting = true;
     serverMsg = "";
     refreshServerUi();
-    location.href = "op2painel://iniciar";
+    if (IS_MAC) location.href = "op2painel://iniciar";
     const deadline = Date.now() + 30000;
     while (Date.now() < deadline) {
       if (await probeServer()) {
@@ -235,7 +252,7 @@
       await new Promise((resolve) => setTimeout(resolve, 700));
     }
     serverWaiting = false;
-    serverMsg = "O servidor não respondeu. Se o Chrome perguntou se podia abrir o app Sessão OP2, clique em Abrir e tente de novo. Se não perguntou nada, dê dois cliques em Sessão OP2.app, na pasta do playtest.";
+    serverMsg = IS_MAC ? "O servidor não respondeu. Se o Chrome perguntou se podia abrir o app Sessão OP2, clique em Abrir e tente de novo. Se não perguntou nada, dê dois cliques em iniciar-sessao.command, na pasta do projeto." : `O servidor não respondeu. ${START_BAT_HINT}`;
     refreshServerUi();
   }
 
@@ -266,7 +283,7 @@
   }
 
   function serverStartHtml() {
-    if (serverWaiting) return `<p class="muted">Ligando o servidor… Se o Chrome perguntar se pode abrir o app <b>Sessão OP2</b>, clique em Abrir.</p>`;
+    if (serverWaiting) return IS_MAC ? `<p class="muted">Ligando o servidor… Se o Chrome perguntar se pode abrir o app <b>Sessão OP2</b>, clique em Abrir.</p>` : `<p class="muted">Esperando o servidor… ${esc(START_BAT_HINT)}</p>`;
     if (!SERVED && serverUp) return `<div class="lock-row"><button class="primary" data-act="server-go">Abrir painel conectado</button></div><p class="muted">O servidor já está ligado. O painel reabre pelo servidor com tudo o que já foi marcado aqui.</p>`;
     return `<div class="lock-row"><button class="primary" data-act="server-start">Ligar servidor do celular</button></div>${serverMsg ? `<p class="warn-text">${esc(serverMsg)}</p>` : ""}`;
   }
@@ -367,7 +384,7 @@
       doorCountdown: Ritmo.roundsLeft(S),
       doorPowered: Ritmo.doorPowered(S),
       tokens: [
-        ...D.characters.map((c) => ({ id: c.id, name: c.tvName || c.name, status: S.chars[c.id].status, ...S.tv.positions[c.id] })),
+        ...presentDefs().map((c) => ({ id: c.id, name: charView(c).tvName, status: S.chars[c.id].status, ...S.tv.positions[c.id] })),
         ...Ritmo.tvTokens(S)
       ]
     };
@@ -419,7 +436,7 @@
   }
 
   function aliveCount() {
-    return Object.values(S.chars).filter((c) => c.status !== "morto").length;
+    return playableDefs().filter((def) => S.chars[def.id].status !== "morto").length;
   }
 
   function testName(stat) {
@@ -467,9 +484,11 @@
       log("Teclado da porta liberado.");
     }
     Ritmo.onNextRound(S, ritmoCtx);
-    if (S.round === 2 && S.chars.edgar.status === "inconsciente") {
-      S.chars.edgar.status = "ativo";
-      log("Edgar acorda (um passo a menos em testes físicos nesta rodada).");
+    if (S.round === 2) {
+      playableDefs().filter((def) => def.startStatus === "inconsciente" && S.chars[def.id].status === "inconsciente").forEach((def) => {
+        S.chars[def.id].status = "ativo";
+        log(`${def.name} acorda (um passo a menos em testes físicos nesta rodada).`);
+      });
     }
     log(`Começa a rodada ${S.round}.`);
   }
@@ -485,7 +504,7 @@
     const row = curseRowFor(curseRound());
     if (!row || !row.loss || S.curseApplied[row.round]) return;
     const hits = [];
-    D.characters.forEach((def) => {
+    playableDefs().forEach((def) => {
       const c = S.chars[def.id];
       if (c.status === "morto" || c.status === "escapou") return;
       let pv = S.idolBroken ? 1 : 0;
@@ -721,8 +740,8 @@
 
   function reminders() {
     const list = [];
-    (D.roundReminders[S.round] || []).forEach((t) => list.push({ kind: "info", text: t }));
-    D.characters.forEach((def) => {
+    (Mesa.pick(D.roundReminders[S.round], S.players) || []).forEach((t) => list.push({ kind: "info", text: t }));
+    playableDefs().forEach((def) => {
       const c = S.chars[def.id];
       if (c.skipRound === S.round) list.push({ kind: "warn", text: `${def.name} não age nesta rodada.` });
       if (c.pvPending) list.push({ kind: "danger", text: `${def.name} está com 0 PV: Vigor DT ${7 + 3 * (c.pvTests - 1)}. Falhou, morre.` });
@@ -768,6 +787,9 @@
         ${musicBtn("idolo", "O Ídolo")}
         <input type="range" min="0" max="1" step="0.05" value="${S.volume}" data-input="volume" title="Volume">
       </div>
+      <label class="players-box" title="Muda quem joga: com 3, o Edgar já está morto no altar; com 5, entra a Kênia.">Jogadores
+        <select data-input="players">${Mesa.PLAYER_OPTIONS.map((n) => `<option value="${n}" ${S.players === n ? "selected" : ""}>${n}</option>`).join("")}</select>
+      </label>
       <button class="ghost" data-act="reset">Nova sessão</button>`;
   }
 
@@ -797,7 +819,7 @@
 
   function renderChars() {
     const cursed = curseRound() !== null;
-    $("#chars").innerHTML = D.characters.filter((def) => def.startStatus !== "morto").map((def) => {
+    $("#chars").innerHTML = playableDefs().map(charView).map((def) => {
       const c = S.chars[def.id];
       const skip = c.skipRound === S.round ? "Não age nesta rodada" : c.skipRound === S.round + 1 ? "Não age na próxima" : "";
       return `
@@ -847,7 +869,7 @@
       <section class="card">
         <h2>Caminho até a saída <small>${done} de ${D.steps.length}</small></h2>
         <ol class="steps">
-          ${D.steps.map((s) => `<li class="${S.steps[s.id] ? "done" : ""}"><label><input type="checkbox" data-input="step" data-id="${s.id}" ${S.steps[s.id] ? "checked" : ""}><b>${esc(s.title)}</b></label><p>${esc(s.text)}</p></li>`).join("")}
+          ${D.steps.map((s) => `<li class="${S.steps[s.id] ? "done" : ""}"><label><input type="checkbox" data-input="step" data-id="${s.id}" ${S.steps[s.id] ? "checked" : ""}><b>${esc(s.title)}</b></label><p>${esc(Mesa.pick(s.text, S.players))}</p></li>`).join("")}
         </ol>
       </section>
       <section class="card door">
@@ -864,7 +886,7 @@
   }
 
   function tabTravas() {
-    const cards = D.locks.map((def) => {
+    const cards = activeLocks().map((def) => {
       const st = S.locks[def.id];
       const statusLabel = { fechada: "Fechada", aberta: `Aberta (${st.openedBy || ""})`, estragada: "Fechadura estragada" }[st.status];
       const fb = st.feedback;
@@ -886,7 +908,7 @@
         <section class="card lock status-${st.status}">
           <h2>${esc(def.name)} <span class="tag ${st.status}">${statusLabel}</span></h2>
           ${def.warn ? `<p class="warn-text">${esc(def.warn)}</p>` : ""}
-          ${def.note ? `<p class="muted">${esc(def.note)}</p>` : ""}
+          ${Mesa.pick(def.note, S.players) ? `<p class="muted">${esc(Mesa.pick(def.note, S.players))}</p>` : ""}
           ${lockPart}
           <div class="lock-row">
             <span class="tag">Arrombar: DT ${def.breakDT}, PA ${def.breakPA}</span>
@@ -903,7 +925,7 @@
         <h2>Como funciona</h2>
         <p>Destrancar: gere a senha secreta, digite o palpite do jogador e leia o resultado de cada dado. ${esc(D.crimeTries)}</p>
         <p>Arrombar: o jogador gasta 1 PV e testa Atletismo contra a DT. Se passar, some a RA dele aqui. Faz barulho.</p>
-        <p class="muted">Crime do grupo: Alan d6 (2), Victor d4 (1), Eloísa d6 (2).</p>
+        <p class="muted">Crime do grupo: ${playableDefs().map((d) => `${esc(d.name)} ${d.crime} (${d.crimeTries})`).join(", ")}.</p>
       </section>
       ${cards}
       <section class="card">
@@ -1008,7 +1030,7 @@
           <p>Ativa quando o armário de metal é aberto (a página ativa sozinha quando você marca o armário como aberto na aba Travas). Leia a narração da p. 52; a música troca para "O Ídolo".</p>
           <p class="muted">Se a mesa travar, o livro autoriza ativar antes: energia vindo do armário, espasmos no freezer.</p>
           <button class="danger-btn big" data-act="curse-on">Ativar maldição agora</button>` : `
-          <p>Vivos: <b>${aliveCount()}</b> (contando quem escapou). A dívida é paga quando restarem ${D.survivorsNeeded}; com ${D.players} jogadores, ${D.players - D.survivorsNeeded === 1 ? "basta 1 morte" : `são ${D.players - D.survivorsNeeded} mortes`}.</p>
+          <p>Vivos: <b>${aliveCount()}</b> (contando quem escapou). A dívida é paga quando restarem ${D.survivorsNeeded}; com ${S.players} jogadores, ${S.players - D.survivorsNeeded === 1 ? "basta 1 morte" : `são ${S.players - D.survivorsNeeded} mortes`}.</p>
           <p class="muted">Nas rodadas 4, 7 e 10, marque nos cards quem feriu outro personagem vivo nesta rodada antes de aplicar as perdas.</p>`}
         <table class="curse-table"><tr><th>Rodada</th><th>Efeito</th><th></th></tr>${rows}</table>
         <div class="lock-row">
@@ -1040,7 +1062,7 @@
       </section>
       <section class="card">
         <h2>A verdade em 30 segundos</h2>
-        <ul class="spoiler-block" tabindex="0">${D.truth.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>
+        <ul class="spoiler-block" tabindex="0">${D.truth.map((t) => Mesa.pick(t, S.players)).filter(Boolean).map((t) => `<li>${esc(t)}</li>`).join("")}</ul>
       </section>
       <section class="card">
         <h2>Armadilhas pro mestre</h2>
@@ -1215,7 +1237,7 @@
     reset: () => {
       if (!confirm("Começar uma sessão nova? Isso apaga rodadas, PV, PD, travas e notas.")) return;
       Object.values(music).forEach((a) => a.pause());
-      S = freshState();
+      S = freshState(S.players);
       if (SERVED) phoneAction("reset");
     },
     tab: (el) => { S.tab = el.dataset.id; },
@@ -1391,6 +1413,18 @@
   };
 
   const INPUTS = {
+    players: (el) => {
+      const players = Mesa.normalizePlayers(el.value);
+      if (players === S.players) return false;
+      if (S.round > 1 && !confirm(`Mudar para ${players} jogadores no meio da sessão? Edgar e Kênia voltam ao estado inicial.`)) return true;
+      S.players = players;
+      S.chars = alignChars(S.chars, players);
+      D.characters.filter((def) => def.playableFrom).forEach((def) => {
+        S.chars[def.id] = { ...S.chars[def.id], status: Mesa.initialStatus(def, players) };
+      });
+      log(`Mesa de ${players} jogadores.`);
+      return true;
+    },
     volume: (el) => { S.volume = Number(el.value); Object.values(music).forEach((a) => { a.volume = S.volume; }); return false; },
     status: (el) => { S.chars[el.dataset.id].status = el.value; log(`${charDef(el.dataset.id).name}: ${STATUS.find(([v]) => v === el.value)[1].toLowerCase()}.`); return true; },
     step: (el) => { S.steps[el.dataset.id] = el.checked; return true; },
