@@ -9,9 +9,15 @@ window.Stage = (function () {
 
   const esc = (value) => String(value ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
-  function tokenHtml(token, style, size, forGm) {
+  const STATUSES = new Set(["ativo", "inconsciente", "morto", "escapou"]);
+  const finite = (value, fallback) => (Number.isFinite(Number(value)) ? Number(value) : fallback);
+
+  function tokenHtml(raw, rawStyle, rawSize, forGm) {
+    const token = { ...raw, id: String(raw.id).replace(/[^a-z0-9-]/gi, ""), status: STATUSES.has(raw.status) ? raw.status : "ativo", x: finite(raw.x, 50), y: finite(raw.y, 50) };
+    const style = rawStyle === "ficha" ? "ficha" : "corpo";
+    const size = finite(rawSize, 1);
     if (token.status === "escapou" && !forGm) return "";
-    const tokenStyle = token.fixedStyle || style;
+    const tokenStyle = token.fixedStyle === "ficha" ? "ficha" : style;
     const img = tokenStyle === "ficha" ? `assets/fichas-mapa/${token.id}.png` : `assets/personagens/${token.id}.png`;
     return `<div class="tk tk-${tokenStyle} st-${token.status}${token.monster ? " tk-monstro" : ""}" data-token="${token.id}" style="left:${token.x}%;top:${token.y}%;--s:${size};z-index:${Math.round(token.y * 10)}">
       <img src="${img}" alt="" draggable="false"><span>${esc(token.name)}${forGm && token.status === "escapou" ? " (escapou)" : ""}</span></div>`;

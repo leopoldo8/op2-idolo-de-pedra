@@ -35,6 +35,7 @@ Stop the session server first: the browser tests start their own on port 8765 an
 
 ```
 node tools/teste-mesa.cjs
+node tools/teste-stage.cjs
 node tools/teste-falas-pd.cjs
 node tools/teste-ritmo.mjs
 node tools/teste-servidor-painel.mjs
@@ -68,6 +69,8 @@ What is specific to this adventure and must be rewritten:
 - `assets/`, the GM sheet and `impressao/`.
 
 ## Known limitations
+
+- Security model: the GM panel and `/api/gm` answer only to this machine (loopback address and a `localhost`/`127.0.0.1` Host header, which blocks DNS rebinding). Other devices on the network reach only `celular.html`, the phone API and the token images. POSTs must be `application/json`, so cross-site pages cannot fire them without a preflight the server never approves.
 
 - The Windows path (`iniciar-sessao.bat`, MIME types, LAN IP detection) was written for Windows but only exercised on macOS with the Windows code path forced.
 - Changing the player count mid-session resets Edgar and Kênia to their starting state.

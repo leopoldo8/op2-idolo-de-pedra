@@ -1,3 +1,4 @@
+import http from "node:http";
 import { spawn } from "node:child_process";
 import { mkdtempSync } from "node:fs";
 import { tmpdir } from "node:os";
@@ -229,6 +230,32 @@ try {
   await evalIn(phonePage, "(() => { const b = [...document.querySelectorAll('[data-act=open], [data-to], [data-app]')].find((el) => /TRANCATRON/i.test(el.textContent)); if (b) b.click(); return !!b; })()");
   await sleep(500);
   check("TRANCATRON shows destravando and disables keypad", await evalIn(phonePage, "document.body.innerText.includes('Destravando') && document.querySelectorAll('.keypad button').length === 12 && [...document.querySelectorAll('.keypad button')].every((b) => b.disabled)"));
+
+  const LAN = { Host: "192.168.0.50:8765" };
+  const raw = (path, headers = {}, method = "GET", body) => new Promise((done) => {
+    const req = http.request({ host: "127.0.0.1", port: 8765, path, method, headers }, (res) => { res.resume(); done(res.statusCode); });
+    req.on("error", () => done(0));
+    if (body) req.write(body);
+    req.end();
+  });
+  check("LAN client cannot climb out of the public folder", (await raw("/assets/fichas-mapa/../../data.js", LAN)) === 403);
+  check("LAN client cannot climb out with encoded dots", (await raw("/assets/fichas-mapa/%2e%2e/%2e%2e/data.js", LAN)) === 403);
+  check("LAN client still gets the phone page and token images", (await raw("/celular.html", LAN)) === 200 && (await raw("/assets/fichas-mapa/alan.png", LAN)) === 200);
+  check("foreign Host cannot read the GM API (DNS rebinding)", (await raw("/api/gm", { Host: "evil.example:8765" })) === 403);
+  check("cross-site text/plain post is refused", (await raw("/api/gm", { Host: "localhost:8765", "Content-Type": "text/plain" }, "POST", '{"action":"shutdown"}')) === 415);
+  check("server still up after the refused post", (await raw("/api/phone")) === 200);
+
+  const evil = { savedAt: Date.now() + 1e9, round: "<img src=x onerror=\"window.__pwned=1\">", notes: "<script>window.__pwned=2</script>" };
+  await fetch(`http://127.0.0.1:${PORT}/json/close/${served.id}`);
+  await sleep(300);
+  const evilTab = await openTab("http://localhost:8765/celular.html");
+  await evalIn(evilTab, `location.href = ${JSON.stringify(`http://localhost:8765/index.html#importar=${encodeURIComponent(JSON.stringify(evil))}`)}; 'ok'`);
+  await sleep(2000);
+  check("imported state was applied (defanged)", (await evalIn(evilTab, "document.querySelector('.round-num b').textContent")).startsWith("‹img"));
+  check("imported state cannot inject HTML", (await evalIn(evilTab, "window.__pwned === undefined && !document.querySelector('img[src=x]')")) === true);
+  await evalIn(evilTab, "window.confirm = () => true; 'ok'");
+  await evalIn(evilTab, click("[data-act=reset]"));
+
   await api("/api/gm", { action: "reset" });
 } finally {
   chrome.kill();

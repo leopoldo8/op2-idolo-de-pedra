@@ -92,10 +92,25 @@
     return JSON.stringify(rest);
   }
 
+  const SAFE_CHARS = { "<": "‹", ">": "›", "\"": "”", "'": "’", "`": "‘" };
+
+  // The import hash can come from any link, so every string is defanged
+  // before it reaches templates that interpolate state.
+  function defang(value, depth = 0) {
+    if (depth > 12) return null;
+    if (typeof value === "string") return value.replace(/[<>"'`]/g, (c) => SAFE_CHARS[c]);
+    if (typeof value === "number") return Number.isFinite(value) ? value : 0;
+    if (typeof value === "boolean" || value === null) return value;
+    if (Array.isArray(value)) return value.map((v) => defang(v, depth + 1));
+    if (typeof value === "object") return Object.fromEntries(Object.entries(value).map(([k, v]) => [defang(k, depth + 1), defang(v, depth + 1)]));
+    return null;
+  }
+
   function importFromHash() {
     if (!location.protocol.startsWith("http") || !location.hash.startsWith(IMPORT_PREFIX)) return;
     try {
-      const incoming = JSON.parse(decodeURIComponent(location.hash.slice(IMPORT_PREFIX.length)));
+      const incoming = defang(JSON.parse(decodeURIComponent(location.hash.slice(IMPORT_PREFIX.length))));
+      if (!incoming || typeof incoming !== "object" || Array.isArray(incoming)) throw new Error("estado inválido");
       const current = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
       if (!current || (incoming.savedAt || 0) > (current.savedAt || 0)) localStorage.setItem(STORAGE_KEY, JSON.stringify(incoming));
     } catch (err) {
@@ -1510,7 +1525,8 @@
   }, true);
 
   window.addEventListener("message", (ev) => {
-    if (!ev.data || ev.data.type !== "op2-hello") return;
+    const ownOrigin = [location.origin, "null", "file://", SERVER_ORIGIN, "http://127.0.0.1:8765"].includes(ev.origin);
+    if (!ownOrigin || !ev.data || ev.data.type !== "op2-hello") return;
     const wasConnected = tvConnected();
     tvWin = ev.source;
     lastHello = Date.now();

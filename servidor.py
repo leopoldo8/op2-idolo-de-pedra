@@ -7,6 +7,7 @@ see answers or the GM screen.
 """
 
 import json
+import posixpath
 import re
 import socket
 import subprocess
@@ -17,7 +18,7 @@ import unicodedata
 import webbrowser
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import unquote, urlparse
 
 BASE = Path(__file__).resolve().parent
 ROOT = BASE / "painel-do-mestre"
@@ -26,6 +27,7 @@ PORT = 8765
 MAX_BODY_BYTES = 10_000
 PUBLIC_PATHS = {"/celular.html"}
 PUBLIC_PREFIXES = ("/assets/fichas-mapa/",)
+GM_HOSTS = {f"localhost:{PORT}", f"127.0.0.1:{PORT}", f"[::1]:{PORT}"}
 TWO_FACTOR_CODE = "482 917"
 PATTERN = [2, 1, 0, 3, 6, 7, 8]
 PATTERN_TRIES = 3
@@ -441,7 +443,16 @@ class Handler(SimpleHTTPRequestHandler):
         super().end_headers()
 
     def is_local(self):
-        return self.client_address[0] in {"127.0.0.1", "::1"}
+        # The Host check blocks DNS rebinding: a page on another domain that
+        # resolves to 127.0.0.1 still sends its own name as Host.
+        return self.client_address[0] in {"127.0.0.1", "::1"} and self.headers.get("Host", "") in GM_HOSTS
+
+    def is_public_file(self, path):
+        decoded = unquote(path)
+        if ".." in decoded.split("/"):
+            return False
+        norm = posixpath.normpath(decoded)
+        return norm in PUBLIC_PATHS or norm.startswith(PUBLIC_PREFIXES)
 
     def send_json(self, payload, status=200):
         body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
@@ -479,13 +490,18 @@ class Handler(SimpleHTTPRequestHandler):
             with LOCK:
                 self.send_json(gm_view(HOST_IP))
             return
-        if not self.is_local() and path not in PUBLIC_PATHS and not path.startswith(PUBLIC_PREFIXES):
+        if not self.is_local() and not self.is_public_file(path):
             self.send_error(403)
             return
         super().do_GET()
 
     def do_POST(self):
         path = urlparse(self.path).path
+        # Requiring a JSON content type forces a CORS preflight on cross-site
+        # requests, which this server never approves.
+        if not self.headers.get("Content-Type", "").startswith("application/json"):
+            self.send_json({"ok": False, "message": "Pedido inválido."}, 415)
+            return
         try:
             body = self.read_json()
         except (ValueError, UnicodeDecodeError):
